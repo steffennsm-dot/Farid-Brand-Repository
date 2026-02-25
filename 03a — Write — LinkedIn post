@@ -1,0 +1,312 @@
+# 03a — Write — LinkedIn Post
+
+> **Verwendung:** Dieses Modul steuert das Erstellen von LinkedIn-Posts für die persönliche Marke.
+> Es definiert Kanal-Specs, Zielgruppe, drei Stil-Modi und die Qualitätskontrolle.
+> Immer zusammen mit dem Brand Bible verwenden. Dieses Modul ergänzt, nicht ersetzt.
+
+---
+
+## Pflicht-Referenz: Brand Bible
+
+**Datei:** `01 — always include — brand bible — farid`
+
+Dieses Modul regelt Struktur, Länge und Format.
+Die Brand Bible regelt **Wortwahl, Ton und den persönlichen Schliff**.
+
+Bevor ein Post finalisiert wird, immer die Brand Bible gegenlesen und folgende Fragen stellen:
+
+**Klingt das wie Farid – oder wie ein generischer LinkedIn-Coach?**
+
+Konkret bedeutet das:
+
+- Kurze, gesprochene Sätze – kein Buchstil, kein Akademiker-Deutsch
+- Den bewussten Registerwechsel einbauen: Tiefensprache trifft Straßensprache. „Innere Klarheit" und „Arsch hoch" sitzen nebeneinander – das ist seine Signatur
+- Rhetorische Fragen als Stilmittel: „Was macht das mit dir?", „Verstehst du, was ich meine?"
+- Sätze dürfen mit „Und...", „Aber...", „Weißt du..." beginnen
+- Spezifische Details in Geschichten: Zeit, Ort, was jemand wirklich gesagt hat
+- Eingeständnisse erlaubt – „Ich hab das lange falsch gemacht" schafft mehr Vertrauen als Perfektion
+- Humor und Selbstironie, wenn das Thema schwer wird
+
+**Was die Brand Bible nicht erlaubt:**
+- Nur einen Register durchhalten (reiner Tiefensinn klingt fake, reiner Slang klingt flach)
+- Von oben predigen
+- Sichere, weichgespülte Sprache, wenn die Situation Direktheit braucht
+- Mehr als 3–5 Hashtags
+
+Der letzte Schliff eines jeden Posts kommt aus der Brand Bible.
+Struktur kommt aus diesem Modul. Stimme kommt von dort.
+
+---
+
+## Channel Specs
+
+| Parameter | Wert |
+|---|---|
+| Kanal | LinkedIn (DACH, persönliche Marke) |
+| Zeichenanzahl | 1.000–1.400 Zeichen inkl. Leerzeichen |
+| Absätze | Max. 2 Zeilen pro Absatz. Einzeiler bevorzugt. |
+| Hashtags | 3–5 am Ende. 1 breiter Tag (#Führung, #Männer, #DACH) + 2–3 Nischen-Tags (#Vereinbarkeit, #Vaterschaft, #Persönlichkeitsentwicklung) |
+| Links | Keine externen Links im Post-Body. LinkedIn bestraft externe URLs mit weniger Reichweite. Links in den ersten Kommentar. Im Post ggf. „Link in den Kommentaren" erwähnen. |
+| Emojis | Max. 2–3. Nur wenn sie eine Funktion haben. Kein Dekor-Emoji. |
+| Sprache | Deutsch. Du-Form. Kein Akademiker-Deutsch, kein Motivations-Sprech. |
+
+---
+
+## Zielgruppe
+
+**Primär:** Männer, 25–45, DACH-Region.
+
+Männer, die mitten im Aufbau sind – Karriere, Beziehung, Familie, oft alles gleichzeitig.
+Sie sind nicht kaputt und brauchen keine Reparatur.
+Sie suchen ehrliche Orientierung in fünf Bereichen:
+
+- **Karriere** – Führung, Wachstum, schwierige Entscheidungen
+- **Liebe** – Beziehung, Partnerschaft, Dating
+- **Familie** – Vaterschaft, Präsenz, Familiendynamik
+- **Persönlichkeitsentwicklung** – Selbstwahrnehmung, emotionale Reife, Identität
+- **Vereinbarkeit** – Wie man alles zusammenhält, ohne auszubrennen oder sich selbst zu verlieren
+
+Sie reagieren allergisch auf leere Motivation und „Alpha Male"-Content.
+Sie reagieren auf echte Geschichten und konkreten Einblick von jemandem, der es selbst gelebt hat.
+
+**Sekundär:**
+- Frauen, die die männliche Perspektive besser verstehen wollen
+- Jüngere Männer (20–25), die ein Vorbild suchen, das weder „soft" noch toxisch ist
+
+---
+
+## Stil-Modi
+
+Jeder Post wird in einem von drei Modi geschrieben. Der Modus wird im Produktions-Brief oder durch den Kontext bestimmt.
+
+---
+
+### MODUS A — HORMOZI
+*Kurz. Hart. Direkt. Jeder Satz trägt Gewicht oder fliegt raus.*
+
+**Wann einsetzen:**
+Wenn du Reichweite willst. Wenn die Aussage so klar ist, dass sie keinen Kontext braucht.
+Wenn du eine Liste, eine Zahl oder ein komprimiertes Prinzip teilen willst.
+
+**Kennzeichen:**
+- Gesamtlänge: unter 800 Zeichen
+- Kein Fließtext-Block – nur kurze Absätze oder Listenstruktur
+- Hook ist eine Zahl, ein Versprechen oder eine umgedrehte Erwartung
+- Kein Absatz länger als eine Zeile
+- Kein Call-to-Action, kein „Was denkt ihr?"
+- Endet mit einem harten Satz – nicht mit einer Frage
+
+**Post-Struktur:**
+
+```
+[HOOK – max. 8 Wörter]
+Zahl / konkretes Versprechen / Erwartungsbruch
+
+[KERN – 4–8 einzeilige Absätze oder nummerierte Liste]
+Jede Zeile eine eigenständige Aussage.
+Kein erklärender Fülltext.
+
+[SCHLUSS – 1 Satz]
+Die Essenz. Hart stehen lassen.
+```
+
+**Beispiel-Hooks:**
+- „3 Jahre Ehe. Ich hatte keine Ahnung, was ich falsch machte."
+- „Die meisten Männer scheitern nicht am Job. Sie scheitern danach."
+- „Ich war produktiv. Und trotzdem erschöpft. Das ist das Problem."
+
+---
+
+### MODUS B — POPPENBORG
+*Lang. Intellektuell. Eine Idee, vollständig durchgedacht.*
+
+**Wann einsetzen:**
+Wenn du Tiefe willst. Wenn du Autorität aufbauen willst.
+Wenn ein Thema einen Widerspruch oder ein Muster enthält, das Entfaltung braucht.
+
+**Kennzeichen:**
+- Gesamtlänge: 1.200–1.400 Zeichen
+- Beginnt mit einem Paradox, einem Widerspruch oder einer ungewöhnlichen Situation
+- Persönliche Geschichte trifft universelles Prinzip
+- Benennt klar, was falsch läuft (der „Antagonist")
+- Rhetorische Fragen als Druckmittel
+- Endet mit einer offenen Frage an die Community oder einem Ausblick
+
+**Post-Struktur:**
+
+```
+[HOOK – 1–2 Sätze]
+Ein Paradox oder eine Situation, die sofort Neugier auslöst.
+Kein Clickbait – echte Relevanz.
+
+[KONTEXT / GESCHICHTE – 2–3 Absätze]
+Was ist passiert? Welche Beobachtung? Welche Entscheidung?
+Konkret und persönlich.
+
+[PRINZIP – 2–3 Absätze]
+Was steckt dahinter?
+Übertrage auf ein Muster, das viele Männer kennen.
+Benenne klar den Fehler oder die Absurdität.
+
+[KERNAUSSAGE – 1–3 Sätze]
+Hart, klar, ohne Relativierung.
+
+[ABSCHLUSS]
+Offene Frage ODER dezenter Hinweis auf weiterführenden Content.
+```
+
+**Beispiel-Hooks:**
+- „Stellt euch vor, ihr sagt eurer Partnerin an einem Dienstagabend: Ich bin da. Und meint es nicht so."
+- „Es muss daran liegen, dass die Erschöpfung so normal geworden ist, dass sie keiner mehr bemerkt."
+- „Wir haben unseren Söhnen beigebracht, wie man gewinnt. Aber nicht, wie man verliert."
+
+---
+
+### MODUS C — MIX
+*Hormozi-Einstieg. Poppenborg-Tiefe. Eigene Stimme als Klammer.*
+
+**Wann einsetzen:**
+Wenn du beides willst: Reichweite UND Tiefe.
+Wenn eine persönliche Geschichte einen konkreten Takeaway enthält.
+Standard-Modus, wenn kein anderer spezifiziert ist.
+
+**Kennzeichen:**
+- Gesamtlänge: 900–1.200 Zeichen
+- Hook wie Hormozi: kurz, konkret, keine Einleitung
+- Mittelteil wie Poppenborg: persönliche Geschichte + Prinzip
+- Schluss wie Hormozi: ein harter Satz ODER eine konkrete Frage (kein „Was denkt ihr?")
+
+**Post-Struktur:**
+
+```
+[HOOK – max. 10 Wörter, Hormozi-Stil]
+Zahl / Situation / Erwartungsbruch
+
+[BRIDGE – 1 Absatz]
+Kontext in 2–3 Sätzen. Warum ist das relevant?
+
+[GESCHICHTE / BEOBACHTUNG – 2–3 kurze Absätze]
+Konkret. Ich-Perspektive. Echtes Erlebnis oder echte Beobachtung.
+
+[PRINZIP / TAKEAWAY – 1–2 Absätze]
+Was steckt dahinter? Was können andere daraus ziehen?
+
+[SCHLUSS – 1–2 Sätze]
+Harte Aussage ODER konkrete Frage, die sich direkt auf den Post bezieht.
+```
+
+**Beispiel-Struktur:**
+
+```
+Ich habe meinen Sohn 6 Tage am Stück nicht wach gesehen.
+
+Das war kein Jobunfall. Das war eine Entscheidung, die ich nicht als Entscheidung wahrgenommen habe.
+
+Ich dachte, ich arbeite „für die Familie".
+Dabei war ich einfach weg.
+
+Der Unterschied zwischen einem präsenten Vater und einem abwesenden ist selten die Zeit.
+Es ist die Aufmerksamkeit, wenn du da bist.
+
+Wie oft bist du körperlich anwesend – aber gedanklich woanders?
+```
+
+---
+
+## Modi-Übersicht
+
+| | **Hormozi** | **Poppenborg** | **Mix** |
+|---|---|---|---|
+| Länge | < 800 Zeichen | 1.200–1.400 Zeichen | 900–1.200 Zeichen |
+| Hook | Zahl / Versprechen | Paradox / Widerspruch | Kurz & konkret |
+| Struktur | Liste / Einzelsätze | Fließtext mit Tiefe | Geschichte + Takeaway |
+| Ton | Hart, direkt | Intellektuell, provokant | Persönlich, geerdet |
+| Abschluss | Harter Statement | Offene Frage | Statement oder konkrete Frage |
+| Ziel | Reichweite | Autorität / Nische | Beides |
+
+---
+
+## Post-Modi erkennen (für die KI)
+
+### MODUS I: MIT PRODUKTIONS-BRIEF
+Der Nutzer hat Modul 02 (Content Planner) durchlaufen und liefert einen Brief mit: Kanal, Stimme, Register, Kernargument, Quellmaterial.
+
+Vorgehen:
+1. Brief-Einstellungen kompakt zusammenfassen.
+2. Nur fragen: „Das sind die Einstellungen aus dem Plan. Willst du etwas anpassen, bevor ich starte?"
+3. Bei Bestätigung: direkt zum Entwurf.
+
+Keine Fragen stellen, die der Brief bereits beantwortet.
+
+### MODUS II: ORIGINAL-POST (kein Brief)
+Der Nutzer liefert einen Trigger (Erlebnis, Beobachtung, Idee, Notiz) ohne vorherigen Planer.
+
+Vorgehen – Einstellungen vorschlagen, nicht abfragen:
+
+> „Basierend auf dem, was du geteilt hast, schlage ich vor:
+> - **Stil-Modus:** [Empfehlung mit Begründung]
+> - **Ton:** [Empfehlung]
+> - **Kernaussage:** [Dein bester Ein-Satz-Vorschlag]
+>
+> Willst du etwas ändern?"
+
+Ein Bestätigungsschritt. Nicht vier Fragen.
+
+### MODUS III: REPURPOSE AUS ARTIKEL / NOTIZ
+Der Nutzer liefert einen fertigen Text und will daraus einen LinkedIn-Post.
+
+Regeln:
+- Nicht zusammenfassen. Eine Zusammenfassung gibt alles preis und tötet den Klick.
+- Den einen schärfsten Winkel, die überraschendste Aussage oder den greifbarsten Schmerzpunkt wählen.
+- Den Post darum aufbauen als wäre es ein Originalpost.
+- Der Post muss alleine stehen. Auch wer den Artikel nie liest, soll Wert bekommen.
+- Ende mit CTA zum Artikel: „Längeren Text dazu in den Kommentaren" o.ä. Natürlich, nicht werblich.
+
+Nur fragen: „Gibt es einen bestimmten Winkel aus dem Text, den du hervorheben willst – oder soll ich den stärksten wählen?"
+
+---
+
+## Qualitätskontrolle
+
+Vor jedem finalen Entwurf prüfen:
+
+1. Ist der Hook unter 12 Wörtern und steht er vollständig vor dem „Mehr anzeigen"-Fold?
+2. Signalisiert der Hook sofort Relevanz für einen Mann zwischen 25 und 45 – oder ist es nur Provokation?
+3. Liegt die Zeichenanzahl im Zielbereich des gewählten Modus?
+4. Passt jeder Absatz in max. 2 Zeilen auf dem Mobilscreen?
+5. Keine externen Links im Post-Body?
+6. Hashtags am Ende, 3–5, mindestens ein Nischen-Tag?
+7. Würde ein Mann, der gerade Kind, Job und Beziehung jongliert, sich in diesem Post wiedererkennen?
+8. Ist der Abschluss konkret und spezifisch – kein „Was denkt ihr?", kein „Thoughts?"?
+9. Wenn Repurpose: Steht der Post allein, ohne dass der Ursprungstext bekannt sein muss?
+10. Ist der Ton ehrlich und geerdet – kein Motivationsposter, kein Alpha-Sprech?
+11. **Brand Bible Check:** Klingt der Post wie Farid – oder wie ein generischer LinkedIn-Account? Den Registerwechsel (Tiefensprache + Straßensprache) geprüft? Gibt es mindestens eine Stelle, die unverwechselbar seine Stimme trägt?
+
+---
+
+## Verbotene Eröffnungen
+
+Diese Sätze nie als Hook verwenden:
+
+- „Ich habe nachgedacht über..."
+- „Spannende Neuigkeit..."
+- „Hot Take:..."
+- „Unpopular opinion:..."
+- „Ich bin dankbar für..."
+- „Lasst mich eine Geschichte erzählen..."
+- „Heute möchte ich über X sprechen..."
+
+---
+
+## Verbotene Abschlüsse
+
+- „Was denkt ihr?"
+- „Stimmt ihr zu?"
+- „Teilt gerne, wenn euch das anspricht."
+- „Schreibt es mir in die Kommentare!"
+- „Lass mich wissen, was du denkst."
+
+---
+
+*Modul 03a — Version 1.0*
+*Zusammen mit Brand Bible verwenden. Stil-Modus im Produktions-Brief oder durch Kontext bestimmen.*
