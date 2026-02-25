@@ -15,10 +15,7 @@ Raw input
 │  STEP 1 — ANALYSE            │
 │  Upload input                │
 │  + 02 — Content Strategist   │
-│  + 06 — Content Calendar     │
 │                              │
-│  → Checks calendar for       │
-│    recent topics             │
 │  → Assesses material         │
 │  → Recommends content pieces │
 │  → Asks: what do you want    │
@@ -47,26 +44,9 @@ Raw input
 │  STEP 3 — HUMAN REVIEW       │
 │  You review the draft.       │
 │                              │
-│  Happy? → Confirm + set      │
-│           publish date       │
+│  Happy? → Confirm            │
 │  Not happy? → Request edits  │
-└──────────────┬───────────────┘
-               │
-          On approval
-               │
-               ▼
-┌──────────────────────────────┐
-│  STEP 4 — LOG TO CALENDAR    │
-│  Approved piece gets added   │
-│  to 06 — Content Calendar    │
-│  with date, title, summary   │
-│                              │
-│  → Entries older than 1      │
-│    month are removed         │
-└──────────────┬───────────────┘
-               │
-               ▼
-        Next piece or done
+└──────────────┘
 ```
 
 ---
@@ -75,16 +55,14 @@ Raw input
 
 ### Step 1: Analyse your input
 
-Upload your raw material and include `02 — Content Strategist.md` and `06 — Content Calendar.md` in the session.
+Upload your raw material and include `02 — Content Strategist.md` in the session.
 
 The strategist will:
-1. Check the content calendar to see what was published in the last month
-2. Read your material in full
-3. Assess whether it is worth pursuing (and say no if it is not)
-4. Flag if any topic overlaps with recent content
-5. Recommend specific content pieces with channel, tone, and priority
-6. Give you an honest count: "This material yields X pieces with real value"
-7. Ask you which pieces you want to produce
+1. Read your material in full
+2. Assess whether it is worth pursuing (and say no if it is not)
+3. Recommend specific content pieces with channel, tone, and priority
+4. Give you an honest count: "This material yields X pieces with real value"
+5. Ask you which pieces you want to produce
 
 **Your action:** Choose which pieces to create.
 
@@ -112,23 +90,6 @@ You review each draft for:
 
 If the draft needs changes, say what to fix. The system revises.
 
-If the draft is approved, the system asks: **"When do you want to publish this?"**
-
-Non-negotiable. Nothing gets logged without your approval.
-
-### Step 4: Log to content calendar
-
-Once approved and a publish date is set, the system adds the piece to `06 — Content Calendar.md` with:
-- Publish date
-- Channel (LinkedIn / Instagram Post / Instagram Story / Blog / Newsletter)
-- Title
-- One-line summary
-- Thematic pillar(s)
-
-The system also removes any entries older than one month to keep the calendar clean and focused.
-
-This calendar is checked at the start of every new analysis session (Step 1) to prevent topic repetition.
-
 ---
 
 ## Your files
@@ -137,13 +98,12 @@ This calendar is checked at the start of every new analysis session (Step 1) to 
 |---|---|---|
 | `00 — Start here` | Explains the full workflow (this document) | Read once, reference when needed |
 | `01 — Brand Bible` | Farid's voice, values, quality gate, banned words | Every drafting session, always include |
-| `02 — Content Strategist` | Analyses input, checks calendar, recommends content | Every session, always include |
+| `02 — Content Strategist` | Analyses input and recommends content | Every session, always include |
 | `03a — LinkedIn Post` | Guide for drafting LinkedIn posts | When drafting a LinkedIn post |
 | `03b — Instagram Post` | Guide for drafting Instagram text/carousel posts | When drafting an Instagram post |
 | `03c — Instagram Story` | Guide for drafting Instagram stories | When drafting an Instagram story |
 | `03d — Blog Article` | Guide for drafting long-form blog articles | When drafting a blog post |
 | `03e — Newsletter` | Guide for drafting newsletter content | When drafting a newsletter |
-| `06 — Content Calendar` | Rolling log of approved content (last 30 days) | Every session, always include |
 
 ---
 
@@ -161,11 +121,10 @@ This calendar is checked at the start of every new analysis session (Step 1) to 
 
 ## Maintenance
 
-- The content calendar self-cleans (entries older than 1 month are removed each session)
 - Review and update channel guides when you find a format that works particularly well
 - Save strong published pieces as reference examples for future sessions
 - Adjust weekly targets if your capacity or strategy changes
 
 ---
 
-*v1.0*
+*v1.1*
