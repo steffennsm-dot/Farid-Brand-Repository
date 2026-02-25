@@ -30,7 +30,7 @@ Raw input
                ▼
 ┌──────────────────────────────┐
 │  STEP 2 — DRAFT              │
-│  02 — Content Strategist     │
+│  01 — Brand Bible (always)   │
 │  + channel guide:            │
 │    03a LinkedIn Post         │
 │    03b Instagram Post        │
@@ -90,7 +90,7 @@ The strategist will:
 
 ### Step 2: Draft the content
 
-For each piece you selected, tell the system which one to draft. It will use the matching channel guide:
+For each piece you selected, tell the system which one to draft. Always include `01 — Brand Bible.md` — it contains Farid's voice, values, quality gate, and banned words. Then add the matching channel guide:
 
 | Channel guide | Use for |
 |---|---|
@@ -100,7 +100,7 @@ For each piece you selected, tell the system which one to draft. It will use the
 | `03d — Blog Article` | Long-form blog articles |
 | `03e — Newsletter` | Newsletter features |
 
-The system drafts **one piece at a time**. Review it before moving to the next.
+The system drafts **one piece at a time** using the Brand Bible for voice and quality, and the channel guide for format and structure. Review it before moving to the next.
 
 ### Step 3: Human review
 
@@ -136,6 +136,7 @@ This calendar is checked at the start of every new analysis session (Step 1) to 
 | File | What it does | When to use |
 |---|---|---|
 | `00 — Start here` | Explains the full workflow (this document) | Read once, reference when needed |
+| `01 — Brand Bible` | Farid's voice, values, quality gate, banned words | Every drafting session, always include |
 | `02 — Content Strategist` | Analyses input, checks calendar, recommends content | Every session, always include |
 | `03a — LinkedIn Post` | Guide for drafting LinkedIn posts | When drafting a LinkedIn post |
 | `03b — Instagram Post` | Guide for drafting Instagram text/carousel posts | When drafting an Instagram post |
