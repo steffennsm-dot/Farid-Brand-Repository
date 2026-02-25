@@ -1,0 +1,399 @@
+# 03b — Write — Instagram Post
+
+> **Verwendung:** Dieses Modul steuert das Erstellen von Instagram-Posts für die persönliche Marke.
+> Es definiert Kanal-Specs, Bild-Text-Zusammenspiel, vier Stil-Modi und die Qualitätskontrolle.
+> Immer zusammen mit dem Brand Bible verwenden. Dieses Modul ergänzt, nicht ersetzt.
+
+---
+
+## Schritt 0 — Start-Check (immer zuerst)
+
+Bevor ein Post erstellt wird, zwei Fragen. Keine mehr.
+
+> **Frage 1: Gibt es bereits ein Bild / ein Bild-Konzept?**
+> - [ ] Ja – Bild liegt vor oder ist beschrieben
+> - [ ] Nein – Bild-Idee soll mitgeliefert werden
+>
+> **Frage 2: Was ist der Auslöser für den Post?**
+> - [ ] Persönliche Reflexion / Lektion
+> - [ ] Tipps / Mehrwert-Content
+> - [ ] Podcast-Episode / Verlinkung
+> - [ ] Humor / Meme mit Mehrwert
+
+Sobald klar: direkt loslegen. Keine weiteren Rückfragen.
+
+---
+
+## Pflicht-Referenz: Brand Bible
+
+**Datei:** `01 — always include — brand bible — farid`
+
+Dieses Modul regelt Struktur, Format und Bild-Text-Logik.
+Die Brand Bible regelt **Wortwahl, Ton und den persönlichen Schliff**.
+
+Vor dem finalen Post immer fragen:
+**Klingt das wie Farid – oder wie ein generischer Instagram-Motivationsaccount?**
+
+Konkret auf Instagram:
+- Emojis sind erlaubt und erwünscht – aber gezielt, nicht dekorativ
+- Registerwechsel ist hier noch wichtiger als auf LinkedIn: Instagram-Publikum reagiert stärker auf Sprache, die sich gesprochen anfühlt
+- Selbstironie und Humor haben auf Instagram mehr Platz als auf LinkedIn
+- Signature-Phrases können natürlicher eingesetzt werden: „Arsch hoch", „Echt jetzt", „Weißt du..."
+
+---
+
+## Channel Specs
+
+| Parameter | Wert |
+|---|---|
+| Kanal | Instagram (DACH, persönliche Marke) |
+| Caption-Länge | 800–1.500 Zeichen. Instagram zeigt ca. 125 Zeichen vor „Mehr". Die ersten 2 Zeilen entscheiden. |
+| Absätze | Max. 2 Zeilen. Einzeiler bevorzugt. Leerzeilen als visuelle Trennung nutzen. |
+| Hashtags | 5–15 am Ende. Mix aus breiten Tags (#Mann, #Persönlichkeitsentwicklung) und Nischen-Tags (#Vereinbarkeit, #Vaterschaft, #MannSein). Hashtags vom Caption durch „—" oder Leerzeile trennen. |
+| Links | Kein klickbarer Link in der Caption. Immer „Link in Bio" oder „Link in der Story". |
+| Emojis | Freier als LinkedIn. 3–8 pro Post. Als visuelle Gliederung (1️⃣ 2️⃣ 3️⃣), als Stimmungsträger (🔥 💭 🌿) oder als Abschluss. Kein Emoji-Spam. |
+| Sprache | Deutsch. Du-Form. Gesprochen, lebendig – wie ein gutes Gespräch, kein Vortrag. |
+| Bild | Auf Instagram trägt das Bild 60% der Wirkung. Caption und Bild müssen zusammenspielen – aber das Bild allein muss schon stoppen. |
+
+---
+
+## Das Bild-Text-Prinzip
+
+Instagram ist ein visuelles Medium. Jeder Post hat zwei Ebenen:
+
+**Ebene 1 – Das Bild (stoppt den Scroll)**
+Das Bild muss alleine funktionieren. Wer die Caption nie liest, soll trotzdem etwas mitnehmen oder neugierig werden.
+
+**Ebene 2 – Die Caption (liefert die Tiefe)**
+Die Caption vertieft, was das Bild aufmacht. Sie erklärt nicht – sie ergänzt.
+
+**Die drei Bild-Typen:**
+
+| Bild-Typ | Beschreibung | Passt zu Modus |
+|---|---|---|
+| **Text-auf-Bild** | Ein Satz / eine These direkt im Bild | A, B, C |
+| **Foto von Farid** | Persönlich, authentisch, situativ | A, D |
+| **Meme / Grafik** | Humor oder visueller Kontrast | D |
+
+**Regel:** Bild-Text und Caption-Hook dürfen nicht identisch sein.
+Das Bild weckt Interesse. Die Caption löst es ein.
+
+---
+
+## Zielgruppe
+
+Wie in Modul 03a – mit einem Instagram-spezifischen Zusatz:
+
+Auf Instagram ist die **Sekundärzielgruppe aktiver** als auf LinkedIn:
+- Frauen, die den männlichen Blickwinkel suchen (kommentieren häufiger)
+- Jüngere Männer (20–25), die noch keine LinkedIn-Präsenz haben
+
+Das bedeutet: Posts können etwas zugänglicher, etwas emotionaler, etwas weniger „Business" sein.
+Der Kern bleibt gleich – die Verpackung darf offener sein.
+
+---
+
+## Stil-Modi
+
+Jeder Post wird in einem von vier Modi geschrieben.
+
+---
+
+### MODUS A — REFLEXION & LEKTION
+*Persönliche Erkenntnis. Strukturiert. Bleibt hängen.*
+
+**Wann einsetzen:**
+Wenn du eine persönliche Lektion, eine Jahreserkenntnis oder eine Verhaltensänderung teilst.
+Wenn du zeigen willst, was du selbst (noch) lernst – nicht was du anderen beibringst.
+
+**Kennzeichen:**
+- Gesamtlänge: 900–1.300 Zeichen
+- Bild zeigt Farid oder einen Text-Overlay mit der Kernthese
+- Caption beginnt mit einer persönlichen Aussage, kein allgemeiner Einstieg
+- Struktur mit „—" als Trenner zwischen den Blöcken
+- Fragen an sich selbst als Reflexionswerkzeug sichtbar machen
+- Endet mit einer Erkenntnis-Zeile oder einem CTA zur Podcast-Episode
+
+**Post-Struktur:**
+
+```
+[HOOK – 2–3 Zeilen]
+Persönliche Aussage. Wer schreibt das, warum jetzt?
+"Was ich mir jedes Jahr als Vater, Partner und Unternehmer neu beibringen muss:"
+
+—
+
+[KERN-AUSSAGE – 1–2 Zeilen]
+Die eigentliche Lektion, klar und direkt.
+"Loslassen. Nicht, weil etwas falsch ist. Sondern weil es mich nicht mehr weiterbringt."
+
+—
+
+[KONKRETE LISTE – 3–4 Punkte mit „-"]
+Was das bedeutet. Spezifisch, nicht abstrakt.
+- Beziehungen, die nur noch Energie kosten
+- Projekte ohne echtes Commitment
+- Ziele, die nicht mehr zu meinem Leben passen
+
+—
+
+[REFLEXIONS-FRAGEN – 2–3 Fragen, nummeriert]
+Fragen, die den Leser einbeziehen.
+1. Was will ich neu in mein Leben lassen?
+2. Von wem verabschiede ich mich bewusst?
+3. Wo reagiere ich noch – statt zu führen?
+
+—
+
+[ERKENNTNIS – 1–2 Sätze]
+Der Abschlusspunkt. Kurz, stark, bleibt hängen.
+"Ein volles Leben braucht keine neuen Optionen. Es braucht Klarheit."
+
+—
+
+[CTA – optional, 1 Satz]
+Nur wenn es einen natürlichen Anlass gibt (Podcast, Artikel).
+"Mehr in der Neujahrsfolge → Link in Bio."
+```
+
+**Beispiel-Hooks:**
+- „Was ich mir jedes Jahr als Vater, Partner und Unternehmer neu beibringen muss:"
+- „Die Lektion, die ich dieses Jahr am härtesten lernen musste:"
+- „Ich war 38 und dachte, ich hätte es raus. Dann passierte das:"
+
+---
+
+### MODUS B — TIPPS & MEHRWERT
+*Praktisch. Teilbar. Jeder Punkt für sich wertvoll.*
+
+**Wann einsetzen:**
+Wenn du konkreten, sofort anwendbaren Mehrwert teilst.
+Wenn der Post gespeichert und weitergeleitet werden soll.
+Wenn das Thema viele Männer betrifft – nicht nur dich persönlich.
+
+**Kennzeichen:**
+- Gesamtlänge: 1.000–1.500 Zeichen
+- Bild zeigt entweder Farid oder einen Text-Overlay: „Was viele Männer vergessen" o.ä.
+- Hook spricht die Zielgruppe direkt an – ihr Alltag, ihr Problem
+- Nummerierte Punkte mit Emoji (1️⃣ 2️⃣ 3️⃣) als visuelle Gliederung
+- Jeder Punkt: Fettgedruckter Titel + 2–3 Zeilen Erklärung + kleines Emoji
+- Endet mit einer Frage an die Community – hier ist das ausnahmsweise erlaubt
+
+**Post-Struktur:**
+
+```
+[HOOK – 2–3 Zeilen]
+Alltag der Zielgruppe spiegeln. Sie sollen sich direkt erkennen.
+"Du gibst jeden Tag Vollgas. Job, Beziehung, Gym, Ziele.
+Jede Minute muss 'produktiv' sein."
+
+[BRÜCKE – 1–2 Zeilen]
+Übergang zu den Tipps. Warum ist das ein Problem?
+"Doch genau diese 3 Dinge lassen viele Männer weg, obwohl sie alles verändern können:"
+
+[TIPPS – 3–4 nummerierte Punkte]
+Jeder Punkt:
+1️⃣ TITEL IN GROSSBUCHSTABEN
+- Bullet 1
+- Bullet 2
+Emoji am Ende des Punktes.
+
+[ERKENNTNIS – 1–2 Sätze]
+Warum das alles wichtig ist. Nicht predigen – einordnen.
+"Diese Dinge sind kein Zeitverlust. Sie sind der Schlüssel zu Energie, Gesundheit und Sinn."
+
+[FRAGE – 1 Satz + Emoji]
+Einladung zur Interaktion. Konkret und themenspezifisch.
+"Wie verbringst du deine Quality-Time am liebsten? Schreib's in die Kommentare 👇"
+```
+
+**Wichtig bei diesem Modus:**
+Die Frage am Ende ist hier erlaubt – weil Instagram-Algorithmus Kommentare belohnt.
+Trotzdem: Konkrete Frage, kein „Was denkt ihr?" oder „Stimmt ihr zu?"
+
+**Beispiel-Hooks:**
+- „Du gibst jeden Tag Vollgas. Und fragst dich trotzdem, warum du leer bist."
+- „3 Dinge, die fast jeden Mann zurückhalten – obwohl sie sofort änderbar wären."
+- „Was erfolgreiche Männer anders machen – nicht beim Arbeiten, sondern beim Loslassen."
+
+---
+
+### MODUS C — ADVICE / KARRIERE-FORMAT
+*Komprimierte Weisheit. Kontrast zwischen Alt und Neu.*
+
+**Wann einsetzen:**
+Wenn du Ratschläge teilst, die du dir früher gewünscht hättest.
+Wenn das Format „Was ich mit X wissen wollte" oder „Was niemand mir sagt über Y" passt.
+Wenn du Erfahrung in komprimierter, teilbarer Form weitergibst.
+
+**Kennzeichen:**
+- Gesamtlänge: 700–1.000 Zeichen (kürzer als andere Modi)
+- Bild zeigt den Kontrast im Text-Overlay: „Career advice I needed at 26, not 55"
+- Caption ist strukturiert und knapp – kein Fließtext
+- Jeder Tipp ist ein eigenständiger Satz, keine Erklärungen nötig
+- Funktioniert auch als Karussell (ein Tipp pro Slide)
+
+**Post-Struktur:**
+
+```
+[BILD-TEXT / HOOK]
+Der Kontrast steht bereits im Bild.
+"Was ich mit 30 wissen wollte – nicht erst mit 50."
+
+[CAPTION HOOK – 1–2 Zeilen]
+Direkte Ansprache. Warum ist das relevant?
+"Niemand hat mir das gesagt. Ich lerne es immer noch."
+
+[TIPPS – 4–7 kurze Punkte]
+Jeder Tipp: max. 1–2 Zeilen. Kein Erklärtext.
+Format: Emoji + kurzer, aktiver Satz.
+🔑 Nein sagen ist eine Kompetenz, keine Schwäche.
+🔑 Dein Netzwerk entscheidet mehr als dein Können.
+🔑 Energie ist dein wichtigstes Asset – nicht Zeit.
+
+[ABSCHLUSS – 1 Satz]
+Einordnung oder Einladung.
+"Was würdest du deinem jüngeren Ich sagen?"
+```
+
+**Bildkonzepte für diesen Modus:**
+- Text-Overlay mit Alterskontrast: „At 25 vs. At 40"
+- Einfache Liste auf dunklem Hintergrund
+- Foto von Farid mit kurzem Text-Overlay
+
+---
+
+### MODUS D — MEME / HUMOR ZU MEHRWERT
+*Lachen öffnet – Erkenntnis bleibt.*
+
+**Wann einsetzen:**
+Wenn ein Meme oder eine humorvolle Situation einen echten Punkt trifft.
+Wenn du eine Wahrheit verpacken willst, die direkt gesagt zu hart klingen würde.
+Wenn du Reichweite durch Unterhaltung willst – mit echtem Inhalt dahinter.
+
+**Kennzeichen:**
+- Gesamtlänge: 600–1.000 Zeichen
+- Bild ist der eigentliche Hook: Meme, Comic, Screenshot-Format
+- Caption beginnt mit der Pointe oder der Reaktion auf das Bild
+- Dann: schneller Pivot zu echtem Mehrwert – max. 3–4 Sätze
+- Kein langes Auswalzen. Die Kürze ist die Stärke.
+- Humor niemals auf Kosten anderer. Selbstironie ist erlaubt.
+
+**Post-Struktur:**
+
+```
+[BILD – trägt den Humor]
+Das Meme / die Situation ist selbsterklärend.
+Beispiel: „CEO: Du wurdest gekündigt. Du: [unerwartete Reaktion]"
+
+[CAPTION HOOK – 1 Satz]
+Reaktion auf das Bild oder Bestätigung der Pointe.
+"Okay, vielleicht nicht ganz so – aber die Energie stimmt."
+
+[PIVOT – 2–3 Sätze]
+Von der Pointe zur echten Aussage.
+Was steckt wirklich dahinter? Was ist die Wahrheit im Witz?
+"Was hinter dieser Haltung steckt: Du weißt, wer du bist, auch wenn jemand anderes darüber entscheidet."
+
+[MEHRWERT / INPUT – 3–5 kurze Punkte oder 2–3 Sätze]
+Der eigentliche Inhalt. Konkret und klar.
+
+[ABSCHLUSS – 1 Satz, optional Emoji]
+Harter Satz oder Frage. Kurz.
+"Wer bist du, wenn keiner zuschaut? 🔥"
+```
+
+**Regeln für Humor bei diesem Modus:**
+- Selbstironie: immer erlaubt
+- Ironie auf Kosten anderer: nie
+- Der Witz muss zum Mehrwert führen – kein Post, der nur unterhält
+- Farid's Sprachmuster passen hier besonders gut: „Echt jetzt", „Krass", „Wow"
+
+---
+
+## Modi-Übersicht
+
+| | **Reflexion** | **Tipps** | **Advice** | **Meme/Humor** |
+|---|---|---|---|---|
+| Länge | 900–1.300 Zeichen | 1.000–1.500 Zeichen | 700–1.000 Zeichen | 600–1.000 Zeichen |
+| Bild | Foto / Text-Overlay | Text-Overlay / Foto | Kontrast-Text | Meme / Grafik |
+| Hook | Persönliche Aussage | Alltag spiegeln | Kontrast | Pointe des Bildes |
+| Struktur | — Trenner + Fragen | Nummeriert + Emoji | Kurze Bullet-Liste | Pivot von Humor zu Inhalt |
+| Ton | Reflektiert, persönlich | Praktisch, direkt | Komprimiert, weise | Leicht, dann treffsicher |
+| CTA | Podcast / kein CTA | Frage an Community | Frage oder keiner | Kurze Frage / Emoji |
+| Ziel | Tiefe + Vertrauen | Saves + Shares | Shares + Reichweite | Reichweite + Kommentare |
+
+---
+
+## Instagram-spezifische Regeln
+
+### Hashtag-Logik
+Instagram-Hashtags funktionieren anders als LinkedIn. Drei Kategorien nutzen:
+
+| Kategorie | Beispiele | Anzahl |
+|---|---|---|
+| Breit (> 1 Mio. Posts) | #Persönlichkeitsentwicklung #Mann #Vater | 2–3 |
+| Mittel (100k–1 Mio.) | #Vereinbarkeit #Vaterschaft #MannSein | 4–6 |
+| Nische (< 100k) | #MännerCoaching #VaterSein #MannUndFamilie | 3–5 |
+
+Hashtags immer am Ende, vom Caption getrennt. Niemals mitten im Text.
+
+### Erste zwei Zeilen entscheiden
+Instagram zeigt vor „Mehr" nur ca. 125 Zeichen.
+Diese zwei Zeilen müssen:
+- Neugier wecken ODER
+- Den Schmerzpunkt direkt treffen ODER
+- Eine Überraschung enthalten
+
+Teste jeden Hook: Würde ich bei diesem Satz „Mehr" tippen?
+
+### Speichern schlägt Liken
+Instagram-Algorithmus belohnt Saves mehr als Likes.
+Tipps- und Advice-Posts haben das höchste Save-Potenzial.
+Reflexions-Posts haben das höchste DM-Potenzial.
+Meme-Posts haben das höchste Kommentar-Potenzial.
+
+Je nach Ziel den Modus wählen.
+
+---
+
+## Qualitätskontrolle
+
+Vor jedem finalen Entwurf prüfen:
+
+1. Stehen die ersten zwei Zeilen alleine – stoppen sie den Scroll?
+2. Passt das Bild-Konzept zum Caption-Einstieg, ohne identisch zu sein?
+3. Liegt die Caption-Länge im Zielbereich des gewählten Modus?
+4. Passt jeder Absatz in max. 2 Zeilen auf dem Mobilscreen?
+5. Sind Hashtags am Ende, vom Text getrennt, 5–15 Stück?
+6. Kein externer Link im Caption-Body – nur „Link in Bio"?
+7. Würde ein Mann zwischen 25 und 45 beim Scrollen stoppen?
+8. Ist der CTA konkret und themenspezifisch – kein „Was denkt ihr?"?
+9. Wenn Modus D: Führt der Humor zu echtem Mehrwert – oder bleibt es nur ein Witz?
+10. Ist der Ton ehrlich und geerdet – kein Motivationsposter, kein Alpha-Sprech?
+11. **Brand Bible Check:** Klingt der Post wie Farid? Registerwechsel drin? Gibt es mindestens einen Satz, der unverwechselbar seine Stimme trägt?
+
+---
+
+## Verbotene Eröffnungen
+
+- „Ich habe nachgedacht über..."
+- „Heute möchte ich über X sprechen..."
+- „Folgender Post könnte dein Leben verändern:"
+- „Das ist der wichtigste Post, den du heute liest:"
+- „Wenn du das liest, dann..."
+
+---
+
+## Verbotene Abschlüsse
+
+- „Was denkt ihr?"
+- „Stimmt ihr zu?"
+- „Teilt gerne, wenn euch das anspricht!"
+- „Double tap wenn du zustimmst 👇"
+- „Tag einen Freund, der das braucht!" (außer es passt wirklich natürlich)
+
+---
+
+*Modul 03b — Version 1.0*
+*Zusammen mit Brand Bible und Modul 03a verwenden. Stil-Modus durch Kontext oder Produktions-Brief bestimmen.*
