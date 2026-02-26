@@ -1,0 +1,431 @@
+# 03c — Write — Instagram Story
+
+> **Verwendung:** Dieses Modul steuert das Erstellen von Instagram Stories für die persönliche Marke.
+> Es unterscheidet zwischen Podcast-Release-Sequenzen und Alltags-Stories.
+> Immer zusammen mit dem Brand Bible verwenden. Dieses Modul ergänzt, nicht ersetzt.
+
+---
+
+## Schritt 0 — Start-Check (immer zuerst)
+
+Bevor eine Story oder Story-Sequenz erstellt wird, eine Frage:
+
+> **Worum geht es?**
+> - [ ] Podcast-Release → Modus A (Cliffhanger-Sequenz)
+> - [ ] Tages-Impuls / Statement → Modus B
+> - [ ] Insight / Erkenntnis aus dem Alltag → Modus C
+> - [ ] Interaktion / Frage an die Community → Modus D
+> - [ ] Hinter-den-Kulissen / Authentischer Moment → Modus E
+
+Sobald klar: direkt loslegen.
+
+---
+
+## Pflicht-Referenz: Brand Bible
+
+**Datei:** `01 — always include — brand bible — farid`
+
+Dieses Modul regelt Struktur und Sequenz-Logik.
+Die Brand Bible regelt **Ton, Wortwahl und den persönlichen Schliff**.
+
+**Stories sind Farids direktester Kanal.** Kein Feed-Algorithmus, kein Scrollen – wer eine Story anschaut, hat sich aktiv entschieden. Das erlaubt mehr Direktheit, mehr Spontanität, mehr Persönlichkeit.
+
+Konkret für Stories:
+- Noch gesprochener als Posts – ein Story-Slide klingt wie ein Satz aus einem echten Gespräch
+- Selbstironie und Humor haben hier den meisten Platz
+- Farids Signature-Phrases passen besonders natürlich: „Echt jetzt", „Weißt du...", „Krass"
+- Emojis als visuelle Gliederung, nicht als Dekoration – aber freier als auf LinkedIn
+
+---
+
+## Channel Specs
+
+| Parameter | Wert |
+|---|---|
+| Kanal | Instagram Story (DACH, persönliche Marke) |
+| Format | Vertikal, 9:16. Text oben oder Mitte, nie am Rand. |
+| Text pro Slide | Max. 3–4 Zeilen. Weniger ist mehr. Jeder Slide = ein Gedanke. |
+| Sequenz-Länge | Podcast-Release: 4–6 Slides. Alltags-Story: 1–3 Slides. |
+| Links | Sticker „Link" oder „Swipe up" für Podcast-CTA. Nur auf dem letzten Slide. |
+| Emojis | Freier als Posts. 1–3 pro Slide. Als Stimmungsträger oder Aufmerksamkeits-Anker. |
+| Schrift | Groß, lesbar, hoher Kontrast. Story wird oft ohne Ton angeschaut. |
+| Musik / Ton | Optional. Wenn Voiceover: dann richtig – nicht halbherzig. |
+| Ablaufdauer | Stories sind 24 Stunden sichtbar. Highlights nutzen für Podcast-Folgen. |
+
+---
+
+## Das Story-Prinzip: Ein Gedanke pro Slide
+
+Eine Story ist kein Post. Sie ist eine Sequenz von Momenten.
+
+**Jeder Slide hat genau eine Aufgabe:**
+- Slide 1: Stoppen. Neugier wecken.
+- Slide 2–4: Aufbauen. Spannung halten oder Mehrwert liefern.
+- Letzter Slide: Abschließen. CTA oder Erkenntnis.
+
+Wer auf einem Slide zwei Gedanken unterbringt, verliert die Aufmerksamkeit.
+Wer zu viele Slides macht, verliert die Zuschauer auf dem Weg.
+
+---
+
+## Stil-Modi
+
+---
+
+### MODUS A — PODCAST-RELEASE (Cliffhanger-Sequenz)
+*Neugier aufbauen. Nicht zusammenfassen. Zum Hören verführen.*
+
+**Wann einsetzen:**
+Am Tag des Podcast-Releases oder einen Tag davor als Teaser.
+Immer wenn eine neue Episode live geht.
+
+**Die Logik der Sequenz:**
+Die Story fasst den Podcast NICHT zusammen. Eine Zusammenfassung tötet den Klick.
+Stattdessen: Ein Gedanke aus der Episode aufgreifen, der neugierig macht – und dann abbrechen.
+Der Cliffhanger ist das Werkzeug. Der Podcast ist die Auflösung.
+
+**Sequenz-Aufbau (4–5 Slides):**
+
+```
+SLIDE 1 — DER HAKEN
+Eine Aussage oder Frage, die sofort trifft.
+Kein Kontext. Keine Einleitung.
+Einfach rein in den Gedanken.
+
+Beispiel:
+"Die meisten Männer wissen nicht, warum sie erschöpft sind.
+Sie glauben, es liegt am Job. 🎙️"
+
+---
+
+SLIDE 2 — DER AUFBAU
+Ein bisschen mehr. Die Spannung wächst.
+Noch keine Auflösung.
+
+Beispiel:
+"Es liegt nicht am Job.
+Es liegt daran, was sie nach dem Job noch alles schultern.
+Und nie ablegen."
+
+---
+
+SLIDE 3 — DER CLIFFHANGER
+Genau hier aufhören. Die Antwort kommt nicht mehr.
+Der Slide bricht absichtlich ab – oder stellt eine Frage, die offen bleibt.
+
+Beispiel:
+"Was steckt wirklich dahinter?
+Und wie kommt man da raus?
+Das haben wir in der neuen Folge auseinandergenommen. 👇"
+
+---
+
+SLIDE 4 — DER CTA
+Podcast-Cover oder Bild der Episode.
+Titel der Folge.
+Link-Sticker oder klarer Hinweis wo zu hören.
+
+Beispiel:
+"🎧 MANN! Farid Podcast
+Neue Folge: [Titel]
+→ Link im Story-Sticker"
+```
+
+**Regeln für den Cliffhanger:**
+- Die Auflösung kommt NIE in der Story. Immer im Podcast.
+- Der Cliffhanger ist keine Frage die man sich selbst beantworten kann. Er muss den Podcast brauchen.
+- Der Ton ist persönlich – als ob Farid es gerade selbst erlebt oder darüber nachgedacht hat.
+
+**Beispiel-Cliffhanger-Formulierungen:**
+- „Was dann passiert ist, hat mich selbst überrascht."
+- „Die Antwort darauf hat mir jemand gegeben, von dem ich es nie erwartet hätte."
+- „Und dann hab ich gemerkt: Das ist nicht das Problem. Das ist nur das Symptom."
+- „Was wirklich dahintersteckt – das haben wir in der neuen Folge."
+
+---
+
+### MODUS B — TAGES-IMPULS
+*Ein Gedanke. Ein Slide. Fertig.*
+
+**Wann einsetzen:**
+Wenn du morgens oder abends einen kurzen, kraftvollen Gedanken teilen willst.
+Wenn du präsent bleiben willst, ohne viel Zeit zu investieren.
+Wenn ein Satz aus einem Gespräch, Buch oder dem eigenen Kopf zu gut ist, um ihn nicht zu teilen.
+
+**Kennzeichen:**
+- 1–2 Slides maximum
+- Der Gedanke steht alleine. Keine Erklärung nötig.
+- Minimales Design: Text auf Hintergrund, Farid-Foto oder kurzer Text-Overlay
+- Kein CTA. Kein Link. Kein Hashtag.
+- Optional: Eine Reaktions-Einladung per Poll oder Emoji-Slider
+
+**Slide-Formate:**
+
+```
+FORMAT 1 — STATEMENT
+Ein Satz. Groß. Klar.
+"Klarheit ist keine Eigenschaft. Sie ist eine Entscheidung."
+
+FORMAT 2 — KONTRAST
+Zwei kurze Zeilen. Eine bricht die andere.
+"Mehr tun macht dich nicht freier.
+Klarer werden schon."
+
+FORMAT 3 — FRAGE
+Eine Frage, die bleibt.
+"Was würdest du heute anders machen,
+wenn du wüsstest, dass es dein letzter Tag ist?"
+
+FORMAT 4 — MORGEN-IMPULS
+Direkte Ansprache. Einstieg in den Tag.
+"Guten Morgen.
+Eine Frage für heute:
+Was gibst du heute – und was nicht mehr?"
+```
+
+**Ton-Hinweis:**
+Impulse klingen nach Farid, nicht nach Pinterest.
+Kein positives Denken, kein Sonnenschein-Zitat.
+Ehrlich, manchmal unbequem, immer auf Augenhöhe.
+
+---
+
+### MODUS C — INSIGHT & ERKENNTNIS
+*Etwas Gelerntes teilen. Persönlich, konkret, mit Tiefe.*
+
+**Wann einsetzen:**
+Wenn du eine Erkenntnis aus dem Alltag, einem Gespräch, einem Buch oder einer Situation teilst.
+Wenn etwas passiert ist, das einen echten Gedanken ausgelöst hat.
+Wenn du mehr als einen Satz brauchst, aber kein ganzes Posting willst.
+
+**Kennzeichen:**
+- 2–3 Slides
+- Beginnt mit der Situation oder dem Auslöser (konkret, nicht abstrakt)
+- Mittlerer Slide: die eigentliche Erkenntnis
+- Letzter Slide: die Übertragung – was das für den Zuschauer bedeutet
+- Ton: nachdenklich, persönlich, nicht belehrend
+
+**Sequenz-Aufbau (3 Slides):**
+
+```
+SLIDE 1 — DER AUSLÖSER
+Was ist passiert? Konkret und kurz.
+Kein Kontext-Roman – eine Zeile reicht.
+
+Beispiel:
+"Heute Morgen hat mich mein Sohn gefragt,
+ob ich heute Zeit für ihn habe.
+Ich hatte einen vollen Kalender. 😶"
+
+---
+
+SLIDE 2 — DIE ERKENNTNIS
+Was hat das ausgelöst? Was hast du verstanden?
+Ehrlich, auch wenn es unbequem ist.
+
+Beispiel:
+"Und mir ist klar geworden:
+Er fragt nicht nach Zeit.
+Er fragt danach, ob er wichtig ist."
+
+---
+
+SLIDE 3 — DIE ÜBERTRAGUNG
+Was bedeutet das für den Zuschauer?
+Nicht predigen – einladen.
+
+Beispiel:
+"Wer fragt dich gerade dasselbe –
+ohne es in Worte zu fassen? 💭"
+```
+
+**Variante: Buch / Podcast / Gespräch als Quelle**
+
+```
+SLIDE 1 — DIE QUELLE
+"Gerade gelesen in [Buch]:
+'[kurzes Zitat unter 10 Wörtern]'"
+Oder: "In einem Gespräch heute kam dieser Satz:"
+
+SLIDE 2 — DEINE EINORDNUNG
+Was bedeutet das für dich?
+Nicht das Zitat erklären – deine persönliche Reaktion zeigen.
+
+SLIDE 3 — DIE FRAGE
+Was löst das beim Zuschauer aus?
+Offene Frage, Emoji-Slider oder Poll.
+```
+
+---
+
+### MODUS D — INTERAKTION & COMMUNITY
+*Fragen stellen. Zuhören. Verbindung schaffen.*
+
+**Wann einsetzen:**
+Wenn du wissen willst, was deine Community beschäftigt.
+Wenn du Themen für Podcasts oder Posts recherchieren willst.
+Wenn du die Beziehung zu deinen Followern stärken willst ohne einen langen Post zu schreiben.
+
+**Kennzeichen:**
+- 1–2 Slides
+- Instagram Story-Sticker nutzen: Poll, Frage-Box, Emoji-Slider, Quiz
+- Die Frage muss konkret und leicht zu beantworten sein
+- Kein langer Text – der Sticker ist der Inhalt
+
+**Story-Sticker-Formate:**
+
+```
+FORMAT 1 — POLL (Ja/Nein oder A/B)
+Kurze These oder Situation.
+Poll-Sticker mit zwei klaren Optionen.
+
+Beispiel:
+"Kennst du das?"
+[Poll: "Ja, täglich" / "Eher selten"]
+
+FORMAT 2 — FRAGE-BOX
+Offene Einladung. Thema vorgeben.
+Frage-Box-Sticker.
+
+Beispiel:
+"Was beschäftigt dich gerade am meisten –
+Karriere, Beziehung oder beides? 👇
+Schreib mir direkt."
+
+FORMAT 3 — EMOJI-SLIDER
+Aussage bewerten lassen.
+Slider von links (wenig) nach rechts (viel).
+
+Beispiel:
+"Wie gut findest du gerade deine Work-Life-Balance?"
+[Emoji-Slider mit passendem Emoji]
+
+FORMAT 4 — QUIZ
+Eine Frage mit überraschender Antwort.
+Erst die Frage – dann die Auflösung auf dem nächsten Slide.
+
+Beispiel Slide 1:
+"Was kostet dich mehr Energie?"
+[Quiz: A) Entscheidungen treffen / B) Entscheidungen kommunizieren]
+
+Slide 2 (Auflösung):
+"Die meisten sagen A.
+Studien zeigen: Es ist fast immer B. 😅"
+```
+
+**Wichtig:** Auf Antworten reagieren. Wer antwortet, erwartet eine Reaktion.
+DM-Antworten sind Gold – sie zeigen dem Algorithmus echte Verbindung.
+
+---
+
+### MODUS E — HINTER DEN KULISSEN
+*Echt sein. Zeigen was sonst keiner sieht.*
+
+**Wann einsetzen:**
+Wenn du einen authentischen Moment aus dem Alltag teilen willst.
+Wenn du zeigst, wie du arbeitest, lebst, denkst – ohne Inszenierung.
+Wenn du die Distanz zwischen dir und deiner Community verringern willst.
+
+**Kennzeichen:**
+- 1–3 Slides
+- Kein perfektes Bild. Authentizität schlägt Ästhetik.
+- Kurzer Text – das Bild oder Video trägt die Story
+- Optional: Ein kurzer Gedanke dazu, was das für dich bedeutet
+- Kein CTA nötig
+
+**Moment-Typen:**
+
+```
+TYP 1 — ARBEITSMOMENT
+Podcast-Aufnahme, Vorbereitung, Schreiben, Call.
+Text dazu: Kurze Einordnung was gerade passiert.
+"Gerade die neue Folge eingesprochen.
+Das Thema hat mich selbst erwischt. 🎙️"
+
+TYP 2 — FAMILIEN-/VATER-MOMENT
+Nicht gestellt. Echter Moment.
+Text knapp halten – das Bild spricht.
+"Frühstück heute Morgen. ☕
+Er hat mir erklärt, wie Wolken entstehen.
+Ich hatte keine Ahnung."
+
+TYP 3 — LERN-MOMENT
+Buch, Podcast, Gespräch – was gerade rein geht.
+"Gerade das gelesen. Zweimal.
+[Foto vom aufgeschlagenen Buch]
+Seite 94, falls du es kennst."
+
+TYP 4 — FEHLER ODER SCHEITERN
+Das Unbequeme zeigen. Ohne Weichspüler.
+"Heute war ich kein guter Zuhörer.
+Das stört mich noch.
+Morgen besser."
+```
+
+**Ton-Hinweis:**
+Hinter den Kulissen bedeutet nicht ungefiltert. Es bedeutet echt.
+Kein Jammern, kein Selbstmitleid – aber auch kein permanentes Highlight-Reel.
+Farid zeigt Stärke UND Verletzlichkeit. Beides macht ihn greifbar.
+
+---
+
+## Story-Typen auf einen Blick
+
+| | **Podcast-Release** | **Tages-Impuls** | **Insight** | **Interaktion** | **Behind Scenes** |
+|---|---|---|---|---|---|
+| Slides | 4–5 | 1–2 | 2–3 | 1–2 | 1–3 |
+| Kern | Cliffhanger | 1 Gedanke | Erkenntnis + Übertragung | Sticker + Frage | Echter Moment |
+| Ton | Neugierig machend | Direkt, klar | Nachdenklich | Einladend | Ungefiltert, echt |
+| CTA | Link-Sticker Podcast | Kein CTA | Optional | Sticker-Reaktion | Kein CTA |
+| Ziel | Podcast-Klicks | Präsenz + Vertrauen | Tiefe + Saves | Community + DMs | Nähe + Vertrauen |
+| Frequenz | Jeden Release-Tag | 3–5x pro Woche | 1–2x pro Woche | 1–2x pro Woche | Situativ |
+
+---
+
+## Die Story-Woche (Orientierung)
+
+Eine gesunde Story-Rhythmik für die persönliche Marke:
+
+| Tag | Story-Typ | Beispiel |
+|---|---|---|
+| Montag | Tages-Impuls | Statement oder Frage für die Woche |
+| Dienstag | Insight / Behind Scenes | Erkenntnis aus einem Gespräch oder Moment |
+| Mittwoch | Interaktion | Poll oder Frage-Box zu einem Wochenthema |
+| Donnerstag | Tages-Impuls oder Hinter den Kulissen | Vorbereitung Podcast, Arbeitssituation |
+| Release-Tag | Podcast-Release-Sequenz | Cliffhanger → CTA |
+| Wochenende | Situativ | Familien-Moment, Impuls, kein Druck |
+
+Kein Tag muss bedient werden. Der Rhythmus ist ein Angebot, keine Pflicht.
+
+---
+
+## Qualitätskontrolle
+
+Vor jeder Story oder Sequenz prüfen:
+
+1. Hat jeder Slide genau einen Gedanken – nicht mehr?
+2. Ist der erste Slide so stark, dass man nicht wegtippt?
+3. Beim Podcast-Release: Kommt die Auflösung NICHT in der Story?
+4. Ist der Text auf jedem Slide in max. 3–4 Zeilen?
+5. Ist der Ton gesprochen und direkt – kein Post-Stil?
+6. Wenn CTA: Nur auf dem letzten Slide. Link-Sticker, kein URL-Text.
+7. Ist es authentisch – oder klingt es wie eine Inszenierung?
+8. **Brand Bible Check:** Klingt es wie Farid? Registerwechsel möglich? Mindestens ein Satz, der unverwechselbar seine Stimme trägt?
+
+---
+
+## Verbotene Story-Muster
+
+- Text der zu klein ist um ihn zu lesen
+- Mehr als 4 Zeilen Text pro Slide
+- Auflösung des Cliffhangers noch in der Story
+- Link-URL als Text (immer nur als Sticker)
+- Story-Sequenzen über 6 Slides (die meisten tippen weg)
+- Perfekt gestylte Slides die wie Werbung aussehen – Authentizität schlägt Ästhetik
+- Jeden Tag dieselbe Story-Struktur – Abwechslung hält die Aufmerksamkeit
+
+---
+
+*Modul 03c — Version 1.0*
+*Zusammen mit Brand Bible, Modul 03a und 03b verwenden.*
+*Podcast-Release-Sequenzen immer am Release-Tag oder Tag davor planen.*
