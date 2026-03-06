@@ -1,8 +1,11 @@
 # 03e — Write — Blog Post
 
-> **Verwendung:** Dieses Modul steuert das Erstellen von Blog-Posts für farid-el-nomany.com.
-> Stilreferenz: Medium (Lesbarkeit, Struktur, Tiefe) × Alex Hormozi (Direktheit, Hooks, Klarheit).
-> Immer zusammen mit dem Brand Bible verwenden.
+> **Zweck:** Texte und Struktur für Blog-Posts auf farid-el-nomany.com schreiben.
+> Dieses Modul definiert WAS geschrieben wird und WIE es aufgebaut ist.
+> Der Output ist strukturierter Klartext – kein HTML.
+> Für die HTML-Umsetzung: `04 — HTML Formatter` verwenden.
+> Stilreferenz: Medium (Lesbarkeit, Tiefe) × Alex Hormozi (Direktheit, Hooks).
+> Immer zusammen mit der Brand Bible verwenden.
 
 ---
 
@@ -11,14 +14,14 @@
 Zwei Fragen. Dann direkt schreiben.
 
 > **1. Was ist das Thema / der Auslöser?**
-> Erlebnis, Beobachtung, These, Podcast-Episode als Basis – was auch immer.
+> Erlebnis, Beobachtung, These, Podcast-Episode – was auch immer.
 >
 > **2. Gibt es ein Ziel für diesen Post?**
 > - [ ] Nur Mehrwert / Positionierung
 > - [ ] Podcast-Episode begleiten (welche?)
 > - [ ] Event oder Angebot weich bewerben
 
-Kein weiteres Nachfragen. Einstellungen vorschlagen und loslegen.
+Kein weiteres Nachfragen. Modus vorschlagen und loslegen.
 
 ---
 
@@ -26,74 +29,21 @@ Kein weiteres Nachfragen. Einstellungen vorschlagen und loslegen.
 
 **Datei:** `01 — always include — brand bible — farid`
 
-Dieses Modul gibt Struktur und Format.
-Die Brand Bible gibt Ton, Wortwahl und den persönlichen Schliff.
-
-**Blog-spezifisch:**
 Der Blog ist Farids ausführlichster Kanal – hier darf Tiefe entstehen.
 Aber: Tiefe rechtfertigt keine Langeweile. Jeder Absatz muss sich verdienen, dazuzusein.
 Der Leser soll nach jedem Abschnitt denken: „Gut, dass ich weiterlese."
 
 ---
 
-## Design & Stil-Referenz
+## Die Stil-Mischung
 
-**Website:** farid-el-nomany.com
-**Referenz-Post:** farid-el-nomany.com/liebende-werden-eltern/
-
-### Farbsystem
-
-| Token | Hex | Verwendung |
-|---|---|---|
-| `--bg` | `#FFFFFF` | Post-Hintergrund |
-| `--ink` | `#1A1A1A` | Headlines, fettgedruckte Aussagen |
-| `--body` | `#2C2C2C` | Fließtext |
-| `--muted` | `#888888` | Metainfos, Kategorien, Lesedauer |
-| `--accent` | `#7F1710` | Links, Zitat-Marker, Trennakzente |
-| `--bg-quote` | `#F9F6F2` | Pull-Quote Hintergrund |
-| `--border` | `#E8E4DF` | Dezente Trennlinien |
-
-### Typografie-Referenz (Medium-Style)
-
-| Rolle | Vorgabe |
-|---|---|
-| Titel (H1) | Groß, serif, fett – schlägt sofort ein |
-| Subheadlines (H2) | Klarer Abschnittstrenner, nicht dekorativ |
-| Fließtext | `font-size: 18–20px`, `line-height: 1.8` – maximale Lesbarkeit |
-| Pull-Quote | Größer als Fließtext, kursiv, mit rotem Akzent links |
-| Lead-Paragraph | Erster Absatz: fett oder visuell hervorgehoben |
-
----
-
-## Die Stil-Mischung: Medium × Hormozi
-
-### Was Medium beisteuert
-
-- **Lange Lesezeit ist kein Problem** – wenn jeder Absatz verdient ist
-- **Klare visuelle Hierarchie:** Titel → Lead → Sections → Abschluss
-- **Pull-Quotes** für die stärksten Sätze – zum Teilen, zum Innehalten
-- **Lesedauer** oben anzeigen – setzt Erwartungen, reduziert Abbrüche
-- **Keine Werbung im Text** – der Inhalt trägt sich selbst
-
-### Was Hormozi beisteuert
-
-- **Hook zuerst.** Der erste Satz muss sitzen. Kein Anlauf, kein Warm-up.
-- **Jeder Absatz max. 3 Zeilen.** Hormozi schreibt nicht in Blöcken – er schreibt in Schlägen.
-- **Konkrete Zahlen, spezifische Situationen.** Nicht „viele Männer" sondern „ein Mann, 38, Vater von zwei Kindern."
-- **Subheadlines als Versprechen.** Jede H2 sagt dem Leser: „Das bekommst du hier."
-- **Kein Fazit das zusammenfasst.** Der Abschluss fügt etwas hinzu, er wiederholt nicht.
-
-### Was Farid beisteuert
-
-- Die persönliche Geschichte als Anker. Erlebtes, nicht Theoretisches.
-- Den Registerwechsel. Tiefe und Direktheit sitzen nebeneinander.
-- Die Fragen. Nicht Antworten verkaufen – Fragen stellen die bleiben.
+**Medium** liefert: klare Hierarchie, Lesbarkeit, Pull-Quotes, Lesedauer, Tiefe ohne Verlust.
+**Hormozi** liefert: Hook zuerst, max. 3 Zeilen pro Absatz, Subheadlines als Versprechen, kein Fazit das zusammenfasst.
+**Farid** liefert: die persönliche Geschichte als Anker, den Registerwechsel, die Fragen die bleiben.
 
 ---
 
 ## Post-Struktur
-
-Jeder Blog-Post folgt dieser Architektur. Die Länge variiert je nach Modus.
 
 ```
 TEIL 1 — META-ZEILE
@@ -108,58 +58,37 @@ TEIL 6 — CTA
 
 ### TEIL 1 — META-ZEILE
 
-**Was rein kommt:**
-Kategorie(n) · Lesedauer · Datum · Autor
-
-**Format:**
 ```
-[Kategorie] · [Kategorie]  ·  [X] Min. Lesezeit  ·  [Datum]
+[Kategorie] · [Kategorie] · [X] Min. Lesezeit · [Datum]
 Farid El-Nomany
 ```
 
-**Kategorien (passend zur Website):**
-- Partnerschaft
-- Familie / Vaterschaft
-- Persönlichkeitsentwicklung
-- Karriere / Business
-- Vereinbarkeit
-- Mindset
+**Kategorien:** Partnerschaft · Familie / Vaterschaft · Persönlichkeitsentwicklung · Karriere / Business · Vereinbarkeit · Mindset
 
-**Lesedauer berechnen:** ca. 200 Wörter pro Minute.
-800 Wörter = 4 Min. · 1.200 Wörter = 6 Min. · 1.600 Wörter = 8 Min.
+**Lesedauer:** ca. 200 Wörter/Minute → 800 W = 4 Min. · 1.200 W = 6 Min. · 1.600 W = 8 Min.
 
 ---
 
 ### TEIL 2 — TITEL
 
-**Was es ist:**
-Der einzige Job des Titels: Den Leser in den ersten Satz ziehen.
+Der einzige Job des Titels: Den Leser in den ersten Satz ziehen. Max. 12 Wörter.
 
-**Hormozi-Titel-Formate:**
-
+**Formate:**
 ```
-FORMAT 1 — DIE UNBEQUEME WAHRHEIT
+DIE UNBEQUEME WAHRHEIT:
 "Warum deine Ehe gerade stirbt – ohne dass du es merkst."
-"Das, was du für Stärke hältst, macht dich kaputt."
 
-FORMAT 2 — DIE ZAHL
-"3 Dinge, die erfolgreiche Männer anders machen – bevor 7 Uhr morgens."
+DIE ZAHL:
 "Nach 18 Jahren Ehe: Was ich mir früher gewünscht hätte zu wissen."
 
-FORMAT 3 — DIE DIREKTE THESE
-"Liebende werden Eltern. Und vergessen sich dabei selbst."
+DIE DIREKTE THESE:
 "Du bist nicht erschöpft wegen des Jobs. Du bist erschöpft wegen danach."
 
-FORMAT 4 — DIE FRAGE
+DIE FRAGE:
 "Was passiert mit dir, wenn keiner zuschaut?"
-"Seit wann reicht dir 'gut genug' bei dir selbst?"
 ```
 
-**Titel-Regeln:**
-- Max. 12 Wörter
-- Keine Doppelpunkte außer für Kontrast-Effekt
-- Kein Clickbait – nur Wahrheiten, die sich anfühlen wie ein leichter Stich
-- Der Titel muss den Leser gemeint fühlen lassen
+**Regeln:** Max. 12 Wörter · kein Clickbait · der Leser muss sich gemeint fühlen
 
 ---
 
@@ -167,22 +96,17 @@ FORMAT 4 — DIE FRAGE
 
 **Länge:** 60–120 Wörter. Kein Wort mehr.
 
-**Was es ist:**
-Der erste Absatz ist der wichtigste des ganzen Posts.
-Er entscheidet ob jemand weiterliest.
+Kein Anlauf. Kein „In diesem Artikel geht es um...". Direkt rein in die Situation.
 
-**Hormozi-Regel:** Kein Anlauf. Kein „In diesem Artikel geht es um...". Rein in die Situation.
-
-**Drei Lead-Typen:**
-
+**Lead-Typen:**
 ```
 TYP 1 — DIE SZENE
-Konkrete Situation. Spezifisch. Der Leser soll sich drin sehen.
+Konkrete Situation. Der Leser soll sich drin sehen.
 "Es war ein Mittwochabend. Mein Sohn fragte mich, ob wir heute noch
 spielen. Ich sagte: 'Gleich.' Das war vor zwei Stunden."
 
 TYP 2 — DIE PROVOKATION
-Eine Aussage, die nicht jeder sagen würde. Direkt, leicht unbequem.
+Eine Aussage die nicht jeder sagen würde.
 "Die meisten Männer wissen nicht, dass sie gerade ihre Ehe
 auf Sparflamme stellen. Sie denken, sie investieren in die Familie."
 
@@ -196,34 +120,17 @@ Fast immer mit dem, was du nach dem Job noch alles trägst."
 
 ### TEIL 4 — BODY (Kern-Sektionen)
 
-**Gesamtlänge je nach Modus:**
-- Kurz: 600–900 Wörter
-- Standard: 900–1.400 Wörter
-- Deep Dive: 1.400–2.000 Wörter
-
-**Aufbau:**
-Der Body besteht aus 3–6 Sektionen. Jede Sektion hat:
+**3–6 Sektionen.** Jede Sektion:
 
 ```
 [H2 SUBHEADLINE – als Versprechen formuliert]
-
-[EINSTIEG – 1–2 Sätze, die direkt in die Sektion führen]
-
+[EINSTIEG – 1–2 Sätze direkt in die Sektion]
 [KERN-ABSÄTZE – max. 3 Zeilen pro Absatz, dann Leerzeile]
-
-[PULL-QUOTE – optional: stärkster Satz der Sektion, hervorgehoben]
-
-[ÜBERLEITUNG – 1 Satz, der zur nächsten Sektion führt]
+[PULL-QUOTE – optional: stärkster Satz, hervorgehoben]
+[ÜBERLEITUNG – 1 Satz zur nächsten Sektion]
 ```
 
-**Absatz-Regeln (Hormozi-Stil):**
-- Max. 3 Zeilen pro Absatz
-- Nach jedem Absatz: Leerzeile
-- Kein Absatz darf nur wiederholen was der vorherige gesagt hat
-- Jeder Absatz fügt etwas hinzu: eine Erkenntnis, ein Beispiel, eine Wendung
-
 **Subheadline-Formate:**
-
 ```
 AUSSAGE:    "Das Problem ist nicht die Zeit."
 FRAGE:      "Was passiert, wenn du dich selbst vergisst?"
@@ -231,13 +138,16 @@ IMPERATIV:  "Hör auf, das zu rechtfertigen."
 KONTRAST:   "Nicht mehr leisten – klarer werden."
 ```
 
-**Pull-Quote:**
-Den stärksten Satz einer Sektion hervorheben.
-Visuell: größere Schrift, kursiv, roter Akzent-Strich links.
+**Pull-Quote:** Den stärksten Satz einer Sektion markieren.
+Im Output: mit `> ` als Blockquote kennzeichnen.
+```
+> "Ein voller Kalender ist kein Beweis für ein volles Leben."
+```
 
-```
-| "Ein voller Kalender ist kein Beweis für ein volles Leben."
-```
+**Absatz-Regeln:**
+- Max. 3 Zeilen pro Absatz
+- Nach jedem Absatz: Leerzeile
+- Jeder Absatz fügt etwas Neues hinzu – kein Wiederholen
 
 ---
 
@@ -245,174 +155,87 @@ Visuell: größere Schrift, kursiv, roter Akzent-Strich links.
 
 **Länge:** 80–150 Wörter
 
-**Was es NICHT ist:**
-- Kein Zusammenfassen: „In diesem Artikel haben wir gesehen..."
-- Keine To-Do-Liste
-- Keine leere Motivation: „Du schaffst das!"
-
-**Was es ist:**
-Ein letzter Gedanke, der etwas hinzufügt.
-Eine Frage, die bleibt.
-Oder eine ehrliche persönliche Einordnung.
-
-**Drei Abschluss-Typen:**
+Kein Zusammenfassen. Etwas Neues hinzufügen oder offen lassen.
 
 ```
 TYP 1 — DIE OFFENE FRAGE
-Keine Antwort. Die Frage ist das Ergebnis.
 "Was würde sich ändern, wenn du diese Woche eine einzige Sache
 anders machst? Nicht mehr. Eine."
 
 TYP 2 — DIE PERSÖNLICHE EINORDNUNG
-Farid teilt seine eigene Haltung dazu. Ehrlich, nicht perfekt.
 "Ich kämpfe mit diesem Thema selbst. Jeden Tag neu.
 Aber der Unterschied zwischen früher und heute ist: Ich weiß jetzt,
 dass es einen Unterschied macht."
 
 TYP 3 — DER HARTE SCHLUSSPUNKT
 Ein Satz. Stehen lassen.
-"Die Zeit, die du dir nimmst, ist keine Schwäche.
-Sie ist der einzige Grund, warum du noch da sein kannst."
+"Die Zeit, die du dir nimmst, ist keine Schwäche."
 ```
 
-**Signatur-Abschluss:**
-```
-Herzliche Grüße, dein Farid.
-Oder: Alles Liebe – Farid.
-Oder eine Signature-Phrase aus der Brand Bible.
-```
+**Signatur:** „Herzliche Grüße, dein Farid." oder „Alles Liebe – Farid."
 
 ---
 
 ### TEIL 6 — CTA
 
-**Länge:** 2–4 Sätze + ein Link
+**Länge:** 2–4 Sätze + ein Link. Maximal ein CTA pro Post.
 
-**Wann welcher CTA:**
-
-| Situation | CTA-Typ |
+| Situation | CTA |
 |---|---|
-| Post ohne spezifisches Angebot | Newsletter-CTA |
-| Post basiert auf Podcast-Episode | Podcast-CTA |
-| Post mit Event-Bezug | Event-CTA (weich, ohne Druck) |
-
-**CTA-Formate:**
+| Kein spezifisches Angebot | Newsletter-CTA |
+| Basiert auf Podcast-Episode | Podcast-CTA |
+| Event-Bezug | Event-CTA (weich, ohne Druck) |
 
 ```
 NEWSLETTER:
-"Wenn dich solche Themen bewegen, schreib dich in meinen
-Newsletter ein. Kein Spam. Nur Dinge, die ich selbst
-für wertvoll halte – direkt in dein Postfach."
+"Wenn dich solche Themen bewegen, schreib dich in meinen Newsletter ein.
+Kein Spam. Nur Dinge, die ich selbst für wertvoll halte."
 → [Link zur Newsletter-Seite]
 
 PODCAST:
-"Ich habe das Thema auch in Folge [X] des MANN! Farid Podcast
-auseinandergenommen. Wenn du tiefer einsteigen willst:
+"Das Thema habe ich in Folge [X] des MANN! Farid Podcast auseinandergenommen.
 [Titel der Folge] – jetzt hören."
 → [Podcast-Link]
-
-EVENT (weich):
-"Wenn du genau das nicht nur lesen, sondern wirklich
-durcharbeiten willst: [Name des Events] macht das möglich.
-Alle Infos findest du hier."
-→ [Link]
 ```
 
-**Verboten im CTA:**
-- „Sichere dir jetzt deinen Platz!"
-- „Nur noch X Plätze verfügbar!"
-- Mehr als ein CTA pro Post
+**Verboten im CTA:** „Sichere dir jetzt..." · „Nur noch X Plätze..." · mehr als ein CTA
 
 ---
 
 ## Modi
 
-### MODUS A — STANDARD-POST
-Persönliche Erkenntnis oder These. Kein direkter Produkt-Bezug.
-Länge: 900–1.400 Wörter. CTA: Newsletter.
+| Modus | Länge | Sektionen | CTA |
+|---|---|---|---|
+| **A — Standard** | 900–1.400 W | 3–4 | Newsletter |
+| **B — Podcast-Begleit** | 800–1.200 W | 3–4 | Podcast-Folge |
+| **C — Deep Dive** | 1.400–2.000 W | 5–6 | Newsletter/Event |
+| **D — Kurz & Scharf** | 500–700 W | 2–3 | Optional |
 
-### MODUS B — PODCAST-BEGLEIT-POST
-Post basiert auf einer Episode. Vertieft ein Thema aus der Folge.
-Länge: 800–1.200 Wörter. CTA: Podcast-Folge.
-**Regel:** Post muss alleine stehen. Wer die Episode nie hört, soll trotzdem vollen Wert bekommen.
-
-### MODUS C — DEEP DIVE
-Ein Thema vollständig durchdenken. Langer, strukturierter Artikel.
-Länge: 1.400–2.000 Wörter. 5–6 Sektionen. Mehrere Pull-Quotes.
-CTA: Newsletter oder Angebot.
-
-### MODUS D — KURZ & SCHARF
-Hormozi-Stil pur. Eine These, komprimiert.
-Länge: 500–700 Wörter. Max. 3 Sektionen. Harter Abschluss-Satz.
-CTA: Optional.
-
----
-
-## Modi-Übersicht
-
-| | **Standard** | **Podcast-Begleit** | **Deep Dive** | **Kurz & Scharf** |
-|---|---|---|---|---|
-| Länge | 900–1.400 W | 800–1.200 W | 1.400–2.000 W | 500–700 W |
-| Sektionen | 3–4 | 3–4 | 5–6 | 2–3 |
-| Pull-Quotes | 1–2 | 1–2 | 3–4 | 0–1 |
-| CTA | Newsletter | Podcast-Folge | Newsletter/Event | Optional |
-| Ton | Persönlich + Prinzip | Vertiefend | Analytisch + Persönlich | Hart, direkt |
-
----
-
-## WordPress-Formatierungs-Hinweise
-
-Beim Übertragen in WordPress beachten:
-
-| Element | WordPress-Umsetzung |
-|---|---|
-| H1 | Nur für den Titel – nie im Body |
-| H2 | Für alle Sektions-Überschriften |
-| Pull-Quote | Blockquote-Element + CSS-Anpassung (roter Akzent links) |
-| Fettdruck | Für Kern-Thesen und die stärksten Sätze – sparsam |
-| Bild | Immer direkt nach dem Titel, vor dem Lead |
-| Kategorien | 2–3 aus der bestehenden Struktur der Website |
-| Permalink | Kurz, auf Deutsch, mit Hauptkeyword |
+**Modus B – Regel:** Post muss alleine stehen. Wer die Episode nie hört, soll trotzdem vollen Wert bekommen.
 
 ---
 
 ## Qualitätskontrolle
 
-Vor jedem finalen Post prüfen:
-
 1. Zieht der erste Satz den Leser rein – ohne Anlauf?
 2. Ist kein Absatz länger als 3 Zeilen?
 3. Fügt jede Sektion etwas Neues hinzu – kein Wiederholen?
-4. Ist mindestens ein Pull-Quote enthalten?
+4. Ist mindestens ein Pull-Quote markiert?
 5. Fasst der Abschluss NICHT zusammen – fügt er etwas hinzu?
 6. Ist der CTA konkret aber ohne Druck?
-7. Liegt die Länge im Zielbereich des gewählten Modus?
+7. Liegt die Länge im Zielbereich des Modus?
 8. Ist jede H2-Subheadline ein Versprechen an den Leser?
-9. Gibt es mindestens eine unbequeme Wahrheit im Post?
-10. **Brand Bible Check:** Klingt es wie Farid? Registerwechsel drin? Gibt es einen Satz, den nur er so schreiben würde?
+9. Gibt es mindestens eine unbequeme Wahrheit?
+10. **Brand Bible Check:** Klingt es wie Farid? Gibt es einen Satz, den nur er so schreiben würde?
 
 ---
 
 ## Verbotene Eröffnungen
-
-- „In diesem Artikel erfährst du..."
-- „Heute schreibe ich über..."
-- „Das Thema X ist sehr wichtig, weil..."
-- „Viele Menschen fragen sich..."
-- „Als ich das erste Mal über X nachgedacht habe..."
-
----
+„In diesem Artikel erfährst du..." · „Heute schreibe ich über..." · „Viele Menschen fragen sich..." · „Das Thema X ist sehr wichtig, weil..."
 
 ## Verbotene Abschlüsse
-
-- „Fazit: Zusammenfassend lässt sich sagen..."
-- „Ich hoffe, dieser Artikel hat dir geholfen."
-- „Wenn dir das gefallen hat, teile es gerne!"
-- „Du schaffst das – ich glaube an dich!"
-- „Vergiss nicht: Du bist nicht allein."
+„Fazit: Zusammenfassend lässt sich sagen..." · „Ich hoffe, dieser Artikel hat dir geholfen." · „Du schaffst das – ich glaube an dich!" · „Wenn dir das gefallen hat, teile es gerne!"
 
 ---
 
-*Modul 03e — Version 1.0*
-*Zusammen mit Brand Bible verwenden.*
-*Stilreferenz: Medium (Struktur) × Alex Hormozi (Direktheit) × Farid (Stimme).*
+*Modul 03e — Version 2.0 | Zuständig für: Textinhalt & Struktur | HTML-Umsetzung: 04 — HTML Formatter*
