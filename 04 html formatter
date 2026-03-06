@@ -1,29 +1,24 @@
 # 04 — HTML Formatter
 
 > **Zweck:** Fertigen Text-Output aus 03d oder 03e in sauberes HTML umwandeln.
-> Dieses Modul definiert das visuelle System, die Farbwerte, Typografie und
-> den genauen Bauplan für Newsletter-HTML und Blog-Post-HTML.
-> Input: strukturierter Klartext aus 03d oder 03e.
-> Output: produktionsfertiges HTML.
+> Input: strukturierter Klartext aus 03d (Newsletter) oder 03e (Blog Post).
+> Output: produktionsfertiges HTML – selbstständig, keine externen Abhängigkeiten.
 
 ---
 
-## Wann dieses Modul verwenden
+## Workflow
 
 ```
-Schritt 1: Text schreiben → 03d (Newsletter) oder 03e (Blog Post)
-Schritt 2: HTML bauen  → dieses Modul (04 — HTML Formatter)
+Schritt 1: Text schreiben  → 03d (Newsletter) oder 03e (Blog Post)
+Schritt 2: HTML bauen      → dieses Modul (04 — HTML Formatter)
 ```
 
-Sag einfach: „Bau jetzt das HTML" oder „Formatiere das als Newsletter-HTML" –
-der Formatter erkennt automatisch welcher Typ vorliegt.
+Sag einfach: „Bau jetzt das HTML" oder „Formatiere das als Blog Post HTML" –
+der Formatter erkennt automatisch welcher Typ vorliegt und baut das passende Format.
 
 ---
 
 ## Feste Links — Immer verwenden, nie ändern
-
-Alle wiederkehrenden Links für Footer, CTAs und Plattform-Buttons.
-Episoden-spezifische Links (Apple + Spotify zur einzelnen Folge) werden im Start-Check abgefragt.
 
 ### Website & Newsletter
 | Zweck | Link |
@@ -41,129 +36,45 @@ Episoden-spezifische Links (Apple + Spotify zur einzelnen Folge) werden im Start
 | **TikTok** | https://www.tiktok.com/@faridelnomany |
 | **Facebook** | https://facebook.com/faridelnomanypaidfriend/ |
 
-### Podcast-Plattformen (Show-Links)
+### Podcast-Plattformen (immer Show-Links — keine Episoden-Links)
 | Plattform | Link |
 |---|---|
-| **Apple Podcasts** | https://podcasts.apple.com/de/podcast/mann-farid-der-m%C3%A4nner-podcast-f%C3%BCr-ein-erf%C3%BClltes-leben/id1566526647 |
+| **Apple Podcasts** | https://podcasts.apple.com/podcast/id1582590279 |
 | **Spotify** | https://open.spotify.com/show/0OjTn34gbhDxxy7f5zrMQy?si=71252acea2fe48f2 |
 | **Amazon Music** | https://music.amazon.de/podcasts/b3c10ae9-cfea-4295-8fab-4bf3a2fae70b/Farid-Josef-ElNomany-paid-friend |
 | **Pocket Casts** | https://pca.st/95b0zfsc |
-| **Alle Folgen (Castos)** | https://farid-josef-el-nomany-paid-friend.castos.com/ |
-
-### Logik: Welcher Podcast-Link wohin
-```
-Newsletter CTA-Block:
-  Apple Podcasts  → Episoden-Link (abfragen) · Fallback: Show-Link oben
-  Spotify         → Episoden-Link (abfragen) · Fallback: Show-Link oben
-  Amazon Music    → immer Show-Link (kein Episoden-Link nötig)
-  Pocket Casts    → immer Show-Link (kein Episoden-Link nötig)
-
-Blog Post CTA (Podcast-Modus):
-  Primär-Link     → Apple Podcasts Episoden-Link oder Show-Link
-```
+| **Alle Folgen** | https://farid-josef-el-nomany-paid-friend.castos.com/ |
 
 ---
 
 ## Design-Philosophie
 
-**Referenz:** Apple.com · Aesop · Medium
+**Referenz:** Apple · Aesop · Medium
 
 Nicht laut. Nicht bunt. Nicht voll.
-Das Design sagt nichts – es lässt den Text sprechen.
-Weißraum ist keine Leere – er ist ein Entscheid.
+Das Design lässt den Text sprechen. Weißraum ist kein leerer Raum – er ist ein Entscheid.
 
-**Drei Prinzipien:**
-1. **Klarheit schlägt Dekoration.** Jedes Element existiert um zu führen, zu trennen oder zu betonen – nicht um schön auszusehen.
-2. **Typografie ist das Design.** Keine Icons, keine Illustrationen, keine Schmuckgrafiken. Der Text trägt die Ästhetik.
+1. **Klarheit schlägt Dekoration.** Kein Element existiert um schön auszusehen.
+2. **Typografie ist das Design.** Keine Icons, keine Schmuckgrafiken. Der Text trägt die Ästhetik.
 3. **Farbe als Signal, nicht als Stimmung.** Rot erscheint selten – und wenn, dann mit Bedeutung.
 
 ---
 
-## Gemeinsames Design-System
-
-Gilt für Newsletter und Blog Post gleichermaßen.
-
-### Farbsystem
+## Gemeinsames Farbsystem
 
 | Token | Hex | Verwendung |
 |---|---|---|
-| `--bg` | `#F4F1EC` | Seiten-Hintergrund, Trenner, Footer-Hintergrund |
+| `--bg` | `#F4F1EC` | Seiten-Hintergrund, Trenner, Footer |
 | `--surface` | `#FFFFFF` | Alle Inhalts-Blöcke |
 | `--ink` | `#1A1A1A` | Headlines, fettgedruckte Aussagen |
 | `--body` | `#2C2C2C` | Fließtext |
-| `--muted` | `#888888` | Metainfos, Lesedauer, Footer-Text, Subtext |
-| `--accent` | `#7F1710` | Labels, CTAs, Akzent-Linien, Pull-Quote-Marker (exakter Rot-Wert aus Farid-Logo) |
+| `--muted` | `#888888` | Metainfos, Lesedauer, Footer-Text |
+| `--accent` | `#7F1710` | CTAs, Akzent-Linien, Labels (Rot aus Farid-Logo) |
 | `--accent-light` | `#F4D0C8` | Helle Labels auf Rot-Hintergrund |
 | `--border` | `#E0DAD2` | Dezente Trennlinien |
-| `--bg-quote` | `#F9F6F2` | Pull-Quote Hintergrund (Blog) |
+| `--bg-quote` | `#F9F6F2` | Pull-Quote Hintergrund |
 
-**Was verboten ist:**
-Schwarz (`#000000`) als Hintergrund · bunte Sekundärfarben · Gradients · box-shadow
-
----
-
-### Typografie-System
-
-| Rolle | Font-Stack | Größe | Gewicht | Line-Height |
-|---|---|---|---|---|
-| H1 Titel | Georgia, Times New Roman, serif | 28px | 700 | 1.35 |
-| H2 Subheadline | Georgia, Times New Roman, serif | 22px | 700 | 1.35 |
-| H3 | Georgia, Times New Roman, serif | 18px | 700 | 1.35 |
-| Fließtext | Georgia, Times New Roman, serif | 17px | 400 | 1.8 |
-| Labels / Caps | Helvetica Neue, Helvetica, Arial, sans-serif | 10px | 700 | — |
-| Sub-Text | Georgia, Times New Roman, serif | 15px | 400 | 1.6 |
-| Footer | Helvetica Neue, Helvetica, Arial, sans-serif | 11px | 400 | — |
-
-**Regeln:**
-- Labels immer `VERSALIEN` + `letter-spacing: 4px`
-- Fließtext: `line-height: 1.8` – nie darunter
-- Kein Kursiv außer bei Pull-Quotes und Einordnungen
-- Keine externen Fonts (Google Fonts etc.) – E-Mail-Clients blockieren sie
-
----
-
-### Spacing-System
-
-Alles in Vielfachen von 8px.
-
-| Kontext | Wert |
-|---|---|
-| Block-Innenabstand (padding) | `44px 48px` |
-| Zwischen Absätzen | `18px` |
-| Zwischen Blöcken (Trenner) | `8px` (Beige-Spacer `--bg`) |
-| Label → Headline | `20px` |
-| Headline → Fließtext | `22px` |
-| Mobile padding | `32px 20px` |
-
----
-
-### Logo-Einbindung
-
-**Datei:** `farid-el-nomany-logo.svg`
-Als Base64-Data-URI direkt ins `src`-Attribut einbetten – kein externer Hosting-Link nötig.
-
-```python
-import base64
-with open('farid-el-nomany-logo.svg', 'rb') as f:
-    logo_b64 = base64.b64encode(f.read()).decode()
-logo_src = f"data:image/svg+xml;base64,{logo_b64}"
-```
-
-Logo-Breite: 210px (Desktop) · 160px (Mobile)
-Hinweis: Ältere Outlook-Versionen (2016−) rendern kein SVG. Bei Bedarf PNG-Fallback anfordern.
-
----
-
-### Responsive (Mobile ≤ 600px)
-
-| Element | Desktop | Mobile |
-|---|---|---|
-| Container-Breite | 600px fix | 100% |
-| Content-Padding | `44px 48px` | `32px 20px` |
-| Logo-Breite | 210px | 160px |
-| H1 | 28px | 24px |
-| Fließtext | 17px | 16px |
-| Social-Links | inline mit Trennern | je eigene Zeile |
+**Verboten:** `#000000` als Hintergrund · bunte Sekundärfarben · Gradients · box-shadow
 
 ---
 
@@ -171,41 +82,39 @@ Hinweis: Ältere Outlook-Versionen (2016−) rendern kein SVG. Bei Bedarf PNG-Fa
 
 # TEIL A — NEWSLETTER HTML
 
-Gilt wenn Input aus `03d — Write — Newsletter` kommt.
-
 ---
 
 ## Newsletter — Block-Bauplan
 
 ```
 ┌─────────────────────────────┐
-│  6px roter Akzent-Streifen  │  --accent
+│  6px roter Akzent-Streifen  │  #7F1710
 ├─────────────────────────────┤
 │  HEADER                     │  Logo zentriert + Ausgaben-Label
 ├─────────────────────────────┤
-│  8px --bg Spacer             │
+│  8px --bg Spacer            │
 ├─────────────────────────────┤
-│  BLOCK 2 — BEGRÜSSUNG       │  --surface
+│  BLOCK 2 — BEGRÜSSUNG       │  #FFFFFF
 ├─────────────────────────────┤
-│  8px --bg Spacer             │
+│  8px --bg Spacer            │
 ├─────────────────────────────┤
-│  BLOCK 3 — KERN-IMPULS      │  --surface
-│    inkl. Reflexionsfragen    │  --accent Hintergrund
+│  BLOCK 3 — KERN-IMPULS      │  #FFFFFF
+│    Reflexionsfragen-Box     │  #7F1710 Hintergrund, weißer Text
 ├─────────────────────────────┤
-│  8px --bg Spacer             │
+│  8px --bg Spacer            │
 ├─────────────────────────────┤
-│  BLOCK 4 — PODCAST          │  --accent Hintergrund, weißer Text
+│  BLOCK 4 — PODCAST          │  #7F1710 Hintergrund, weißer Text
 ├─────────────────────────────┤
-│  8px --bg Spacer             │
+│  8px --bg Spacer            │
 ├─────────────────────────────┤
-│  BLOCK 5 — WEITERES         │  --surface (nur wenn Inhalt vorhanden)
+│  BLOCK 5 — WEITERES         │  #FFFFFF (nur wenn Inhalt vorhanden)
 ├─────────────────────────────┤
-│  8px --bg Spacer             │
+│  8px --bg Spacer            │
 ├─────────────────────────────┤
-│  BLOCK 6 — SIGN-OFF         │  --surface
+│  BLOCK 6 — SIGN-OFF         │  #FFFFFF
 ├─────────────────────────────┤
-│  FOOTER                     │  --bg Hintergrund
-│  6px roter Akzent-Streifen  │  --accent (unten)
+│  FOOTER                     │  #F4F1EC Hintergrund
+│  6px roter Akzent-Streifen  │  #7F1710 (unten)
 └─────────────────────────────┘
 ```
 
@@ -215,129 +124,177 @@ Gilt wenn Input aus `03d — Write — Newsletter` kommt.
 
 ### HEADER
 ```
-Hintergrund:        --surface (#FFFFFF)
-Oberer Akzent:      6px solid --accent
-Logo:               zentriert, 210px, Base64-eingebettet
-Ausgaben-Label:     Caps, --accent, letter-spacing: 4px, 10px Helvetica
-Padding:            32px 48px
+Hintergrund:        #FFFFFF
+Oberer Akzent:      6px solid #7F1710
+
+Logo HTML (exakt so bauen – table + align="center" + margin:0 auto):
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#FFFFFF">
+  <tr>
+    <td align="center" style="padding:32px 48px 16px;">
+      <img src="[LOGO_BASE64]" width="210" alt="Farid El-Nomany"
+           style="display:block;margin:0 auto;width:210px;max-width:210px;border:0;">
+    </td>
+  </tr>
+  <tr>
+    <td align="center" style="padding:0 48px 28px;">
+      <p style="font-family:Helvetica Neue,Helvetica,Arial,sans-serif;
+                font-size:10px;font-weight:700;letter-spacing:4px;
+                text-transform:uppercase;color:#7F1710;margin:0;">
+        [AUSGABE #NUMMER · MONAT JAHR]
+      </p>
+    </td>
+  </tr>
+</table>
+
+Logo-Datei:   farid-el-nomany-logo.svg → als Base64-Data-URI einbetten
+Logo-Breite:  210px Desktop · 160px Mobile
 ```
 
 ### BLOCK 2 — BEGRÜSSUNG
 ```
-Hintergrund:        --surface
-Padding:            44px 48px
-H2 (optional):      Georgia 22px, --ink
-Fließtext:          Georgia 17px, --body, line-height 1.8
+Hintergrund:  #FFFFFF
+Padding:      44px 48px
+Fließtext:    Georgia, 17px, #2C2C2C, line-height 1.8
 ```
 
 ### BLOCK 3 — KERN-IMPULS
 ```
-Hintergrund:        --surface
-Padding:            44px 48px
-These:              Georgia 17px, --body – erste Sätze können fett sein
-Entfaltung:         normaler Fließtext
+Hintergrund:  #FFFFFF
+Padding:      44px 48px
+These:        Georgia 17px, erste Sätze in <strong>
 
-REFLEXIONSFRAGEN-BOX (eigener Sub-Block):
-  Hintergrund:      --accent (#7F1710)
-  Padding:          32px 40px
-  Label:            Caps, --accent-light, letter-spacing: 4px
-  Fragen:           Georgia 17px, #FFFFFF, line-height 1.8
-  Einordnung darunter: kursiv, --muted, --surface Hintergrund
+REFLEXIONSFRAGEN-BOX:
+  Hintergrund:  #7F1710
+  Padding:      32px 40px
+  Label:        Helvetica, 10px, #F4D0C8, CAPS, letter-spacing: 4px
+  Fragen:       Georgia, 17px, #FFFFFF, line-height 1.8
+  Einordnung:   Georgia, 15px, kursiv, #888888 — eigene Zeile darunter auf #FFFFFF
 ```
 
 ### BLOCK 4 — PODCAST
 ```
-Hintergrund:        --accent (#7F1710)
-Padding:            36px 48px
-Text:               #FFFFFF
+Hintergrund:  #7F1710
+Padding:      36px 48px
+Text:         #FFFFFF
 
-Podcast-Cover:      100×100px, border-radius: 6px, float left (Desktop)
-                    Auf Mobile: ausblenden, Text volle Breite
-Cover-Quelle:       Base64-eingebettet (PNG oder JPG)
-                    Priorität 1: episodenspezifisches Cover
-                    Priorität 2: mann-farid-podcast-cover.png
+Podcast-Cover:
+  Datei:        mann-farid-podcast-cover.png → immer als Base64-Data-URI einbetten
+  Größe:        100×100px, border-radius: 6px
+  Position:     Tabellen-Zelle links neben dem Text (Desktop)
+  Mobile:       Cover ausblenden, Text volle Breite
 
-Episoden-Titel:     Georgia 20px, #FFFFFF, fett
-Beschreibung:       Georgia 17px, #FFFFFF, line-height 1.8
-Bullets:            --accent-light als Marker (→ oder ›)
+Episoden-Titel:   Georgia, 20px, #FFFFFF, font-weight 700
+Beschreibung:     Georgia, 17px, #FFFFFF, line-height 1.8
+Bullets:          #F4D0C8 als Marker (→)
 
-CTA-Button (JETZT HÖREN):
-  Hintergrund:      #FFFFFF
-  Textfarbe:        --accent
-  Font:             Helvetica, 11px, 700, CAPS, letter-spacing: 2px
-  Padding:          14px 36px
-  Border-radius:    3px
+CTA-Button „JETZT HÖREN":
+  Hintergrund:  #FFFFFF
+  Textfarbe:    #7F1710
+  Font:         Helvetica, 11px, 700, CAPS, letter-spacing: 2px
+  Padding:      14px 36px
+  Border-radius: 3px
 
-Plattform-Links (unter Button):
-  Label:            Caps, --accent-light, letter-spacing: 3px, 10px
-  Links (je eigene Zelle in Tabellen-Row):
-    Apple Podcasts  → Episoden-Link (oder Show-Link als Fallback)
-    Spotify         → Episoden-Link (oder Show-Link als Fallback)
-    Amazon Music    → https://music.amazon.de/podcasts/b3c10ae9-cfea-4295-8fab-4bf3a2fae70b/Farid-Josef-ElNomany-paid-friend
-    Pocket Casts    → https://pca.st/95b0zfsc
-  Stil: #FFFFFF, 11px Helvetica, 600, Unterstrich mit rgba(255,255,255,0.3)
-  Mobile: Links stapeln vertikal
+Plattform-Links (feste URLs, immer Show-Links):
+  Label:        Helvetica, 10px, #F4D0C8, CAPS, letter-spacing: 3px
+  Apple Podcasts  → https://podcasts.apple.com/podcast/id1582590279
+  Spotify         → https://open.spotify.com/show/0OjTn34gbhDxxy7f5zrMQy?si=71252acea2fe48f2
+  Amazon Music    → https://music.amazon.de/podcasts/b3c10ae9-cfea-4295-8fab-4bf3a2fae70b/Farid-Josef-ElNomany-paid-friend
+  Pocket Casts    → https://pca.st/95b0zfsc
+  Stil:         #FFFFFF, 11px Helvetica, underline rgba(255,255,255,0.3)
+  Mobile:       Links stapeln vertikal
 ```
 
 ### BLOCK 5 — WEITERES (optional)
 ```
-Hintergrund:        --surface
-Padding:            44px 48px
-Label:              Caps, --accent, letter-spacing: 4px
-Item-Titel:         Georgia 18px, --ink, fett
-Item-Text:          Georgia 17px, --body
-Item-Link:          --accent, Caps, letter-spacing: 2px
-Trennlinie:         1px solid --border (zwischen Items)
+Hintergrund:  #FFFFFF
+Padding:      44px 48px
+Label:        Helvetica, 10px, #7F1710, CAPS, letter-spacing: 4px
+Item-Titel:   Georgia, 18px, #1A1A1A, 700
+Item-Text:    Georgia, 17px, #2C2C2C
+Item-Link:    #7F1710, Helvetica, CAPS, letter-spacing: 2px
+Trennlinie:   1px solid #E0DAD2 zwischen Items
 NICHT rendern wenn kein Inhalt vorhanden.
 ```
 
 ### BLOCK 6 — SIGN-OFF
 ```
-Hintergrund:        --surface
-Padding:            44px 48px
+Hintergrund:  #FFFFFF
+Padding:      44px 48px
 
 Reply-Box:
-  Hintergrund:      --bg (#F4F1EC)
-  Linke Border:     4px solid --accent
-  Padding:          20px 24px
-  Text:             Georgia 17px, --body, kursiv
+  Hintergrund:  #F4F1EC
+  Linke Border: 4px solid #7F1710
+  Padding:      20px 24px
+  Text:         Georgia, 17px, #2C2C2C, kursiv
 
-Unterschrift:       Georgia 22px, --ink
+Unterschrift:   Georgia, 22px, #1A1A1A
 ```
 
 ### FOOTER
 ```
-Hintergrund:        --bg (#F4F1EC)
-Obere Border:       2px solid --border
-Padding:            32px 48px
+Hintergrund:    #F4F1EC
+Obere Border:   2px solid #E0DAD2
+Padding:        32px 48px
+Unterer Akzent: 6px solid #7F1710
 
-Label „FOLGE MIR":  Caps, --accent, letter-spacing: 4px, 10px Helvetica
+Label „FOLGE MIR":
+  Helvetica, 10px, #7F1710, CAPS, letter-spacing: 4px, margin-bottom: 16px
+
 Social-Links (feste URLs):
-  INSTAGRAM   → https://www.instagram.com/farid_elnomany/
-  LINKEDIN    → https://www.linkedin.com/in/farid-el-nomany-7922321b0/
-  TIKTOK      → https://www.tiktok.com/@faridelnomany
-  FACEBOOK    → https://facebook.com/faridelnomanypaidfriend/
-  Stil:         --body, 13px Helvetica, CAPS, kein underline
-  Trenner:      ` · ` (Leerzeichen Punkt Leerzeichen)
-  Mobile:       je eigene Zeile mit 8px margin
+  INSTAGRAM  → https://www.instagram.com/farid_elnomany/
+  LINKEDIN   → https://www.linkedin.com/in/farid-el-nomany-7922321b0/
+  TIKTOK     → https://www.tiktok.com/@faridelnomany
+  FACEBOOK   → https://facebook.com/faridelnomanypaidfriend/
+  Stil:      #2C2C2C, 11px Helvetica, CAPS, kein underline
+  Trenner:   · (Leerzeichen · Leerzeichen)
+  Mobile:    je eigene Zeile mit 8px margin
 
-Adresse:            --muted, 11px Helvetica
-Abmelde-Link:       --accent, underline, 11px Helvetica → [ABMELDE-LINK] (von Beehiiv/MailPoet)
-Unterer Akzent:     6px solid --accent
+Abmelde-Link:  #7F1710, underline, 11px Helvetica → [ABMELDE-LINK]
+Adresse:       #888888, 11px Helvetica
 ```
 
 ---
 
 ## Newsletter — Technische Anforderungen
 
-- Table-based Layout (E-Mail-kompatibel, kein CSS Grid/Flexbox)
-- MSO Conditional Comments für Outlook (`<!--[if mso]>`)
-- Max-width: 600px, zentriert
-- Alle Bilder: Base64 als Data-URI eingebettet
+- Table-based Layout — kein Flexbox, kein Grid, kein CSS-Position
+- MSO Conditional Comments für Outlook: `<!--[if mso]> ... <![endif]-->`
+- Container: max-width 600px, `align="center"`
+- Alle Bilder: Base64 als Data-URI eingebettet — kein externer Bildlink
+- `bgcolor`-Attribute auf allen `<table>`-Tags als Fallback
 - Kein JavaScript
-- Keine externen Fonts
-- `bgcolor` Attribute auf Tables als Fallback
-- Inline-CSS wo nötig für E-Mail-Client-Kompatibilität
+- Keine externen Fonts — Georgia und Helvetica sind systemseitig verfügbar
+- Inline-CSS auf allen Elementen für maximale E-Mail-Client-Kompatibilität
+
+### Logo Base64-Einbindung (Python)
+```python
+import base64
+with open('farid-el-nomany-logo.svg', 'rb') as f:
+    logo_b64 = base64.b64encode(f.read()).decode()
+logo_src = f"data:image/svg+xml;base64,{logo_b64}"
+```
+
+### Podcast-Cover Base64-Einbindung (Python)
+```python
+import base64
+with open('mann-farid-podcast-cover.png', 'rb') as f:
+    cover_b64 = base64.b64encode(f.read()).decode()
+cover_src = f"data:image/png;base64,{cover_b64}"
+```
+
+### Responsive (Mobile ≤ 600px)
+```css
+@media only screen and (max-width: 600px) {
+  .email-container { width: 100% !important; }
+  .content-block   { padding: 32px 20px !important; }
+  .logo-img        { width: 160px !important; max-width: 160px !important; }
+  .h1              { font-size: 24px !important; }
+  .body-text       { font-size: 16px !important; }
+  .podcast-cover   { display: none !important; }
+  .social-link     { display: block !important; margin: 8px 0 !important; }
+}
+```
 
 ---
 
@@ -345,171 +302,527 @@ Unterer Akzent:     6px solid --accent
 
 # TEIL B — BLOG POST HTML
 
-Gilt wenn Input aus `03e — Write — Blog Post` kommt.
+---
+
+## Das "Content Earns It"-Prinzip
+
+**Dieses Prinzip gilt absolut. Keine Ausnahmen.**
+
+Bevor ein visuelles Element eingebaut wird, eine Frage stellen:
+> „Enthält der Text dieses Elements Inhalt, der dieses Element rechtfertigt?"
+
+Wenn nein → Element weglassen.
+**Niemals Inhalt erfinden oder hinzufügen, der nicht im Draft steht.**
+
+| Element | Verwenden wenn... | Nicht verwenden wenn... |
+|---|---|---|
+| **Pull-Quote** | Text enthält einen Satz, der alleine wirkungsvoll ist | Kein natürlicher Höhepunkt vorhanden |
+| **Highlight-Box** | Text enthält eine These, die visuell hervorstechen soll | Kein klarer Ankerpunkt vorhanden |
+| **Zitat-Box** | Konkretes Beispiel oder Anekdote im Text | Meinungen oder Argumente |
+| **Dunkel-Band** | Klarer emotionaler Wendepunkt im Text | Kein Pivot-Moment vorhanden |
+| **Tooltip** | Fachwort, Begriff, Abkürzung im Text | Allgemein bekannte Wörter |
+
+Typischer Einsatz: **2–3 visuelle Elemente pro Post** reichen.
+Ein langer Deep-Dive: maximal 4–5. Mehr ist fast nie besser.
 
 ---
 
-## Blog Post — Seitenstruktur
+## Blog Post — HTML-Schale (vollständig, direkt verwenden)
 
-```
-┌─────────────────────────────┐
-│  NAVIGATION (statisch)      │  Farids Website-Nav – nicht im generierten HTML
-├─────────────────────────────┤
-│  META-ZEILE                 │  Kategorie · Lesezeit · Datum
-├─────────────────────────────┤
-│  HERO-BILD                  │  Vollbreite, max 800px, vor dem Lead
-├─────────────────────────────┤
-│  TITEL (H1)                 │  Georgia, groß, trifft sofort
-├─────────────────────────────┤
-│  AUTOR-ZEILE                │  Avatar + Name + Datum
-├─────────────────────────────┤
-│  LEAD-PARAGRAPH             │  Fett oder visuell hervorgehoben
-├─────────────────────────────┤
-│  BODY (Sektionen)           │  H2 + Fließtext + Pull-Quotes
-├─────────────────────────────┤
-│  ABSCHLUSS                  │  Kursiv oder hervorgehoben
-├─────────────────────────────┤
-│  SIGNATUR                   │  „Dein Farid" in Georgia
-├─────────────────────────────┤
-│  CTA-BOX                    │  Hervorgehobener Block
-├─────────────────────────────┤
-│  ÄHNLICHE ARTIKEL           │  Optional, WordPress-generiert
-└─────────────────────────────┘
-```
+Das folgende HTML ist die vollständige Schale für jeden Blog Post.
+Platzhalter in `[GROSSBUCHSTABEN]` ersetzen. Ungenutzte Elemente komplett entfernen.
 
----
-
-## Blog Post — Element-Spezifikationen
-
-### META-ZEILE
 ```html
-<p class="meta">
-  Partnerschaft · Persönlichkeitsentwicklung · 6 Min. Lesezeit · 29. Mai 2024
-</p>
-```
-```
-Font:       Helvetica Neue, 12px, --muted
-Letter-sp.: 1px
-Margin:     0 0 32px 0
-```
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[ARTIKEL-TITEL] | Farid El-Nomany</title>
+  <meta name="description" content="[META-BESCHREIBUNG – 1 Satz, max. 155 Zeichen]">
+  <style>
+    /* === FARBEN === */
+    :root {
+      --bg:           #F4F1EC;
+      --surface:      #FFFFFF;
+      --ink:          #1A1A1A;
+      --body:         #2C2C2C;
+      --muted:        #888888;
+      --accent:       #7F1710;
+      --accent-light: #F4D0C8;
+      --border:       #E0DAD2;
+      --bg-quote:     #F9F6F2;
+    }
 
-### HERO-BILD
-```
-Breite:         100%, max 800px
-Border-radius:  4px
-Margin:         0 0 40px 0
-Alt-Text:       Beschreibender Text immer setzen
-```
+    /* === RESET === */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { overflow-x: hidden; scroll-behavior: smooth; }
 
-### TITEL (H1)
-```
-Font:           Georgia, 36px (Desktop) / 28px (Mobile), 700
-Farbe:          --ink
-Line-height:    1.25
-Margin:         0 0 24px 0
-Max-width:      720px
-```
+    /* === BASIS === */
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: 18px;
+      line-height: 1.8;
+      color: var(--body);
+      background: var(--surface);
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
 
-### AUTOR-ZEILE
-```html
-<div class="author-row">
-  <img src="[AVATAR]" width="40" height="40" style="border-radius:50%">
-  <span class="author-name">Farid El-Nomany</span>
-  <span class="author-date">[Datum]</span>
+    /* === PROGRESS BAR === */
+    .progress-bar {
+      position: fixed;
+      top: 0; left: 0;
+      height: 3px;
+      width: 0%;
+      background: var(--accent);
+      z-index: 200;
+      transition: width 0.1s linear;
+    }
+
+    /* === ARTIKEL-WRAPPER === */
+    .post-wrapper {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 32px 80px;
+    }
+
+    /* === META-ZEILE === */
+    .post-meta {
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--muted);
+      letter-spacing: 0.5px;
+      margin-bottom: 32px;
+    }
+
+    /* === HERO-BILD === */
+    .hero-image {
+      width: 100%;
+      max-width: 720px;
+      height: auto;
+      border-radius: 4px;
+      display: block;
+      margin: 0 0 40px 0;
+    }
+
+    /* === TITEL === */
+    .post-title {
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      margin-bottom: 24px;
+    }
+
+    /* === AUTOR-ZEILE === */
+    .author-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 40px;
+    }
+    .author-avatar {
+      width: 40px; height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .author-name {
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--ink);
+    }
+    .author-date {
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    /* === FLIESSTEXT === */
+    .post-body p {
+      font-size: 18px;
+      line-height: 1.8;
+      color: var(--body);
+      margin-bottom: 22px;
+    }
+
+    /* === LEAD-PARAGRAPH === */
+    .post-lead {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 1.7;
+      color: var(--body);
+      border-left: 4px solid var(--accent);
+      padding-left: 20px;
+      margin-bottom: 40px;
+    }
+
+    /* === ÜBERSCHRIFTEN === */
+    .post-body h2 {
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 1.3;
+      color: var(--ink);
+      margin: 56px 0 20px;
+      padding-top: 32px;
+      border-top: 1px solid var(--border);
+    }
+    .post-body h2:first-of-type { border-top: none; padding-top: 0; }
+    .post-body h3 {
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--ink);
+      margin: 36px 0 14px;
+    }
+
+    /* === PULL-QUOTE === */
+    .pull-quote {
+      background: var(--bg-quote);
+      border-left: 5px solid var(--accent);
+      padding: 24px 32px;
+      margin: 40px 0;
+      font-size: 21px;
+      font-style: italic;
+      line-height: 1.6;
+      color: var(--ink);
+    }
+    .pull-quote p { margin: 0; font-size: 21px; }
+
+    /* === HIGHLIGHT-BOX (für Thesen) === */
+    .highlight-box {
+      background: var(--bg);
+      border-left: 5px solid var(--accent);
+      padding: 28px 32px;
+      margin: 40px 0;
+    }
+    .highlight-box p { margin: 0; font-size: 17px; color: var(--body); }
+
+    /* === ZITAT-BOX (für Beispiele/Anekdoten) === */
+    .example-box {
+      background: var(--bg-quote);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--accent);
+      padding: 24px 28px;
+      margin: 32px 0;
+    }
+    .example-box p { margin: 0; font-size: 16px; line-height: 1.75; color: var(--body); }
+
+    /* === DUNKEL-BAND (Wendepunkt) === */
+    .dark-band {
+      background: var(--ink);
+      color: #FFFFFF;
+      padding: 48px 40px;
+      margin: 48px -32px;
+    }
+    .dark-band h2 {
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: 26px;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 20px;
+      border: none;
+      padding: 0;
+    }
+    .dark-band p {
+      font-size: 18px;
+      line-height: 1.8;
+      color: rgba(255,255,255,0.85);
+      margin-bottom: 18px;
+    }
+    .dark-band p:last-child { margin-bottom: 0; }
+
+    /* === TOOLTIP-TERME === */
+    .term {
+      position: relative;
+      border-bottom: 1.5px dotted var(--accent);
+      cursor: help;
+    }
+    .term .tip {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      bottom: calc(100% + 8px);
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--ink);
+      color: #FFFFFF;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 12px;
+      font-weight: 500;
+      padding: 6px 10px;
+      border-radius: 3px;
+      max-width: 220px;
+      white-space: normal;
+      line-height: 1.4;
+      z-index: 10;
+      pointer-events: none;
+      transition: opacity 0.15s ease;
+    }
+    .term .tip::after {
+      content: '';
+      position: absolute;
+      top: 100%; left: 50%;
+      transform: translateX(-50%);
+      border: 5px solid transparent;
+      border-top-color: var(--ink);
+    }
+    .term:hover .tip,
+    .term:focus .tip { visibility: visible; opacity: 1; }
+
+    /* === ABSCHLUSS === */
+    .post-closing {
+      font-style: italic;
+      font-size: 18px;
+      line-height: 1.8;
+      color: var(--body);
+      border-top: 1px solid var(--border);
+      padding-top: 32px;
+      margin-top: 48px;
+    }
+
+    /* === SIGNATUR === */
+    .post-signature {
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--ink);
+      margin-top: 24px;
+    }
+
+    /* === CTA-BOX === */
+    .cta-box {
+      background: var(--bg);
+      border-left: 5px solid var(--accent);
+      padding: 28px 32px;
+      margin: 48px 0 0;
+    }
+    .cta-label {
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 10px;
+    }
+    .cta-text {
+      font-size: 17px;
+      color: var(--body);
+      margin-bottom: 16px;
+    }
+    .cta-link {
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .cta-link:hover { text-decoration: underline; }
+
+    /* === RESPONSIVE === */
+    @media (max-width: 680px) {
+      .post-wrapper   { padding: 32px 20px 64px; }
+      .post-title     { font-size: 28px; }
+      .post-lead      { font-size: 18px; }
+      .pull-quote     { font-size: 18px; padding: 20px 24px; }
+      .pull-quote p   { font-size: 18px; }
+      .dark-band      { margin: 40px -20px; padding: 40px 24px; }
+      .dark-band h2   { font-size: 22px; }
+      .post-body h2   { font-size: 21px; }
+      .term .tip      { left: 0; transform: none; }
+      .term .tip::after { left: 16px; transform: none; }
+    }
+
+    /* === PRINT === */
+    @media print {
+      .progress-bar { display: none; }
+      .dark-band { background: #F4F1EC; color: var(--ink); margin: 40px 0; }
+      .dark-band h2 { color: var(--ink); }
+      .dark-band p  { color: var(--body); }
+      .term { border-bottom: none; }
+      .term .tip { display: none; }
+      .cta-box { background: white; border: 1px solid var(--border); }
+      body { font-size: 11pt; }
+      a { color: var(--ink); text-decoration: none; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- PROGRESS BAR -->
+<div class="progress-bar" id="progressBar"></div>
+
+<div class="post-wrapper">
+
+  <!-- META-ZEILE -->
+  <p class="post-meta">[Kategorie] · [Kategorie] · [X] Min. Lesezeit · [Datum]</p>
+
+  <!-- HERO-BILD (vor Titel) -->
+  <img src="[BILD-URL]" alt="[BILD-BESCHREIBUNG]" class="hero-image">
+
+  <!-- TITEL -->
+  <h1 class="post-title">[TITEL]</h1>
+
+  <!-- AUTOR-ZEILE -->
+  <div class="author-row">
+    <img src="[AVATAR-URL]" alt="Farid El-Nomany" class="author-avatar">
+    <div>
+      <div class="author-name">Farid El-Nomany</div>
+      <div class="author-date">[Datum]</div>
+    </div>
+  </div>
+
+  <!-- LEAD -->
+  <p class="post-lead">[LEAD-PARAGRAPH]</p>
+
+  <!-- BODY -->
+  <div class="post-body">
+
+    <p>[Fließtext...]</p>
+
+    <!-- PULL-QUOTE (nur wenn Text es trägt) -->
+    <blockquote class="pull-quote">
+      <p>"[Stärkster Satz der Sektion]"</p>
+    </blockquote>
+
+    <h2>[H2 Subheadline]</h2>
+    <p>[Fließtext...]</p>
+
+    <!-- HIGHLIGHT-BOX (nur wenn Text es trägt) -->
+    <div class="highlight-box">
+      <p>[These oder Kernaussage]</p>
+    </div>
+
+    <!-- ZITAT-BOX für Beispiele (nur wenn Text es trägt) -->
+    <div class="example-box">
+      <p>[Konkretes Beispiel oder Anekdote – 2–4 Sätze]</p>
+    </div>
+
+    <!-- DUNKEL-BAND für Wendepunkt (max. einmal pro Post) -->
+    <div class="dark-band">
+      <h2>[Wendepunkt-Titel]</h2>
+      <p>[Text...]</p>
+    </div>
+
+    <!-- TOOLTIP-TERM (für Fachbegriffe, inline verwenden) -->
+    <!-- <span class="term" tabindex="0">Begriff<span class="tip">Kurze Erklärung max. 10 Wörter</span></span> -->
+
+    <h2>[H2 Subheadline]</h2>
+    <p>[Fließtext...]</p>
+
+  </div>
+
+  <!-- ABSCHLUSS -->
+  <div class="post-closing">
+    <p>[Abschluss-Text]</p>
+    <p class="post-signature">Herzliche Grüße, dein Farid.</p>
+  </div>
+
+  <!-- CTA-BOX -->
+  <div class="cta-box">
+    <p class="cta-label">Auch interessant</p>
+    <p class="cta-text">[CTA-Text – 2–3 Sätze]</p>
+    <a href="[LINK]" class="cta-link">[Link-Text] →</a>
+  </div>
+
 </div>
-```
-```
-Font:       Helvetica, 13px, --muted
-Margin:     0 0 40px 0
+
+<!-- PROGRESS BAR SCRIPT -->
+<script>
+(function() {
+  var bar = document.getElementById('progressBar');
+  if (!bar) return;
+  window.addEventListener('scroll', function() {
+    var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    var progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+    bar.style.width = Math.min(progress, 100) + '%';
+  }, { passive: true });
+})();
+</script>
+
+</body>
+</html>
 ```
 
-### LEAD-PARAGRAPH
-```
-Font:           Georgia, 19px, --body, line-height 1.8
-Font-weight:    600 (semi-fett) oder normale Stärke mit größerem Font
-Margin-bottom:  32px
-Border-left:    optional: 4px solid --accent, padding-left: 20px
-```
+---
 
-### FLIESSTEXT (Body)
-```
-Font:           Georgia, 18px, --body, line-height 1.8
-Max-width:      680px
-Margin-bottom:  22px (zwischen Absätzen)
-```
+## Blog Post — Visuelle Elemente
 
-### H2 SUBHEADLINES
-```
-Font:           Georgia, 22px, --ink, 700, line-height 1.35
-Margin:         48px 0 20px 0
-```
-
-### PULL-QUOTE (aus Blockquote `> "..."`)
+### PULL-QUOTE
+Für den stärksten Satz einer Sektion. Max. zweimal pro Post.
 ```html
 <blockquote class="pull-quote">
-  "Ein voller Kalender ist kein Beweis für ein volles Leben."
+  <p>"Satz der alleine trägt."</p>
 </blockquote>
 ```
-```
-Hintergrund:    --bg-quote (#F9F6F2)
-Border-left:    5px solid --accent
-Padding:        24px 32px
-Font:           Georgia, 21px, --ink, kursiv, line-height 1.6
-Margin:         40px 0
-```
 
-### ABSCHLUSS
-```
-Font:           Georgia, 18px, --body, kursiv, line-height 1.8
-Border-top:     1px solid --border
-Padding-top:    32px
-Margin-top:     48px
-```
-
-### SIGNATUR
+### HIGHLIGHT-BOX
+Für eine These oder Kernaussage die visuell hervorstechen soll.
 ```html
-<p class="signature">Herzliche Grüße, dein Farid.</p>
-```
-```
-Font:           Georgia, 20px, --ink, 700
-Margin-top:     24px
-```
-
-### CTA-BOX
-```html
-<div class="cta-box">
-  <p class="cta-label">AUCH INTERESSANT</p>
-  <p class="cta-text">[CTA-Text]</p>
-  <a href="[LINK]" class="cta-link">[Link-Text] →</a>
+<div class="highlight-box">
+  <p>Die These oder Kernaussage.</p>
 </div>
 ```
-```
-Hintergrund:    --bg (#F4F1EC)
-Border-left:    5px solid --accent
-Padding:        28px 32px
-Margin:         48px 0
-Label:          Helvetica, 10px, --accent, CAPS, letter-spacing: 3px
-Text:           Georgia, 17px, --body
-Link:           --accent, Helvetica, 12px, 700, CAPS, letter-spacing: 2px, kein underline
 
-Feste CTA-Links:
-  Newsletter  → https://farid-el-nomany.com/newsletter/
-  Podcast     → Apple Podcasts Episoden-Link (abfragen) · Fallback: https://podcasts.apple.com/de/podcast/mann-farid-der-m%C3%A4nner-podcast-f%C3%BCr-ein-erf%C3%BClltes-leben/id1566526647
+### ZITAT-BOX
+Für konkrete Beispiele und Anekdoten — nicht für Meinungen.
+```html
+<div class="example-box">
+  <p>Das konkrete Beispiel oder die Anekdote. 2–4 Sätze.</p>
+</div>
 ```
+
+### DUNKEL-BAND
+Für den emotionalen Wendepunkt — maximal einmal pro Post.
+```html
+<div class="dark-band">
+  <h2>Titel des Wendepunkts</h2>
+  <p>Text...</p>
+</div>
+```
+
+### TOOLTIP-TERM
+Für Fachbegriffe, Abkürzungen oder Begriffe die der Leser vielleicht nicht kennt.
+Markup im Draft: `{{Begriff: Kurze Erklärung max. 10 Wörter}}`
+HTML-Output:
+```html
+<span class="term" tabindex="0">Begriff<span class="tip">Kurze Erklärung max. 10 Wörter</span></span>
+```
+
+---
+
+## Blog Post — Feste CTA-Links
+
+| CTA-Typ | Link |
+|---|---|
+| Newsletter | https://farid-el-nomany.com/newsletter/ |
+| Podcast (Apple) | https://podcasts.apple.com/podcast/id1582590279 |
+| Podcast (Spotify) | https://open.spotify.com/show/0OjTn34gbhDxxy7f5zrMQy?si=71252acea2fe48f2 |
 
 ---
 
 ## Blog Post — WordPress-Ausgabe
 
-Der generierte HTML-Code ist für direkte Verwendung im WordPress **HTML-Block** oder **Classic Editor** optimiert.
+Wenn der Post direkt in WordPress eingebaut wird (statt als eigenständige HTML-Datei):
 
 ```
-H1          → nur für den Seitentitel (WordPress-Titelfeld), NICHT im Body
+H1          → nur im WordPress-Titelfeld, NIE im Body
 H2          → alle Sektions-Überschriften
-blockquote  → Pull-Quotes (CSS-Anpassung im WordPress-Theme nötig)
-strong      → Kern-Thesen und stärkste Sätze (sparsam)
-Bild        → vor dem Lead, als Featured Image oder erster Block
-Kategorien  → 2–3 aus bestehender Website-Struktur
+blockquote  → Pull-Quotes
+strong      → Kern-Thesen, sparsam einsetzen
+Bild        → als Featured Image, erscheint automatisch vor dem Titel
+Kategorien  → 2–3 aus: Partnerschaft · Familie/Vaterschaft ·
+              Persönlichkeitsentwicklung · Karriere/Business ·
+              Vereinbarkeit · Mindset
 Permalink   → kurz, Deutsch, mit Hauptkeyword
 ```
 
@@ -517,46 +830,35 @@ Permalink   → kurz, Deutsch, mit Hauptkeyword
 
 ## Platzhalter-Konventionen
 
-Alle noch auszufüllenden Felder:
-
-```
-[BESCHREIBUNG IN GROSSBUCHSTABEN]
-
-Beispiele:
-[AUSGABE #101 · MÄRZ 2025]
-[EPISODEN-TITEL]
-[APPLE-PODCAST-LINK-ZUR-FOLGE]
-[SPOTIFY-LINK-ZUR-FOLGE]
-[ABMELDE-LINK]
-[HERO-BILD-URL]
-```
-
-Platzhalter inklusive eckiger Klammern ersetzen.
-Blöcke ohne Inhalt (z.B. Block 5 Newsletter) komplett entfernen.
+Alle auszufüllenden Felder im Format `[GROSSBUCHSTABEN]`.
+Ungenutzte Elemente (z.B. Block 5 im Newsletter, Dunkel-Band im Blog) komplett entfernen.
 
 ---
 
-## Qualitätskontrolle HTML-Output
+## Qualitätskontrolle
 
-**Newsletter:**
-1. Alle Bilder Base64-eingebettet – kein externer Bild-Link?
-2. Table-based Layout – kein Flexbox oder Grid?
-3. 600px Container mit `align="center"`?
-4. Alle Farben exakt aus dem Farbsystem?
-5. Plattform-Links alle vorhanden und korrekt?
-6. Mobile-Styles in `<style>` mit `@media`?
+### Newsletter
+1. Logo mittig? `align="center"` auf `<td>` + `display:block; margin:0 auto` auf `<img>`?
+2. Alle Bilder Base64-eingebettet — kein externer Bildlink?
+3. Table-based Layout — kein Flexbox, kein Grid?
+4. `bgcolor`-Attribute auf allen `<table>`-Tags?
+5. Podcast-Cover: `mann-farid-podcast-cover.png` eingebettet?
+6. Alle vier Plattform-Links vorhanden und korrekt (Show-Links)?
 7. Block 5 entfernt wenn kein Inhalt?
+8. Kein JavaScript?
 
-**Blog Post:**
-1. H1 nur einmal – nur für den Titel?
-2. Pull-Quotes als `<blockquote>` ausgezeichnet?
-3. Lead-Paragraph visuell abgesetzt?
-4. CTA-Box vorhanden und korrekt verlinkt?
-5. Alt-Texte auf allen Bildern?
-6. Kein `<h1>` im Body-Bereich?
+### Blog Post
+1. Progress Bar vorhanden — `<div id="progressBar">` + Script vor `</body>`?
+2. H1 nur einmal — nur im Titel?
+3. Content Earns It: Kein visuelles Element ohne Textgrundlage?
+4. Kein Inhalt erfunden der nicht im Draft stand?
+5. Tooltips für alle Fachbegriffe gesetzt?
+6. CTA-Box vorhanden mit festem Link?
+7. Alt-Texte auf allen Bildern?
+8. Print-CSS im `<style>`-Block enthalten?
 
 ---
 
-*Modul 04 — Version 1.0*
-*Input: Strukturierter Klartext aus 03d oder 03e.*
-*Output: Produktionsfertiges HTML für Newsletter (E-Mail) oder Blog Post (WordPress).*
+*Modul 04 — Version 2.0*
+*Input: Klartext aus 03d oder 03e.*
+*Output: Produktionsfertiges HTML — Newsletter (E-Mail) oder Blog Post (Browser/WordPress).*
