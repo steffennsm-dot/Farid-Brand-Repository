@@ -1,0 +1,509 @@
+# 04 — HTML Formatter
+
+> **Zweck:** Fertigen Text-Output aus 03d oder 03e in sauberes HTML umwandeln.
+> Dieses Modul definiert das visuelle System, die Farbwerte, Typografie und
+> den genauen Bauplan für Newsletter-HTML und Blog-Post-HTML.
+> Input: strukturierter Klartext aus 03d oder 03e.
+> Output: produktionsfertiges HTML.
+
+---
+
+## Wann dieses Modul verwenden
+
+```
+Schritt 1: Text schreiben → 03d (Newsletter) oder 03e (Blog Post)
+Schritt 2: HTML bauen  → dieses Modul (04 — HTML Formatter)
+```
+
+Sag einfach: „Bau jetzt das HTML" oder „Formatiere das als Newsletter-HTML" –
+der Formatter erkennt automatisch welcher Typ vorliegt.
+
+---
+
+## Design-Philosophie
+
+**Referenz:** Apple.com · Aesop · Medium
+
+Nicht laut. Nicht bunt. Nicht voll.
+Das Design sagt nichts – es lässt den Text sprechen.
+Weißraum ist keine Leere – er ist ein Entscheid.
+
+**Drei Prinzipien:**
+1. **Klarheit schlägt Dekoration.** Jedes Element existiert um zu führen, zu trennen oder zu betonen – nicht um schön auszusehen.
+2. **Typografie ist das Design.** Keine Icons, keine Illustrationen, keine Schmuckgrafiken. Der Text trägt die Ästhetik.
+3. **Farbe als Signal, nicht als Stimmung.** Rot erscheint selten – und wenn, dann mit Bedeutung.
+
+---
+
+## Gemeinsames Design-System
+
+Gilt für Newsletter und Blog Post gleichermaßen.
+
+### Farbsystem
+
+| Token | Hex | Verwendung |
+|---|---|---|
+| `--bg` | `#F4F1EC` | Seiten-Hintergrund, Trenner, Footer-Hintergrund |
+| `--surface` | `#FFFFFF` | Alle Inhalts-Blöcke |
+| `--ink` | `#1A1A1A` | Headlines, fettgedruckte Aussagen |
+| `--body` | `#2C2C2C` | Fließtext |
+| `--muted` | `#888888` | Metainfos, Lesedauer, Footer-Text, Subtext |
+| `--accent` | `#7F1710` | Labels, CTAs, Akzent-Linien, Pull-Quote-Marker (exakter Rot-Wert aus Farid-Logo) |
+| `--accent-light` | `#F4D0C8` | Helle Labels auf Rot-Hintergrund |
+| `--border` | `#E0DAD2` | Dezente Trennlinien |
+| `--bg-quote` | `#F9F6F2` | Pull-Quote Hintergrund (Blog) |
+
+**Was verboten ist:**
+Schwarz (`#000000`) als Hintergrund · bunte Sekundärfarben · Gradients · box-shadow
+
+---
+
+### Typografie-System
+
+| Rolle | Font-Stack | Größe | Gewicht | Line-Height |
+|---|---|---|---|---|
+| H1 Titel | Georgia, Times New Roman, serif | 28px | 700 | 1.35 |
+| H2 Subheadline | Georgia, Times New Roman, serif | 22px | 700 | 1.35 |
+| H3 | Georgia, Times New Roman, serif | 18px | 700 | 1.35 |
+| Fließtext | Georgia, Times New Roman, serif | 17px | 400 | 1.8 |
+| Labels / Caps | Helvetica Neue, Helvetica, Arial, sans-serif | 10px | 700 | — |
+| Sub-Text | Georgia, Times New Roman, serif | 15px | 400 | 1.6 |
+| Footer | Helvetica Neue, Helvetica, Arial, sans-serif | 11px | 400 | — |
+
+**Regeln:**
+- Labels immer `VERSALIEN` + `letter-spacing: 4px`
+- Fließtext: `line-height: 1.8` – nie darunter
+- Kein Kursiv außer bei Pull-Quotes und Einordnungen
+- Keine externen Fonts (Google Fonts etc.) – E-Mail-Clients blockieren sie
+
+---
+
+### Spacing-System
+
+Alles in Vielfachen von 8px.
+
+| Kontext | Wert |
+|---|---|
+| Block-Innenabstand (padding) | `44px 48px` |
+| Zwischen Absätzen | `18px` |
+| Zwischen Blöcken (Trenner) | `8px` (Beige-Spacer `--bg`) |
+| Label → Headline | `20px` |
+| Headline → Fließtext | `22px` |
+| Mobile padding | `32px 20px` |
+
+---
+
+### Logo-Einbindung
+
+**Datei:** `farid-el-nomany-logo.svg`
+Als Base64-Data-URI direkt ins `src`-Attribut einbetten – kein externer Hosting-Link nötig.
+
+```python
+import base64
+with open('farid-el-nomany-logo.svg', 'rb') as f:
+    logo_b64 = base64.b64encode(f.read()).decode()
+logo_src = f"data:image/svg+xml;base64,{logo_b64}"
+```
+
+Logo-Breite: 210px (Desktop) · 160px (Mobile)
+Hinweis: Ältere Outlook-Versionen (2016−) rendern kein SVG. Bei Bedarf PNG-Fallback anfordern.
+
+---
+
+### Responsive (Mobile ≤ 600px)
+
+| Element | Desktop | Mobile |
+|---|---|---|
+| Container-Breite | 600px fix | 100% |
+| Content-Padding | `44px 48px` | `32px 20px` |
+| Logo-Breite | 210px | 160px |
+| H1 | 28px | 24px |
+| Fließtext | 17px | 16px |
+| Social-Links | inline mit Trennern | je eigene Zeile |
+
+---
+
+---
+
+# TEIL A — NEWSLETTER HTML
+
+Gilt wenn Input aus `03d — Write — Newsletter` kommt.
+
+---
+
+## Newsletter — Block-Bauplan
+
+```
+┌─────────────────────────────┐
+│  6px roter Akzent-Streifen  │  --accent
+├─────────────────────────────┤
+│  HEADER                     │  Logo zentriert + Ausgaben-Label
+├─────────────────────────────┤
+│  8px --bg Spacer             │
+├─────────────────────────────┤
+│  BLOCK 2 — BEGRÜSSUNG       │  --surface
+├─────────────────────────────┤
+│  8px --bg Spacer             │
+├─────────────────────────────┤
+│  BLOCK 3 — KERN-IMPULS      │  --surface
+│    inkl. Reflexionsfragen    │  --accent Hintergrund
+├─────────────────────────────┤
+│  8px --bg Spacer             │
+├─────────────────────────────┤
+│  BLOCK 4 — PODCAST          │  --accent Hintergrund, weißer Text
+├─────────────────────────────┤
+│  8px --bg Spacer             │
+├─────────────────────────────┤
+│  BLOCK 5 — WEITERES         │  --surface (nur wenn Inhalt vorhanden)
+├─────────────────────────────┤
+│  8px --bg Spacer             │
+├─────────────────────────────┤
+│  BLOCK 6 — SIGN-OFF         │  --surface
+├─────────────────────────────┤
+│  FOOTER                     │  --bg Hintergrund
+│  6px roter Akzent-Streifen  │  --accent (unten)
+└─────────────────────────────┘
+```
+
+---
+
+## Newsletter — Block-Spezifikationen
+
+### HEADER
+```
+Hintergrund:        --surface (#FFFFFF)
+Oberer Akzent:      6px solid --accent
+Logo:               zentriert, 210px, Base64-eingebettet
+Ausgaben-Label:     Caps, --accent, letter-spacing: 4px, 10px Helvetica
+Padding:            32px 48px
+```
+
+### BLOCK 2 — BEGRÜSSUNG
+```
+Hintergrund:        --surface
+Padding:            44px 48px
+H2 (optional):      Georgia 22px, --ink
+Fließtext:          Georgia 17px, --body, line-height 1.8
+```
+
+### BLOCK 3 — KERN-IMPULS
+```
+Hintergrund:        --surface
+Padding:            44px 48px
+These:              Georgia 17px, --body – erste Sätze können fett sein
+Entfaltung:         normaler Fließtext
+
+REFLEXIONSFRAGEN-BOX (eigener Sub-Block):
+  Hintergrund:      --accent (#7F1710)
+  Padding:          32px 40px
+  Label:            Caps, --accent-light, letter-spacing: 4px
+  Fragen:           Georgia 17px, #FFFFFF, line-height 1.8
+  Einordnung darunter: kursiv, --muted, --surface Hintergrund
+```
+
+### BLOCK 4 — PODCAST
+```
+Hintergrund:        --accent (#7F1710)
+Padding:            36px 48px
+Text:               #FFFFFF
+
+Podcast-Cover:      100×100px, border-radius: 6px, float left (Desktop)
+                    Auf Mobile: ausblenden, Text volle Breite
+Cover-Quelle:       Base64-eingebettet (PNG oder JPG)
+                    Priorität 1: episodenspezifisches Cover
+                    Priorität 2: mann-farid-podcast-cover.png
+
+Episoden-Titel:     Georgia 20px, #FFFFFF, fett
+Beschreibung:       Georgia 17px, #FFFFFF, line-height 1.8
+Bullets:            --accent-light als Marker (→ oder ›)
+
+CTA-Button (JETZT HÖREN):
+  Hintergrund:      #FFFFFF
+  Textfarbe:        --accent
+  Font:             Helvetica, 11px, 700, CAPS, letter-spacing: 2px
+  Padding:          14px 36px
+  Border-radius:    3px
+
+Plattform-Links (unter Button):
+  Label:            Caps, --accent-light, letter-spacing: 3px, 10px
+  Links (je eigene Zelle in Tabellen-Row):
+    Apple Podcasts  → Episoden-Link (oder Show-Link als Fallback)
+    Spotify         → Episoden-Link (oder Show-Link als Fallback)
+    Amazon Music    → https://music.amazon.de/podcasts/b3c10ae9-cfea-4295-8fab-4bf3a2fae70b/Farid-Josef-ElNomany-paid-friend
+    Pocket Casts    → https://pca.st/95b0zfsc
+  Stil: #FFFFFF, 11px Helvetica, 600, Unterstrich mit rgba(255,255,255,0.3)
+  Mobile: Links stapeln vertikal
+```
+
+### BLOCK 5 — WEITERES (optional)
+```
+Hintergrund:        --surface
+Padding:            44px 48px
+Label:              Caps, --accent, letter-spacing: 4px
+Item-Titel:         Georgia 18px, --ink, fett
+Item-Text:          Georgia 17px, --body
+Item-Link:          --accent, Caps, letter-spacing: 2px
+Trennlinie:         1px solid --border (zwischen Items)
+NICHT rendern wenn kein Inhalt vorhanden.
+```
+
+### BLOCK 6 — SIGN-OFF
+```
+Hintergrund:        --surface
+Padding:            44px 48px
+
+Reply-Box:
+  Hintergrund:      --bg (#F4F1EC)
+  Linke Border:     4px solid --accent
+  Padding:          20px 24px
+  Text:             Georgia 17px, --body, kursiv
+
+Unterschrift:       Georgia 22px, --ink
+```
+
+### FOOTER
+```
+Hintergrund:        --bg (#F4F1EC)
+Obere Border:       2px solid --border
+Padding:            32px 48px
+
+Label „FOLGE MIR":  Caps, --accent, letter-spacing: 4px, 10px Helvetica
+Social-Links:       --body, 13px Helvetica, CAPS, kein underline
+                    Getrennt durch ` · ` (Leerzeichen Punkt Leerzeichen)
+                    Mobile: je eigene Zeile mit 8px margin
+
+Adresse:            --muted, 11px Helvetica
+Abmelde-Link:       --accent, underline, 11px Helvetica
+Unterer Akzent:     6px solid --accent
+```
+
+---
+
+## Newsletter — Technische Anforderungen
+
+- Table-based Layout (E-Mail-kompatibel, kein CSS Grid/Flexbox)
+- MSO Conditional Comments für Outlook (`<!--[if mso]>`)
+- Max-width: 600px, zentriert
+- Alle Bilder: Base64 als Data-URI eingebettet
+- Kein JavaScript
+- Keine externen Fonts
+- `bgcolor` Attribute auf Tables als Fallback
+- Inline-CSS wo nötig für E-Mail-Client-Kompatibilität
+
+---
+
+---
+
+# TEIL B — BLOG POST HTML
+
+Gilt wenn Input aus `03e — Write — Blog Post` kommt.
+
+---
+
+## Blog Post — Seitenstruktur
+
+```
+┌─────────────────────────────┐
+│  NAVIGATION (statisch)      │  Farids Website-Nav – nicht im generierten HTML
+├─────────────────────────────┤
+│  META-ZEILE                 │  Kategorie · Lesezeit · Datum
+├─────────────────────────────┤
+│  HERO-BILD                  │  Vollbreite, max 800px, vor dem Lead
+├─────────────────────────────┤
+│  TITEL (H1)                 │  Georgia, groß, trifft sofort
+├─────────────────────────────┤
+│  AUTOR-ZEILE                │  Avatar + Name + Datum
+├─────────────────────────────┤
+│  LEAD-PARAGRAPH             │  Fett oder visuell hervorgehoben
+├─────────────────────────────┤
+│  BODY (Sektionen)           │  H2 + Fließtext + Pull-Quotes
+├─────────────────────────────┤
+│  ABSCHLUSS                  │  Kursiv oder hervorgehoben
+├─────────────────────────────┤
+│  SIGNATUR                   │  „Dein Farid" in Georgia
+├─────────────────────────────┤
+│  CTA-BOX                    │  Hervorgehobener Block
+├─────────────────────────────┤
+│  ÄHNLICHE ARTIKEL           │  Optional, WordPress-generiert
+└─────────────────────────────┘
+```
+
+---
+
+## Blog Post — Element-Spezifikationen
+
+### META-ZEILE
+```html
+<p class="meta">
+  Partnerschaft · Persönlichkeitsentwicklung · 6 Min. Lesezeit · 29. Mai 2024
+</p>
+```
+```
+Font:       Helvetica Neue, 12px, --muted
+Letter-sp.: 1px
+Margin:     0 0 32px 0
+```
+
+### HERO-BILD
+```
+Breite:         100%, max 800px
+Border-radius:  4px
+Margin:         0 0 40px 0
+Alt-Text:       Beschreibender Text immer setzen
+```
+
+### TITEL (H1)
+```
+Font:           Georgia, 36px (Desktop) / 28px (Mobile), 700
+Farbe:          --ink
+Line-height:    1.25
+Margin:         0 0 24px 0
+Max-width:      720px
+```
+
+### AUTOR-ZEILE
+```html
+<div class="author-row">
+  <img src="[AVATAR]" width="40" height="40" style="border-radius:50%">
+  <span class="author-name">Farid El-Nomany</span>
+  <span class="author-date">[Datum]</span>
+</div>
+```
+```
+Font:       Helvetica, 13px, --muted
+Margin:     0 0 40px 0
+```
+
+### LEAD-PARAGRAPH
+```
+Font:           Georgia, 19px, --body, line-height 1.8
+Font-weight:    600 (semi-fett) oder normale Stärke mit größerem Font
+Margin-bottom:  32px
+Border-left:    optional: 4px solid --accent, padding-left: 20px
+```
+
+### FLIESSTEXT (Body)
+```
+Font:           Georgia, 18px, --body, line-height 1.8
+Max-width:      680px
+Margin-bottom:  22px (zwischen Absätzen)
+```
+
+### H2 SUBHEADLINES
+```
+Font:           Georgia, 22px, --ink, 700, line-height 1.35
+Margin:         48px 0 20px 0
+```
+
+### PULL-QUOTE (aus Blockquote `> "..."`)
+```html
+<blockquote class="pull-quote">
+  "Ein voller Kalender ist kein Beweis für ein volles Leben."
+</blockquote>
+```
+```
+Hintergrund:    --bg-quote (#F9F6F2)
+Border-left:    5px solid --accent
+Padding:        24px 32px
+Font:           Georgia, 21px, --ink, kursiv, line-height 1.6
+Margin:         40px 0
+```
+
+### ABSCHLUSS
+```
+Font:           Georgia, 18px, --body, kursiv, line-height 1.8
+Border-top:     1px solid --border
+Padding-top:    32px
+Margin-top:     48px
+```
+
+### SIGNATUR
+```html
+<p class="signature">Herzliche Grüße, dein Farid.</p>
+```
+```
+Font:           Georgia, 20px, --ink, 700
+Margin-top:     24px
+```
+
+### CTA-BOX
+```html
+<div class="cta-box">
+  <p class="cta-label">AUCH INTERESSANT</p>
+  <p class="cta-text">[CTA-Text]</p>
+  <a href="[LINK]" class="cta-link">[Link-Text] →</a>
+</div>
+```
+```
+Hintergrund:    --bg (#F4F1EC)
+Border-left:    5px solid --accent
+Padding:        28px 32px
+Margin:         48px 0
+Label:          Helvetica, 10px, --accent, CAPS, letter-spacing: 3px
+Text:           Georgia, 17px, --body
+Link:           --accent, Helvetica, 12px, 700, CAPS, letter-spacing: 2px, kein underline
+```
+
+---
+
+## Blog Post — WordPress-Ausgabe
+
+Der generierte HTML-Code ist für direkte Verwendung im WordPress **HTML-Block** oder **Classic Editor** optimiert.
+
+```
+H1          → nur für den Seitentitel (WordPress-Titelfeld), NICHT im Body
+H2          → alle Sektions-Überschriften
+blockquote  → Pull-Quotes (CSS-Anpassung im WordPress-Theme nötig)
+strong      → Kern-Thesen und stärkste Sätze (sparsam)
+Bild        → vor dem Lead, als Featured Image oder erster Block
+Kategorien  → 2–3 aus bestehender Website-Struktur
+Permalink   → kurz, Deutsch, mit Hauptkeyword
+```
+
+---
+
+## Platzhalter-Konventionen
+
+Alle noch auszufüllenden Felder:
+
+```
+[BESCHREIBUNG IN GROSSBUCHSTABEN]
+
+Beispiele:
+[AUSGABE #101 · MÄRZ 2025]
+[EPISODEN-TITEL]
+[APPLE-PODCAST-LINK-ZUR-FOLGE]
+[SPOTIFY-LINK-ZUR-FOLGE]
+[ABMELDE-LINK]
+[HERO-BILD-URL]
+```
+
+Platzhalter inklusive eckiger Klammern ersetzen.
+Blöcke ohne Inhalt (z.B. Block 5 Newsletter) komplett entfernen.
+
+---
+
+## Qualitätskontrolle HTML-Output
+
+**Newsletter:**
+1. Alle Bilder Base64-eingebettet – kein externer Bild-Link?
+2. Table-based Layout – kein Flexbox oder Grid?
+3. 600px Container mit `align="center"`?
+4. Alle Farben exakt aus dem Farbsystem?
+5. Plattform-Links alle vorhanden und korrekt?
+6. Mobile-Styles in `<style>` mit `@media`?
+7. Block 5 entfernt wenn kein Inhalt?
+
+**Blog Post:**
+1. H1 nur einmal – nur für den Titel?
+2. Pull-Quotes als `<blockquote>` ausgezeichnet?
+3. Lead-Paragraph visuell abgesetzt?
+4. CTA-Box vorhanden und korrekt verlinkt?
+5. Alt-Texte auf allen Bildern?
+6. Kein `<h1>` im Body-Bereich?
+
+---
+
+*Modul 04 — Version 1.0*
+*Input: Strukturierter Klartext aus 03d oder 03e.*
+*Output: Produktionsfertiges HTML für Newsletter (E-Mail) oder Blog Post (WordPress).*
