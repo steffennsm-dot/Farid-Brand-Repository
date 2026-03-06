@@ -1,39 +1,37 @@
 # 03d — Write — Newsletter
 
-> **Verwendung:** Dieses Modul steuert das Erstellen des MANN! Farid Newsletters.
-> Jede Ausgabe basiert auf einer Podcast-Episode als Anker.
-> Immer zusammen mit dem Brand Bible verwenden.
+> **Zweck:** Texte und Struktur für den MANN! Farid Newsletter schreiben.
+> Dieses Modul definiert WAS geschrieben wird und WIE es aufgebaut ist.
+> Der Output ist strukturierter Klartext – kein HTML.
+> Für die HTML-Umsetzung: `04 — HTML Formatter` verwenden.
+> Immer zusammen mit der Brand Bible verwenden.
 
 ---
 
 ## Schritt 0 — Start-Check (immer zuerst)
 
-Bevor der Newsletter geschrieben wird, folgende Dinge klären.
 **Immer in einem einzigen Check – nicht in mehreren Runden.**
 
 > **1. Welche Podcast-Episode ist der Anker dieser Ausgabe?**
 > Titel + kurze Beschreibung oder Link reicht.
 >
 > **2. Apple Podcast- und Spotify-Link zur Folge?**
-> Diese beiden Links werden immer abgefragt – sie kommen direkt in den CTA-Block.
-> Wenn noch nicht vorhanden: Platzhalter einbauen und Hinweis setzen.
+> Werden immer abgefragt – kommen direkt in den CTA-Block.
+> Wenn noch nicht vorhanden: Platzhalter + Hinweis setzen.
 >
-> **3. Gibt es einen zusätzlichen Impuls / ein Thema für diese Ausgabe?**
+> **3. Gibt es einen zusätzlichen Impuls / ein Thema?**
 > Optional – wenn nicht, leite ich den Impuls aus der Episode ab.
 >
-> **4. Gibt es ein Event, Seminar oder Angebot das diese Ausgabe erwähnen soll?**
+> **4. Gibt es ein Event, Seminar oder Angebot das erwähnt werden soll?**
 > Optional – wenn ja: Name + Link.
 
 Sobald klar: direkt schreiben. Keine weiteren Rückfragen.
 
 ---
 
-## Podcast-Plattformen — Feste Links & Episoden-Links
+## Podcast-Plattformen
 
-### Feste Plattform-Links (immer gleich – nie ändern)
-
-Diese Links zeigen auf die Show-Seite, nicht auf eine einzelne Folge.
-Sie werden im CTA-Block zusätzlich angezeigt wenn kein direkter Episoden-Link vorliegt.
+### Feste Show-Links (nie ändern)
 
 | Plattform | Link |
 |---|---|
@@ -43,23 +41,12 @@ Sie werden im CTA-Block zusätzlich angezeigt wenn kein direkter Episoden-Link v
 | **Pocket Casts** | https://pca.st/95b0zfsc |
 | **Alle Folgen** | https://farid-josef-el-nomany-paid-friend.castos.com/ |
 
-### Episoden-spezifische Links (werden abgefragt)
+### Episoden-spezifische Links
 
-Für jeden Newsletter werden **Apple Podcasts** und **Spotify** mit dem direkten Link zur aktuellen Folge verlinkt.
-Amazon Music und Pocket Casts verlinken auf die Show-Seite – dort landet der Hörer und findet die neueste Folge automatisch.
+Apple Podcasts + Spotify → direkter Episoden-Link (immer abfragen).
+Amazon Music + Pocket Casts → fester Show-Link (automatisch).
 
-**Logik im CTA-Block:**
-
-```
-Apple Podcasts  → Direktlink zur Folge (wird abgefragt)
-Spotify         → Direktlink zur Folge (wird abgefragt)
-Amazon Music    → Fester Show-Link (automatisch)
-Pocket Casts    → Fester Show-Link (automatisch)
-```
-
-**Wenn kein Episoden-Link vorliegt:**
-Alle vier Plattformen verlinken auf die Show-Seite.
-Platzhalter mit Hinweis einbauen: `[APPLE-LINK – bitte ergänzen]`
+Wenn kein Episoden-Link vorliegt: Platzhalter `[APPLE-LINK – bitte ergänzen]` setzen.
 
 ---
 
@@ -67,36 +54,10 @@ Platzhalter mit Hinweis einbauen: `[APPLE-LINK – bitte ergänzen]`
 
 **Datei:** `01 — always include — brand bible — farid`
 
-Dieses Modul gibt Struktur und Format.
-Die Brand Bible gibt **Ton, Wortwahl und den persönlichen Schliff**.
-
 Newsletter-spezifisch:
-- Der Newsletter ist Farids persönlichster schriftlicher Kanal – persönlicher als Posts, direkter als Artikel
-- Er landet im Posteingang. Das ist Vertrauen. Es ist kein Feed-Beitrag, sondern ein Brief.
-- Registerwechsel hier besonders wichtig: Tiefe ohne Distanz, Klarheit ohne Kälte
-- Klingt wie ein Brief von einem Freund der weiß, wovon er redet – nicht wie ein Unternehmens-Newsletter
-
----
-
-## Branding & Assets
-
-| Asset | Wert |
-|---|---|
-| **Logo (SVG)** | `farid-el-nomany-logo.svg` – liegt im selben Ordner wie das HTML-Template |
-| **Logo-Einbindung** | Als Base64 direkt ins HTML eingebettet – kein externer Link nötig |
-| **Podcast-Cover (Standard)** | `mann-farid-podcast-cover.png` – liegt im selben Ordner wie das HTML-Template |
-| **Podcast-Cover-Einbindung** | Als Base64 direkt ins HTML eingebettet – wird ersetzt wenn eine episodenspezifische Version vorliegt |
-| **Primärfarbe** | Dunkelbraun / Anthrazit – erdiger, maskuliner Ton |
-| **Akzentfarbe** | Warmes Beige / Sandton als Hintergrund |
-| **Schrift** | Serifenlos, klar, modern |
-| **Podcast-Name** | MANN! Farid Podcast |
-| **Website** | https://farid-el-nomany.com |
-| **Instagram** | https://www.instagram.com/farid_elnomany/ |
-| **LinkedIn** | https://www.linkedin.com/in/farid-el-nomany-7922321b0/ |
-
-> **Hinweis zum Logo:** Das Logo ist direkt aus der WordPress-Website gezogen.
-> Wenn du ein anderes Format (weißer Hintergrund, Freigestellt, etc.) nutzen willst,
-> schick den Link und ich tausche es im HTML-Template aus.
+- Der Newsletter landet im Posteingang. Das ist Vertrauen – kein Feed-Beitrag.
+- Klingt wie ein Brief von einem Freund der weiß, wovon er redet.
+- Registerwechsel wichtig: Tiefe ohne Distanz, Klarheit ohne Kälte.
 
 ---
 
@@ -104,24 +65,20 @@ Newsletter-spezifisch:
 
 | Parameter | Wert |
 |---|---|
-| Kanal | E-Mail Newsletter (DACH, persönliche Marke) |
-| Länge | 500–800 Wörter gesamt |
+| Gesamtlänge | 500–800 Wörter |
 | Versand-Rhythmus | Wöchentlich oder nach jedem Podcast-Release |
-| Ton | Persönlich, warm, direkt – kein Unternehmens-Newsletter, kein Motivations-Spam |
-| Ziel | Jede Ausgabe gibt dem Leser einen Gedanken, den er noch nicht hatte oder noch nicht so gedacht hat |
-| Format | HTML-Template (separates Dokument) – dieses Modul steuert den Inhalt |
+| Ton | Persönlich, warm, direkt |
+| Ziel | Jede Ausgabe gibt dem Leser einen Gedanken, den er noch nicht so gedacht hat |
 | Versand-Tool | Beehiiv (empfohlen) oder WordPress MailPoet |
 
 ---
 
 ## Newsletter-Struktur
 
-Jede Ausgabe folgt exakt dieser Reihenfolge. Kein Block darf fehlen oder verschoben werden.
-
 ```
 BLOCK 1 — HEADER
 BLOCK 2 — PERSÖNLICHE BEGRÜSSUNG
-BLOCK 3 — DER KERN-IMPULS (Hauptteil)
+BLOCK 3 — DER KERN-IMPULS
 BLOCK 4 — DIE PODCAST-FOLGE
 BLOCK 5 — WEITERES AUS DEM UNIVERSUM (optional)
 BLOCK 6 — SIGN-OFF
@@ -132,12 +89,12 @@ BLOCK 7 — FOOTER
 
 ### BLOCK 1 — HEADER
 
-**Was rein kommt:**
-- Logo oben zentriert
-- Kein langer Einleitungstext – das Logo ist genug
-- Optional: Ausgaben-Nummer oder Datum dezent darunter
+Kein Textinhalt – wird vom HTML Formatter automatisch gebaut.
+Einzige Angabe hier:
 
-**HTML-Template:** Automatisch. Kein Inhalt nötig.
+```
+[AUSGABE #NUMMER · MONAT JAHR]
+```
 
 ---
 
@@ -145,27 +102,23 @@ BLOCK 7 — FOOTER
 
 **Länge:** 3–6 Sätze
 
-**Was es ist:**
-Eine kurze, persönliche Einleitung. Kein „Willkommen zum Newsletter". Sondern: Was ist gerade los bei Farid? Ein konkreter Moment, eine Beobachtung, etwas das diese Woche passiert ist.
+Ein konkreter Moment, eine Beobachtung, etwas das gerade passiert ist.
+Kein „Willkommen zum Newsletter". Wie der Anfang einer Nachricht an einen guten Freund.
 
-**Ton:** Wie der Anfang einer WhatsApp-Nachricht an einen guten Freund. Kurz, echt, ohne Vorspiel.
-
-**Struktur:**
 ```
 [KONKRETER MOMENT – 1–2 Sätze]
-Was ist gerade los? Wo ist Farid? Was hat er erlebt?
+Was ist gerade los bei Farid? Wo ist er? Was hat er erlebt?
 Beispiel: "Ich sitze gerade im Zug nach Hamburg und tippe das hier zwischen zwei Calls."
-Oder: "Diese Woche hat mich eine Frage nicht losgelassen."
 
 [ÜBERLEITUNG ZUM THEMA – 1–2 Sätze]
 Warum schreibt er das? Was hat das mit dem Leser zu tun?
 Nicht erklären – einladen.
 ```
 
-**Was verboten ist:**
-- „Willkommen zur neuen Ausgabe meines Newsletters"
+**Verboten:**
+- „Willkommen zur neuen Ausgabe..."
 - „Diese Woche habe ich für euch..."
-- Jegliche Form von Ankündigung was kommt
+- Ankündigungen was im Newsletter kommt
 
 ---
 
@@ -173,38 +126,30 @@ Nicht erklären – einladen.
 
 **Länge:** 250–400 Wörter – der längste Block
 
-**Was es ist:**
 Das Herz der Ausgabe. Ein Gedanke, vollständig durchdacht.
-Immer aus der aktuellen Podcast-Episode abgeleitet – aber kein Transkript, keine Zusammenfassung.
-Der Newsletter gibt einen Winkel, der neugierig macht. Die ganze Tiefe kommt im Podcast.
+Aus der Podcast-Episode abgeleitet – aber kein Transkript, keine Zusammenfassung.
+Wer den Kern-Impuls liest und nie den Podcast hört, soll trotzdem etwas mitnehmen.
 
-**Pflicht-Regel:** Wer den Kern-Impuls liest und den Podcast nie hört, soll trotzdem etwas mitnehmen.
-Der Podcast ist die Vertiefung – nicht die Voraussetzung.
-
-**Struktur:**
 ```
 [THESE – 1–3 Sätze]
 Die Kernaussage direkt. Kein Warm-up.
-Was ist die eine Idee die diese Ausgabe trägt?
 Beispiel: "Die meisten Männer wissen nicht warum sie erschöpft sind.
 Sie suchen die Antwort im Kalender. Die liegt woanders."
 
 [ENTFALTUNG – 3–5 Absätze]
 Die These ausarbeiten. Persönliche Beobachtung oder Erfahrung einbauen.
-Konkret, nicht abstrakt. Maximal 2 Zeilen pro Absatz.
+Konkret, nicht abstrakt. Max. 2 Zeilen pro Absatz.
 Mindestens eine Stelle die unbequem ist – eine Wahrheit die nicht jeder ausspricht.
 
 [REFLEXIONS-FRAGEN – 2–3 Fragen]
 Keine Antworten geben – Fragen stellen die der Leser selbst beantwortet.
-Format: Nummeriert oder mit „—" als Trenner.
 Beispiel:
 — Was trägst du gerade mit dir, das du eigentlich schon loslassen wolltest?
 — Wo funktionierst du – statt zu leben?
-— Was würde sich ändern, wenn du das heute anders entscheidest?
 
 [KURZE EINORDNUNG – 1–2 Sätze]
 Nicht die Fragen beantworten. Nur einen letzten Gedanken mitgeben.
-"Diese Fragen brauchen keine sofortige Antwort. Nur ehrliche."
+Beispiel: "Diese Fragen brauchen keine sofortige Antwort. Nur eine ehrliche."
 ```
 
 ---
@@ -213,67 +158,41 @@ Nicht die Fragen beantworten. Nur einen letzten Gedanken mitgeben.
 
 **Länge:** 80–150 Wörter
 
-**Was es ist:**
-Der direkte Hinweis auf die aktuelle Episode. Nicht als Ankündigung – als natürliche Weiterführung des Kern-Impulses.
+Natürliche Weiterführung des Kern-Impulses – keine Ankündigung.
 
-**Struktur:**
 ```
 [ÜBERLEITUNG – 1 Satz]
 Verbindung zum Kern-Impuls herstellen.
-"Genau darum geht es in der neuen Folge."
 
-[PODCAST-COVER-BILD]
-Im HTML-Template als Bild-Platzhalter. URL der Episode einfügen.
+[EPISODEN-TITEL]
 
-[EPISODEN-TITEL – fett]
 [KURZE BESCHREIBUNG – 2–3 Sätze]
 Was erwartet den Hörer? Nicht alles verraten.
-Ein konkreter Gedanke aus der Folge der neugierig macht.
 
-[WAS DU IN DER FOLGE ERFÄHRST – 3–5 Bullet Points]
-Kurz, konkret, jeder Punkt für sich wertvoll.
-• ...
-• ...
-• ...
+[HIGHLIGHT-PUNKTE – 3–5 Bullets]
+Was der Hörer konkret mitnimmt.
 
-[CALL-TO-ACTION]
-Primär-Button: "JETZT HÖREN →" mit Apple-Podcast-Link zur Folge
+[CTA-TEXT]
+Kurzer Einleitungssatz vor den Plattform-Buttons.
+Beispiel: "Hören – wo du deinen Podcast hörst:"
+```
 
-Darunter 4 kleine Plattform-Links in einer Zeile:
-🎧 Apple Podcasts → [EPISODEN-LINK]
-🎧 Spotify        → [EPISODEN-LINK]
-🎧 Amazon Music   → https://music.amazon.de/podcasts/b3c10ae9-cfea-4295-8fab-4bf3a2fae70b/Farid-Josef-ElNomany-paid-friend
-🎧 Pocket Casts   → https://pca.st/95b0zfsc
+**Podcast-Cover-Logik:**
+```
+Priorität 1: Episoden-spezifisches Cover (Datei oder URL übergeben)
+Priorität 2: Kein Cover → mann-farid-podcast-cover.png (Standard)
 ```
 
 ---
 
-### BLOCK 5 — WEITERES AUS DEM UNIVERSUM
+### BLOCK 5 — WEITERES AUS DEM UNIVERSUM (optional)
 
-**Länge:** 50–150 Wörter
+Nur nutzen wenn: Event, Seminar, Kooperation oder Empfehlung vorhanden.
 
-**Was es ist:**
-Optional. Nur wenn es etwas gibt das wirklich relevant ist.
-Kein Auffüllen – kein Block um des Blocks willen.
-
-**Mögliche Inhalte (maximal 1–2 pro Ausgabe):**
-- Hinweis auf ein kommendes Event / Seminar (Grow Beyond, Heldenreise, etc.)
-- Empfehlung: Buch, Podcast, Artikel – mit einem Satz warum
-- Persönlicher Hinweis: Interview, Beitrag, Erwähnung
-- Ältere Episode die zum aktuellen Thema passt
-
-**Format pro Item:**
-```
-[LABEL – fett, klein: z.B. 🎙️ ÄLTERE FOLGE oder 📅 EVENT]
-[TITEL]
-[1–2 Sätze was es ist und warum es sich lohnt]
-[Link]
-```
-
-**Was verboten ist:**
-- Mehr als 2 Items in diesem Block
-- Werbliche Formulierungen: „Sichere dir jetzt...", „Nur noch X Plätze"
-- Items die nichts mit dem Thema der Ausgabe zu tun haben
+- Max. 2 Items
+- Jedes Item: Titel + 2–3 Sätze + Link
+- Kein Verkaufsdruck, kein FOMO
+- Wenn nichts Sinnvolles: Block komplett weglassen
 
 ---
 
@@ -281,324 +200,60 @@ Kein Auffüllen – kein Block um des Blocks willen.
 
 **Länge:** 3–5 Sätze
 
-**Was es ist:**
-Der persönliche Abschluss. Warm, direkt, mit einer Einladung zur Antwort.
-Replies sind Gold für Zustellbarkeit und Community – der Sign-off soll echte Antworten einladen.
+Kein Zusammenfassen – etwas Neues hinzufügen oder offen lassen.
 
-**Struktur:**
 ```
 [ABSCHLUSS-GEDANKE – 1–2 Sätze]
-Ein letzter Impuls. Kein Zusammenfassen.
-"Das Wichtigste nehme ich immer mit wenn ich den Newsletter fertig schreibe:
-Die Fragen sind wichtiger als die Antworten."
+Nicht wiederholen. Etwas hinzufügen oder ehrlich offen lassen.
 
-[REPLY-EINLADUNG – 1 Satz]
-Konkret und themenspezifisch. Kein „Was denkt ihr?"
-Beispiel:
-"Schreib mir direkt zurück: Was ist dein größtes Thema gerade – Karriere, Beziehung oder beides?"
-Oder: "Hit Reply: Welche der drei Fragen hat dich am meisten erwischt?"
+[REPLY-EINLADUNG – 1 konkreter Satz]
+Muss zum Thema der Ausgabe passen.
+Nicht: "Was denkst du?" → Sondern: "Wann hast du das letzte Mal [Thema]? Schreib mir."
 
 [UNTERSCHRIFT]
-"Alles Liebe – dein Farid"
-Oder eine seiner Signature-Phrases: "Auf immer gerne bald. Dein Farid."
+"Dein Farid" oder "Alles Liebe, Farid"
 ```
 
 ---
 
 ### BLOCK 7 — FOOTER
 
-**HTML-Template:** Automatisch. Kein Inhalt nötig.
-
-**Was automatisch drin ist:**
-- Social Media Icons mit Links (Instagram, LinkedIn, TikTok, Facebook)
-- Website-Link
-- Abmelde-Link (rechtlich verpflichtend)
-- Impressum-Link
-- Copyright
+Kein Textinhalt – wird vom HTML Formatter automatisch gebaut.
+Feste Elemente: Social Links, Abmelde-Link, rechtliche Angaben.
 
 ---
 
-## Struktur auf einen Blick
+## Modi
 
-| Block | Inhalt | Länge | Pflicht? |
-|---|---|---|---|
-| Header | Logo + Ausgabe | — | ✅ |
-| Begrüßung | Persönlicher Moment + Überleitung | 3–6 Sätze | ✅ |
-| Kern-Impuls | These + Entfaltung + Fragen | 250–400 Wörter | ✅ |
-| Podcast-Folge | Cover + Titel + Beschreibung + CTA | 80–150 Wörter | ✅ |
-| Weiteres | Event / Empfehlung / ältere Folge | 50–150 Wörter | ⬜ Optional |
-| Sign-off | Abschluss + Reply-Einladung | 3–5 Sätze | ✅ |
-| Footer | Social + Links + Abmeldung | — | ✅ |
-
----
-
-## Modi erkennen (für die KI)
-
-### MODUS I: MIT PODCAST-LINK ODER BESCHREIBUNG
-Der Nutzer liefert Titel und Inhalt der Episode.
-
-Vorgehen:
-1. Kern-Impuls aus der Episode ableiten – nicht zusammenfassen, den stärksten Winkel wählen
-2. Alle Blöcke schreiben
-3. Platzhalter für Podcast-Cover-Bild einbauen
-
-### MODUS II: NUR THEMA, NOCH KEINE EPISODE
-Der Nutzer hat ein Thema aber noch kein fertiges Audio.
-
-Vorgehen:
-1. Kern-Impuls aus dem Thema entwickeln
-2. Podcast-Block als Platzhalter schreiben: „[Episoden-Titel einfügen]" / „[Cover-Bild einfügen]"
-3. Darauf hinweisen welche Infos noch fehlen
-
-### MODUS III: AUSGABE MIT EVENT-BEWERBUNG
-Zusätzlich zu den Pflicht-Blöcken soll ein Event beworben werden.
-
-Regeln:
-- Event kommt in Block 5 (Weiteres) – niemals in Block 3 (Kern-Impuls)
-- Max. 3–4 Sätze + Link
-- Einladend, ohne Druck – kein Verkaufstext
+| Modus | Wann | Besonderheit |
+|---|---|---|
+| **I — Mit Episode** | Normalfall, Links vorhanden | Kern-Impuls aus stärkstem Gedanken der Folge |
+| **II — Nur Thema** | Episode noch nicht live | Block 4 mit Platzhaltern, Impuls trägt alleine |
+| **III — Mit Event** | Promotion nötig | Event nur in Block 5, max. 3–4 Sätze, kein Druck |
 
 ---
 
 ## Qualitätskontrolle
 
-Vor jeder finalen Ausgabe prüfen:
-
-1. Beginnt die Begrüßung mit einem konkreten Moment – nicht mit einer Ankündigung?
-2. Liefert der Kern-Impuls Wert auch ohne den Podcast gehört zu haben?
-3. Ist der Kern-Impuls kein Transkript und keine Zusammenfassung – sondern ein eigenständiger Gedanke?
-4. Enthält der Kern-Impuls mindestens eine unbequeme Wahrheit?
-5. Sind die Reflexions-Fragen konkret und persönlich – kein „Was denkst du über X?"
-6. Ist der Podcast-Block eine natürliche Weiterführung – keine Ankündigung?
-7. Hat der Sign-off eine konkrete Reply-Einladung?
+1. Beginnt Block 2 mit einem konkreten Moment – nicht mit einer Ankündigung?
+2. Steht der Kern-Impuls alleine – ohne Podcast trotzdem wertvoll?
+3. Ist der Kern-Impuls kein Transkript – sondern ein eigenständiger Gedanke?
+4. Gibt es mindestens eine unbequeme Wahrheit?
+5. Sind die Reflexionsfragen konkret und persönlich?
+6. Ist der Podcast-Block natürliche Weiterführung – keine Ankündigung?
+7. Hat der Sign-off eine konkrete, themenspezifische Reply-Einladung?
 8. Liegt die Gesamtlänge zwischen 500 und 800 Wörtern?
-9. Wenn Block 5 genutzt: Maximal 2 Items, kein Verkaufsdruck?
-10. **Brand Bible Check:** Klingt es wie ein Brief von Farid – oder wie ein Newsletter-Template?
+9. Block 5 (falls genutzt): max. 2 Items, kein Verkaufsdruck?
+10. **Brand Bible Check:** Klingt es wie ein Brief von Farid – oder wie ein Template?
 
 ---
 
 ## Verbotene Eröffnungen
+„Willkommen zur neuen Ausgabe..." · „Diese Woche habe ich für euch..." · „Ich hoffe, diese E-Mail findet dich gut." · „Hallo zusammen..."
 
-- „Willkommen zur neuen Ausgabe..."
-- „Diese Woche habe ich für euch..."
-- „Ich hoffe, diese E-Mail findet dich gut."
-- „Hier ist der neue Newsletter."
-- „Hallo zusammen..."
+## Verbotene Formulierungen
+„Sichere dir jetzt..." · „Nur noch X Plätze verfügbar" · „Das darfst du nicht verpassen" · „Stay tuned!" · „Wie immer findet ihr hier..."
 
 ---
 
-## Verbotene Formulierungen im gesamten Newsletter
-
-- „Sichere dir jetzt..."
-- „Nur noch X Plätze verfügbar"
-- „Das darfst du nicht verpassen"
-- „Ich bin so aufgeregt euch das zu zeigen"
-- „Stay tuned!" (auf Deutsch oder Englisch)
-- „Wie immer findet ihr hier..."
-
----
-
-## HTML-Template — Design-Anweisungen
-
-Wenn der Nutzer sagt „Erstelle das HTML-Template" oder „Bau den Newsletter", wird das Template nach diesen Anweisungen gebaut. Keine Abweichungen ohne explizite Freigabe.
-
----
-
-### Design-Philosophie
-
-**Referenz-Ästhetik: Apple, Aesop, Highsnobiety.**
-Nicht laut. Nicht bunt. Nicht voll.
-Das Design sagt nichts – es lässt den Text sprechen.
-
-Jedes Element muss sich rechtfertigen.
-Was keinen Zweck hat, fliegt raus.
-Weißraum ist kein leerer Raum – er ist ein Design-Entscheid.
-
-**Die drei Prinzipien:**
-1. **Klarheit schlägt Dekoration.** Kein Element existiert um schön auszusehen. Jedes Element existiert um zu führen, zu trennen oder zu betonen.
-2. **Typografie ist das Design.** Keine Icons, keine Illustrationen, keine Schmuckgrafiken. Der Text trägt die Ästhetik.
-3. **Farbe als Signal, nicht als Stimmung.** Rot erscheint selten – und wenn, dann mit Bedeutung.
-
----
-
-### Farbsystem
-
-| Token | Hex | Verwendung |
-|---|---|---|
-| `--bg` | `#F4F1EC` | Seiten-Hintergrund, Trenner zwischen Blöcken |
-| `--surface` | `#FFFFFF` | Alle Inhalts-Blöcke |
-| `--ink` | `#1A1A1A` | Headlines |
-| `--body` | `#2C2C2C` | Fließtext |
-| `--muted` | `#888888` | Subtext, Einordnungen, Footer-Text |
-| `--accent` | `#8B1A1A` | Labels, CTAs, Akzentlinien, Fragen-Block |
-| `--accent-light` | `#F4D0C8` | Helle Labels auf Rot-Hintergrund |
-| `--border` | `#E0DAD2` | Dezente Trennlinien |
-
-**Was verboten ist:**
-- Schwarz (`#000000`) als Hintergrundfarbe
-- Bunte Sekundärfarben
-- Gradient-Hintergründe
-- Schatten-Effekte (box-shadow)
-
----
-
-### Typografie-System
-
-| Rolle | Font-Stack | Größe | Gewicht |
-|---|---|---|---|
-| Headlines H1 | Georgia, Times New Roman, serif | 28px | 700 |
-| Headlines H2 | Georgia, Times New Roman, serif | 24px | 700 |
-| Headlines H3 | Georgia, Times New Roman, serif | 20px | 700 |
-| Fließtext | Georgia, Times New Roman, serif | 17px | 400 |
-| Labels / Caps | Helvetica Neue, Helvetica, Arial, sans-serif | 10px | 700 |
-| Sub-Text | Georgia, Times New Roman, serif | 15px | 400 |
-| Footer | Helvetica Neue, Helvetica, Arial, sans-serif | 11–12px | 400 |
-
-**Typografie-Regeln:**
-- Labels immer in `VERSALIEN` mit `letter-spacing: 3px`
-- Fließtext: `line-height: 1.8` – nie darunter
-- Headlines: `line-height: 1.35`
-- Kein Kursiv außer für Einordnungen und Zitate
-- Keine Unterstreichungen außer bei Footer-Links
-
----
-
-### Spacing-System
-
-Alles in Vielfachen von 8px. Keine willkürlichen Abstände.
-
-| Kontext | Wert |
-|---|---|
-| Inhalts-Block innen (padding) | `44px 48px` |
-| Zwischen Absätzen | `18px` |
-| Zwischen Blöcken (Trenner) | `8px` (Beige-Spacer) |
-| Label → Headline Abstand | `20px` |
-| Headline → Text Abstand | `22–24px` |
-| Mobile padding | `32px 20px` |
-
----
-
-### Block-Spezifikationen
-
-**HEADER**
-- Hintergrund: `--surface` (#FFFFFF)
-- Roter Akzent-Streifen oben: 6px, `--accent`
-- Logo: zentriert, 210px breit, kein Hintergrund-Block dahinter
-- Ausgaben-Label: Caps-Style, `--accent`, `letter-spacing: 3px`
-
-**BEGRÜSSUNG + KERN-IMPULS**
-- Hintergrund: `--surface`
-- Zwischen Blöcken: 8px `--bg` als Luft-Trenner
-- Reflexionsfragen-Block: Hintergrund `--accent`, Text weiß, Labels `--accent-light`
-- Einordnung darunter: kursiv, `--muted`
-
-**PODCAST-BLOCK**
-- Hintergrund: `--accent` (#8B1A1A)
-- Podcast-Cover: 100×100px, border-radius 6px
-- CTA-Button: weiß mit rotem Text – umgekehrter Kontrast
-- Bullets: `--accent-light` als Pfeil-Marker
-
-**WEITERES (optional)**
-- Hintergrund: `--surface`
-- Trennlinie zwischen Items: 1px, `--border`
-- Item-Links: `--accent`, Caps, letter-spacing
-
-**SIGN-OFF**
-- Hintergrund: `--surface`
-- Reply-Box: Hintergrund `--bg`, linke Border 4px `--accent`
-- Unterschrift: Georgia, 22px, `--ink`
-
-**FOOTER**
-- Hintergrund: `--bg`
-- Obere Border: 3px, `--border`
-- Label „FOLGE MIR": Caps, `--accent`
-- Social-Links: `--body`, keine Unterstreichung, Caps
-- Abmelde-Link: `--accent`, underline
-- Abschluss-Linie unten: 6px, `--accent`
-
----
-
-### Responsive-Regeln (Mobile ≤ 600px)
-
-| Element | Desktop | Mobile |
-|---|---|---|
-| Container-Breite | 600px | 100% |
-| Content-Padding | `44px 48px` | `32px 20px` |
-| Logo-Breite | 210px | 160px |
-| H1-Größe | 28px | 24px |
-| Fließtext | 17px | 16px |
-| Podcast-Inner | `36px 48px` | `24px 20px` |
-| Button | `16px 36px` | `14px 24px` |
-| Social-Links | inline | block, je 8px margin |
-
----
-
-### Was das Template nicht enthält
-
-- Keine Icons (außer Emoji-Ergänzungen wo sinnvoll)
-- Keine Illustrationen oder Hintergrundbild-Grafiken
-- Keine Animated GIFs
-- Keine multi-column Layouts – alles single column
-- Keine Schatten, Glow-Effekte oder Gradients
-- Keine Schriften von Google Fonts (Email-Clients blockieren externe Fonts)
-- Kein Schwarz als Hintergrundfarbe irgendwo
-
----
-
-### Logo-Einbindung
-
-Das Logo wird als **Base64-eingebettetes PNG** direkt im HTML-Code gespeichert.
-Kein externer URL nötig – das Logo lädt immer, egal in welchem E-Mail-Client.
-
-**Logo-Datei:** `farid-el-nomany-logo.svg`
-Das Logo ist ein SVG-Vektor mit dem vollständigen Schriftzug „FARID EL-NOMANY" und dem roten Banner „MÄNNER VON MORGEN."
-Es wird als Base64 direkt ins HTML eingebettet – so lädt es in jedem E-Mail-Client ohne externen Link.
-
-**Workflow beim Template-Erstellen:**
-1. SVG-Datei `farid-el-nomany-logo.svg` mit Python einlesen
-2. Als Base64 kodieren: `base64.b64encode(svg_data).decode()`
-3. Als `data:image/svg+xml;base64,[CODE]` direkt in das `src`-Attribut des `<img>`-Tags einsetzen
-
-**Hinweis Outlook-Kompatibilität:** Ältere Outlook-Versionen (2016 und älter) rendern kein SVG.
-Falls nötig: PNG-Version als Fallback anfordern.
-
----
-
-### Podcast-Cover — Standard & Episoden-spezifisch
-
-**Standard-Cover:** `mann-farid-podcast-cover.png`
-Das generische MANN! Farid Podcast-Cover mit Farid am Mikrofon.
-Wird verwendet wenn keine episodenspezifische Cover-Grafik vorliegt.
-
-**Episoden-spezifisches Cover:**
-Wenn eine Folge ein eigenes Cover hat, ersetzt es das Standard-Cover.
-Einfach die Datei oder URL beim Template-Erstellen mitgeben.
-
-**Priorisierung:**
-```
-1. Episoden-spezifisches Cover vorhanden? → Das nehmen.
-2. Kein episoden-Cover? → mann-farid-podcast-cover.png einbetten.
-```
-
-**Einbindung (wie beim Logo):**
-```python
-import base64
-with open('mann-farid-podcast-cover.png', 'rb') as f:
-    cover_b64 = base64.b64encode(f.read()).decode()
-cover_src = f"data:image/png;base64,{cover_b64}"
-```
-
----
-
-### Platzhalter-Konventionen
-
-Alle ausfüllbaren Felder im Template folgen diesem Format: `[BESCHREIBUNG IN GROSSBUCHSTABEN]`
-
-Beim Befüllen einfach den Platzhalter inklusive der eckigen Klammern ersetzen.
-Blöcke die nicht genutzt werden (Block 5 – Weiteres) komplett löschen.
-
----
-
-*Modul 03d — Version 1.1*
-*Zusammen mit Brand Bible und HTML-Template verwenden.*
-*Jede Ausgabe basiert auf einer Podcast-Episode als Anker.*
+*Modul 03d — Version 2.0 | Zuständig für: Textinhalt & Struktur | HTML-Umsetzung: 04 — HTML Formatter*
