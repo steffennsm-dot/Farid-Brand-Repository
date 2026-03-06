@@ -44,8 +44,8 @@ Episoden-spezifische Links (Apple + Spotify zur einzelnen Folge) werden im Start
 ### Podcast-Plattformen (Show-Links)
 | Plattform | Link |
 |---|---|
-| **Apple Podcasts** | https://podcasts.apple.com/podcast/id1582590279 |
-| **Spotify** | https://open.spotify.com/show/0OjTn34gbhDxxy7f5zrMQy |
+| **Apple Podcasts** | https://podcasts.apple.com/de/podcast/mann-farid-der-m%C3%A4nner-podcast-f%C3%BCr-ein-erf%C3%BClltes-leben/id1566526647 |
+| **Spotify** | https://open.spotify.com/show/0OjTn34gbhDxxy7f5zrMQy?si=71252acea2fe48f2 |
 | **Amazon Music** | https://music.amazon.de/podcasts/b3c10ae9-cfea-4295-8fab-4bf3a2fae70b/Farid-Josef-ElNomany-paid-friend |
 | **Pocket Casts** | https://pca.st/95b0zfsc |
 | **Alle Folgen (Castos)** | https://farid-josef-el-nomany-paid-friend.castos.com/ |
@@ -494,7 +494,7 @@ Link:           --accent, Helvetica, 12px, 700, CAPS, letter-spacing: 2px, kein 
 
 Feste CTA-Links:
   Newsletter  → https://farid-el-nomany.com/newsletter/
-  Podcast     → Apple Podcasts Episoden-Link (abfragen) · Fallback: https://podcasts.apple.com/podcast/id1582590279
+  Podcast     → Apple Podcasts Episoden-Link (abfragen) · Fallback: https://podcasts.apple.com/de/podcast/mann-farid-der-m%C3%A4nner-podcast-f%C3%BCr-ein-erf%C3%BClltes-leben/id1566526647
 ```
 
 ---
