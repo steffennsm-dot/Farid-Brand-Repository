@@ -20,6 +20,50 @@ der Formatter erkennt automatisch welcher Typ vorliegt.
 
 ---
 
+## Feste Links — Immer verwenden, nie ändern
+
+Alle wiederkehrenden Links für Footer, CTAs und Plattform-Buttons.
+Episoden-spezifische Links (Apple + Spotify zur einzelnen Folge) werden im Start-Check abgefragt.
+
+### Website & Newsletter
+| Zweck | Link |
+|---|---|
+| **Website** | https://farid-el-nomany.com |
+| **Newsletter-Anmeldung** | https://farid-el-nomany.com/newsletter/ |
+| **Blog** | https://farid-el-nomany.com/blog/ |
+| **Podcast-Seite** | https://farid-el-nomany.com/mann-farid-podcast/ |
+
+### Social Media
+| Plattform | Link |
+|---|---|
+| **Instagram** | https://www.instagram.com/farid_elnomany/ |
+| **LinkedIn** | https://www.linkedin.com/in/farid-el-nomany-7922321b0/ |
+| **TikTok** | https://www.tiktok.com/@faridelnomany |
+| **Facebook** | https://facebook.com/faridelnomanypaidfriend/ |
+
+### Podcast-Plattformen (Show-Links)
+| Plattform | Link |
+|---|---|
+| **Apple Podcasts** | https://podcasts.apple.com/podcast/id1582590279 |
+| **Spotify** | https://open.spotify.com/show/0OjTn34gbhDxxy7f5zrMQy |
+| **Amazon Music** | https://music.amazon.de/podcasts/b3c10ae9-cfea-4295-8fab-4bf3a2fae70b/Farid-Josef-ElNomany-paid-friend |
+| **Pocket Casts** | https://pca.st/95b0zfsc |
+| **Alle Folgen (Castos)** | https://farid-josef-el-nomany-paid-friend.castos.com/ |
+
+### Logik: Welcher Podcast-Link wohin
+```
+Newsletter CTA-Block:
+  Apple Podcasts  → Episoden-Link (abfragen) · Fallback: Show-Link oben
+  Spotify         → Episoden-Link (abfragen) · Fallback: Show-Link oben
+  Amazon Music    → immer Show-Link (kein Episoden-Link nötig)
+  Pocket Casts    → immer Show-Link (kein Episoden-Link nötig)
+
+Blog Post CTA (Podcast-Modus):
+  Primär-Link     → Apple Podcasts Episoden-Link oder Show-Link
+```
+
+---
+
 ## Design-Philosophie
 
 **Referenz:** Apple.com · Aesop · Medium
@@ -268,12 +312,17 @@ Obere Border:       2px solid --border
 Padding:            32px 48px
 
 Label „FOLGE MIR":  Caps, --accent, letter-spacing: 4px, 10px Helvetica
-Social-Links:       --body, 13px Helvetica, CAPS, kein underline
-                    Getrennt durch ` · ` (Leerzeichen Punkt Leerzeichen)
-                    Mobile: je eigene Zeile mit 8px margin
+Social-Links (feste URLs):
+  INSTAGRAM   → https://www.instagram.com/farid_elnomany/
+  LINKEDIN    → https://www.linkedin.com/in/farid-el-nomany-7922321b0/
+  TIKTOK      → https://www.tiktok.com/@faridelnomany
+  FACEBOOK    → https://facebook.com/faridelnomanypaidfriend/
+  Stil:         --body, 13px Helvetica, CAPS, kein underline
+  Trenner:      ` · ` (Leerzeichen Punkt Leerzeichen)
+  Mobile:       je eigene Zeile mit 8px margin
 
 Adresse:            --muted, 11px Helvetica
-Abmelde-Link:       --accent, underline, 11px Helvetica
+Abmelde-Link:       --accent, underline, 11px Helvetica → [ABMELDE-LINK] (von Beehiiv/MailPoet)
 Unterer Akzent:     6px solid --accent
 ```
 
@@ -442,6 +491,10 @@ Margin:         48px 0
 Label:          Helvetica, 10px, --accent, CAPS, letter-spacing: 3px
 Text:           Georgia, 17px, --body
 Link:           --accent, Helvetica, 12px, 700, CAPS, letter-spacing: 2px, kein underline
+
+Feste CTA-Links:
+  Newsletter  → https://farid-el-nomany.com/newsletter/
+  Podcast     → Apple Podcasts Episoden-Link (abfragen) · Fallback: https://podcasts.apple.com/podcast/id1582590279
 ```
 
 ---
