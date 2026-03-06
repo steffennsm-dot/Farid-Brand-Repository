@@ -8,18 +8,58 @@
 
 ## Schritt 0 — Start-Check (immer zuerst)
 
-Bevor der Newsletter geschrieben wird, drei Dinge klären:
+Bevor der Newsletter geschrieben wird, folgende Dinge klären.
+**Immer in einem einzigen Check – nicht in mehreren Runden.**
 
 > **1. Welche Podcast-Episode ist der Anker dieser Ausgabe?**
 > Titel + kurze Beschreibung oder Link reicht.
 >
-> **2. Gibt es einen zusätzlichen Impuls / ein Thema für diese Ausgabe?**
+> **2. Apple Podcast- und Spotify-Link zur Folge?**
+> Diese beiden Links werden immer abgefragt – sie kommen direkt in den CTA-Block.
+> Wenn noch nicht vorhanden: Platzhalter einbauen und Hinweis setzen.
+>
+> **3. Gibt es einen zusätzlichen Impuls / ein Thema für diese Ausgabe?**
 > Optional – wenn nicht, leite ich den Impuls aus der Episode ab.
 >
-> **3. Gibt es ein Event, Seminar oder Angebot das diese Ausgabe erwähnen soll?**
+> **4. Gibt es ein Event, Seminar oder Angebot das diese Ausgabe erwähnen soll?**
 > Optional – wenn ja: Name + Link.
 
 Sobald klar: direkt schreiben. Keine weiteren Rückfragen.
+
+---
+
+## Podcast-Plattformen — Feste Links & Episoden-Links
+
+### Feste Plattform-Links (immer gleich – nie ändern)
+
+Diese Links zeigen auf die Show-Seite, nicht auf eine einzelne Folge.
+Sie werden im CTA-Block zusätzlich angezeigt wenn kein direkter Episoden-Link vorliegt.
+
+| Plattform | Link |
+|---|---|
+| **Apple Podcasts** | https://podcasts.apple.com/podcast/id1582590279 |
+| **Spotify** | https://open.spotify.com/show/0OjTn34gbhDxxy7f5zrMQy |
+| **Amazon Music** | https://music.amazon.de/podcasts/b3c10ae9-cfea-4295-8fab-4bf3a2fae70b/Farid-Josef-ElNomany-paid-friend |
+| **Pocket Casts** | https://pca.st/95b0zfsc |
+| **Alle Folgen** | https://farid-josef-el-nomany-paid-friend.castos.com/ |
+
+### Episoden-spezifische Links (werden abgefragt)
+
+Für jeden Newsletter werden **Apple Podcasts** und **Spotify** mit dem direkten Link zur aktuellen Folge verlinkt.
+Amazon Music und Pocket Casts verlinken auf die Show-Seite – dort landet der Hörer und findet die neueste Folge automatisch.
+
+**Logik im CTA-Block:**
+
+```
+Apple Podcasts  → Direktlink zur Folge (wird abgefragt)
+Spotify         → Direktlink zur Folge (wird abgefragt)
+Amazon Music    → Fester Show-Link (automatisch)
+Pocket Casts    → Fester Show-Link (automatisch)
+```
+
+**Wenn kein Episoden-Link vorliegt:**
+Alle vier Plattformen verlinken auf die Show-Seite.
+Platzhalter mit Hinweis einbauen: `[APPLE-LINK – bitte ergänzen]`
 
 ---
 
@@ -44,6 +84,8 @@ Newsletter-spezifisch:
 |---|---|
 | **Logo (SVG)** | `farid-el-nomany-logo.svg` – liegt im selben Ordner wie das HTML-Template |
 | **Logo-Einbindung** | Als Base64 direkt ins HTML eingebettet – kein externer Link nötig |
+| **Podcast-Cover (Standard)** | `mann-farid-podcast-cover.png` – liegt im selben Ordner wie das HTML-Template |
+| **Podcast-Cover-Einbindung** | Als Base64 direkt ins HTML eingebettet – wird ersetzt wenn eine episodenspezifische Version vorliegt |
 | **Primärfarbe** | Dunkelbraun / Anthrazit – erdiger, maskuliner Ton |
 | **Akzentfarbe** | Warmes Beige / Sandton als Hintergrund |
 | **Schrift** | Serifenlos, klar, modern |
@@ -194,8 +236,14 @@ Kurz, konkret, jeder Punkt für sich wertvoll.
 • ...
 • ...
 
-[CALL-TO-ACTION – 1 Satz + Button]
-"Jetzt hören →" mit Link zur Episode
+[CALL-TO-ACTION]
+Primär-Button: "JETZT HÖREN →" mit Apple-Podcast-Link zur Folge
+
+Darunter 4 kleine Plattform-Links in einer Zeile:
+🎧 Apple Podcasts → [EPISODEN-LINK]
+🎧 Spotify        → [EPISODEN-LINK]
+🎧 Amazon Music   → https://music.amazon.de/podcasts/b3c10ae9-cfea-4295-8fab-4bf3a2fae70b/Farid-Josef-ElNomany-paid-friend
+🎧 Pocket Casts   → https://pca.st/95b0zfsc
 ```
 
 ---
@@ -513,6 +561,32 @@ Es wird als Base64 direkt ins HTML eingebettet – so lädt es in jedem E-Mail-C
 
 **Hinweis Outlook-Kompatibilität:** Ältere Outlook-Versionen (2016 und älter) rendern kein SVG.
 Falls nötig: PNG-Version als Fallback anfordern.
+
+---
+
+### Podcast-Cover — Standard & Episoden-spezifisch
+
+**Standard-Cover:** `mann-farid-podcast-cover.png`
+Das generische MANN! Farid Podcast-Cover mit Farid am Mikrofon.
+Wird verwendet wenn keine episodenspezifische Cover-Grafik vorliegt.
+
+**Episoden-spezifisches Cover:**
+Wenn eine Folge ein eigenes Cover hat, ersetzt es das Standard-Cover.
+Einfach die Datei oder URL beim Template-Erstellen mitgeben.
+
+**Priorisierung:**
+```
+1. Episoden-spezifisches Cover vorhanden? → Das nehmen.
+2. Kein episoden-Cover? → mann-farid-podcast-cover.png einbetten.
+```
+
+**Einbindung (wie beim Logo):**
+```python
+import base64
+with open('mann-farid-podcast-cover.png', 'rb') as f:
+    cover_b64 = base64.b64encode(f.read()).decode()
+cover_src = f"data:image/png;base64,{cover_b64}"
+```
 
 ---
 
