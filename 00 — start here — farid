@@ -67,16 +67,16 @@ The strategist will:
 **Your action:** Choose which pieces to create.
 
 ### Step 2: Draft the content
-
-For each piece you selected, tell the system which one to draft. Always include `01 — Brand Bible.md` — it contains Farid's voice, values, quality gate, and banned words. Then add the matching channel guide:
+For each piece you selected, tell the system which one to draft. Always include `01 — always include — brand bible — farid` — it contains Farid's voice, values, quality gate, and banned words. Then add the matching channel guide:
 
 | Channel guide | Use for |
 |---|---|
-| `03a — LinkedIn Post` | LinkedIn text posts |
-| `03b — Instagram Post` | Instagram text or carousel posts |
-| `03c — Instagram Story` | Instagram story content |
-| `03d — Blog Article` | Long-form blog articles |
-| `03e — Newsletter` | Newsletter features |
+| `03a — Write — LinkedIn post` | LinkedIn text posts |
+| `03b — Write — Instagram post` | Instagram text or carousel posts |
+| `03c — Write — Instagram story` | Instagram story sequences |
+| `03d — Write — Newsletter` | Weekly newsletter (podcast-based) |
+| `03e — Write — Blog post` | Long-form blog articles |
+| `03f — Write — Reel caption` | Reel captions for Instagram & LinkedIn |
 
 The system drafts **one piece at a time** using the Brand Bible for voice and quality, and the channel guide for format and structure. Review it before moving to the next.
 
@@ -99,14 +99,17 @@ If the draft needs changes, say what to fix. The system revises.
 
 | File | What it does | When to use |
 |---|---|---|
-| `00 — Start here` | Explains the full workflow (this document) | Read once, reference when needed |
-| `01 — Brand Bible` | Farid's voice, values, quality gate, banned words | Every drafting session, always include |
-| `02 — Content Strategist` | Analyses input and recommends content | Every session, always include |
-| `03a — LinkedIn Post` | Guide for drafting LinkedIn posts | When drafting a LinkedIn post |
-| `03b — Instagram Post` | Guide for drafting Instagram text/carousel posts | When drafting an Instagram post |
-| `03c — Instagram Story` | Guide for drafting Instagram stories | When drafting an Instagram story |
-| `03d — Blog Article` | Guide for drafting long-form blog articles | When drafting a blog post |
-| `03e — Newsletter` | Guide for drafting newsletter content | When drafting a newsletter |
+| `00 — start here — farid` | Explains the full workflow (this document) | Read once, reference when needed |
+| `01 — always include — brand bible — farid` | Farid's voice, values, quality gate, banned words | Every drafting session — always include |
+| `02 — analyse your input — content planner` | Analyses input and recommends content | Every session — always include |
+| `03a — Write — LinkedIn post` | Guide for drafting LinkedIn posts | When drafting a LinkedIn post |
+| `03b — Write — Instagram post` | Guide for drafting Instagram text/carousel posts | When drafting an Instagram post |
+| `03c — Write — Instagram story` | Guide for drafting Instagram story sequences | When drafting an Instagram story |
+| `03d — Write — Newsletter` | Guide for drafting the weekly newsletter | When drafting a newsletter |
+| `03e — Write — Blog post` | Guide for drafting long-form blog articles | When drafting a blog post |
+| `03f — Write — Reel caption` | Guide for drafting Reel captions (2 lines + signature) | When drafting a Reel caption |
+| `farid-el-nomany-logo.svg` | Farid's brand logo (vector) | Newsletter HTML template generation |
+| `mann-farid-podcast-cover.png` | Standard MANN! Farid podcast cover image | Newsletter HTML — default when no episode cover exists |
 
 ---
 
