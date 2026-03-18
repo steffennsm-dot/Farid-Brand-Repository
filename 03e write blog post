@@ -233,20 +233,8 @@ TEIL 7 — CTA
 
 ---
 
-### TEIL 1 — META-ZEILE
 
-```
-[Kategorie] · [Kategorie] · [X] Min. Lesezeit · [Datum]
-Farid El-Nomany
-```
-
-**Kategorien:** Partnerschaft · Familie / Vaterschaft · Persönlichkeitsentwicklung · Karriere / Business · Vereinbarkeit · Mindset
-
-**Lesedauer:** ca. 200 Wörter/Minute → 800 W = 4 Min. · 1.200 W = 6 Min. · 1.600 W = 8 Min.
-
----
-
-### TEIL 2 — TITEL
+### TEIL 1 — TITEL
 
 Der einzige Job des Titels: Den Leser in den ersten Satz ziehen.
 **Primär-Keyword muss im Titel vorkommen.** Max. 12 Wörter.
@@ -270,7 +258,7 @@ DIE FRAGE:
 
 ---
 
-### TEIL 3 — LEAD (Hook)
+### TEIL 2 — LEAD (Hook)
 
 **Länge:** 60–120 Wörter. **Primär-Keyword in den ersten 100 Wörtern.**
 
@@ -290,15 +278,16 @@ Kernaussage direkt. Der Rest des Posts beweist sie.
 
 ---
 
-### TEIL 4 — BODY (Kern-Sektionen)
+### TEIL 3 — BODY (Kern-Sektionen)
 
 **3–6 Sektionen.** Jede Sektion:
 
 ```
 [H2 SUBHEADLINE – als Versprechen formuliert, sekundäres Keyword einbauen]
 [EINSTIEG – 1–2 Sätze direkt in die Sektion]
-[KERN-ABSÄTZE – max. 3 Zeilen pro Absatz, dann Leerzeile]
+[KERN-ABSÄTZE – max. 4 Zeilen pro Absatz, dann Leerzeile]
 [PULL-QUOTE – optional: stärkster Satz, mit > markieren]
+[Sprache - auf basis der Brand bble und persönlich fließend wie in einem Blog post]
 [ÜBERLEITUNG – 1 Satz zur nächsten Sektion]
 ```
 
@@ -316,13 +305,14 @@ KONTRAST:   "Nicht mehr leisten – klarer werden."
 ```
 
 **Absatz-Regeln:**
-- Max. 3 Zeilen pro Absatz · Leerzeile danach
+- Max. 4 Zeilen pro Absatz · Leerzeile danach
 - Jeder Absatz fügt etwas Neues hinzu — kein Wiederholen
+- Natürlicher sprachfluss wie in einem persönlichem Blog
 - Mindestens einmal eine klare **Definitionssatz** einbauen (für KI-Zitation)
 
 ---
 
-### TEIL 5 — FAQ-BLOCK
+### TEIL 4 — FAQ-BLOCK
 
 **Länge:** 2–4 Fragen mit je 2–4 Satz Antwort.
 **Position:** immer nach dem Body, vor dem Abschluss.
@@ -347,7 +337,7 @@ Format:
 
 ---
 
-### TEIL 6 — ABSCHLUSS
+### TEIL 5 — ABSCHLUSS
 
 **Länge:** 80–150 Wörter. Kein Zusammenfassen — etwas Neues hinzufügen.
 
@@ -366,7 +356,7 @@ Ein Satz. Stehen lassen.
 
 ---
 
-### TEIL 7 — CTA
+### TEIL 6 — CTA
 
 **Länge:** 2–4 Sätze + ein Link. Maximal ein CTA pro Post.
 
