@@ -1,7 +1,8 @@
 # 03e — Write — Blog Post
 
 > **Zweck:** Texte und Struktur für Blog-Posts auf farid-el-nomany.com schreiben.
-> Dieses Modul definiert WAS geschrieben wird und WIE es aufgebaut ist.
+> Dieses Modul definiert WAS geschrieben wird, WIE es aufgebaut ist,
+> und wie es für SEO und KI-Suche optimiert wird.
 > Der Output ist strukturierter Klartext – kein HTML.
 > Für die HTML-Umsetzung: `04 — HTML Formatter` verwenden.
 > Stilreferenz: Medium (Lesbarkeit, Tiefe) × Alex Hormozi (Direktheit, Hooks).
@@ -11,7 +12,7 @@
 
 ## Schritt 0 — Start-Check (immer zuerst)
 
-Zwei Fragen. Dann direkt schreiben.
+Drei Fragen. Dann direkt schreiben.
 
 > **1. Was ist das Thema / der Auslöser?**
 > Erlebnis, Beobachtung, These, Podcast-Episode – was auch immer.
@@ -20,6 +21,10 @@ Zwei Fragen. Dann direkt schreiben.
 > - [ ] Nur Mehrwert / Positionierung
 > - [ ] Podcast-Episode begleiten (welche?)
 > - [ ] Event oder Angebot weich bewerben
+>
+> **3. SEO-Recherche durchführen?**
+> - [ ] Ja → Schritt 1 (SEO) zuerst, dann schreiben
+> - [ ] Nein → direkt zu Modus + Struktur
 
 Kein weiteres Nachfragen. Modus vorschlagen und loslegen.
 
@@ -37,9 +42,175 @@ Der Leser soll nach jedem Abschnitt denken: „Gut, dass ich weiterlese."
 
 ## Die Stil-Mischung
 
-**Medium** liefert: klare Hierarchie, Lesbarkeit, Pull-Quotes, Lesedauer, Tiefe ohne Verlust.
+**Medium** liefert: klare Hierarchie, Lesbarkeit, Pull-Quotes, Tiefe ohne Verlust.
 **Hormozi** liefert: Hook zuerst, max. 3 Zeilen pro Absatz, Subheadlines als Versprechen, kein Fazit das zusammenfasst.
 **Farid** liefert: die persönliche Geschichte als Anker, den Registerwechsel, die Fragen die bleiben.
+
+---
+
+---
+
+# SCHRITT 1 — SEO & KI-OPTIMIERUNG
+
+> Dieser Schritt kommt **vor** dem Schreiben.
+> Ziel: den Post so aufbauen, dass er bei Google gefunden wird
+> und von KI-Systemen (ChatGPT, Perplexity, Gemini, Claude) als Antwort ausgespielt wird.
+
+---
+
+## Warum beides zusammen
+
+**Klassisches SEO** optimiert für Google-Ranking: Keywords, Struktur, Lesbarkeit, Backlinks.
+**KI-Suchoptimierung (AEO — Answer Engine Optimization)** optimiert dafür, dass Sprachmodelle
+den Post als vertrauenswürdige Quelle zitieren — bei Fragen wie:
+„Was sind die größten Herausforderungen für Männer in der Partnerschaft?"
+
+Beide Ziele verstärken sich: ein klar strukturierter, thematisch tiefer Post
+wird sowohl von Google als auch von KI-Systemen bevorzugt.
+
+---
+
+## 1.1 — Keyword-Recherche
+
+Bevor der Post geschrieben wird, folgende Analyse durchführen:
+
+### Primäres Keyword
+Das eine Wort oder die eine Phrase, um die der gesamte Post gebaut wird.
+
+**Kriterien:**
+- Wie suchen Männer in DACH wirklich? → Alltagssprache, keine Marketing-Sprache
+- Nicht zu breit („Beziehung"), nicht zu nischig („Männer 38 Jahre Vaterrolle Konflikt")
+- Idealerweise: Suchvolumen vorhanden, aber Konkurrenz nicht zu hoch
+
+**Beispiele für Farids Themenfelder:**
+
+| Themenfeld | Mögliches Primär-Keyword |
+|---|---|
+| Partnerschaft | „Ehe in der Krise" · „Beziehung retten" · „Kommunikation Partnerschaft" |
+| Vaterschaft | „Guter Vater sein" · „Vater und Beruf vereinbaren" · „Präsenter Vater" |
+| Erschöpfung | „Männer Burnout" · „Erschöpfung als Mann" · „Keine Energie mehr" |
+| Persönlichkeit | „Als Mann wachsen" · „Selbstreflexion Mann" · „Männliche Identität" |
+| Vereinbarkeit | „Beruf und Familie vereinbaren Mann" · „Work-Life-Balance Vater" |
+
+### Sekundäre Keywords (3–5 Stück)
+Verwandte Begriffe, die natürlich im Text auftauchen sollen.
+Nicht erzwingen – einbauen wo es sich ergibt.
+
+**Beispiel für „Ehe in der Krise":**
+- Beziehungskrise überwinden
+- Ehe retten Tipps
+- Paar Kommunikation verbessern
+- Ehe ohne Leidenschaft
+- Beziehung auffrischen
+
+### Long-Tail-Keywords (2–3 Stück)
+Längere Suchanfragen mit klarer Absicht – oft direkte Fragen.
+Ideal für FAQ-Sektionen und KI-Antworten.
+
+**Beispiel:**
+- „Was tun wenn die Ehe sich auseinandergelebt hat"
+- „Wie rette ich meine Ehe als Mann"
+- „Warum bin ich als Vater so erschöpft"
+
+### Keyword-Recherche-Werkzeuge
+Falls Zugriff vorhanden, folgende Tools prüfen:
+- **Google Search Console** → welche Keywords bringen bereits Traffic auf die Website?
+- **Ubersuggest / Ahrefs / Semrush** → Suchvolumen und Konkurrenz
+- **Google Autovervollständigung** → Reale Suchanfragen sehen
+- **„Menschen fragen auch"** auf Google → Long-Tail-Fragen direkt aus der SERP
+
+Wenn kein Tool verfügbar: Thema eingeben und Google-Autovervollständigung + People-also-ask beobachten.
+
+---
+
+## 1.2 — Technische SEO-Checkliste
+
+Diese Elemente werden beim Schreiben direkt mitgeliefert:
+
+| Element | Anforderung |
+|---|---|
+| **Title Tag** | 50–60 Zeichen · Primär-Keyword am Anfang · zieht den Leser rein |
+| **Meta-Beschreibung** | 140–155 Zeichen · Primär-Keyword · konkreter Nutzen · kein Clickbait |
+| **URL / Permalink** | Kurz · Deutsch · mit Primär-Keyword · keine Stopwörter |
+| **H1 (Titel)** | Primär-Keyword enthalten · max. 12 Wörter · zieht den Leser rein |
+| **H2 Subheadlines** | Sekundäre Keywords natürlich einbauen · als Versprechen formuliert |
+| **Erster Absatz** | Primär-Keyword in den ersten 100 Wörtern |
+| **Bilder Alt-Text** | Primär-Keyword mindestens einmal · beschreibend |
+| **Interne Links** | 2–3 Links zu anderen Farid-Posts oder Podcast-Seite |
+| **Lesbarkeit** | Flesch-Kincaid Score: möglichst hoch · kurze Sätze · Absätze max. 3 Zeilen |
+
+---
+
+## 1.3 — KI-Suchoptimierung (AEO)
+
+KI-Systeme bevorzugen Quellen die:
+1. **Eine Frage direkt beantworten** — am besten schon im ersten Absatz nach der Frage
+2. **Strukturiert und klar gegliedert** sind — H2, H3, Listen helfen KI beim Extrahieren
+3. **Factual und spezifisch** sind — vage Ratschläge werden seltener zitiert
+4. **Autorität signalisieren** — persönliche Erfahrung + konkrete Beispiele
+
+### Konkrete Maßnahmen im Post
+
+**FAQ-Block einbauen (am Ende des Posts, vor CTA)**
+2–4 Fragen die echte Suchanfragen widerspiegeln — mit direkten, knappen Antworten.
+KI-Systeme extrahieren FAQs besonders häufig.
+
+Format:
+```
+### Häufig gestellte Fragen
+
+**[Frage genau so wie jemand sie googeln würde?]**
+[Direkte Antwort in 2–4 Sätzen. Primär-Keyword natürlich einbauen.]
+
+**[Zweite Frage?]**
+[Direkte Antwort in 2–4 Sätzen.]
+```
+
+**Definitionssatz einbauen**
+Mindestens einmal eine klare Definition des Themas — so wie eine Enzyklopädie es formulieren würde.
+KI-Systeme zitieren Definitionen gerne als Antwort.
+
+Beispiel:
+> „Väterliche Erschöpfung beschreibt den Zustand chronischer emotionaler und körperlicher
+> Überlastung bei Männern, die Beruf, Partnerschaft und Vaterschaft gleichzeitig tragen –
+> ohne ausreichend Raum für eigene Erholung."
+
+**Konkrete Zahlen und Fakten**
+Wenn vorhanden: Studien, Statistiken, Prozentzahlen einbauen.
+Nicht erfinden — nur verwenden was belegt ist oder aus Farids direkter Erfahrung stammt.
+
+---
+
+## 1.4 — SEO-Output (wird vor dem Textschreiben geliefert)
+
+Bevor der Post geschrieben wird, folgendes als Block ausgeben:
+
+```
+SEO-BRIEF — [THEMA]
+
+PRIMÄR-KEYWORD:     [Keyword]
+SEKUNDÄRE KEYWORDS: [Keyword 1] · [Keyword 2] · [Keyword 3]
+LONG-TAIL:          [Frage 1] · [Frage 2]
+
+TITLE TAG:          [50–60 Zeichen]
+META-BESCHREIBUNG:  [140–155 Zeichen]
+URL-VORSCHLAG:      /[kurz-deutsch-keyword]/
+
+FAQ-FRAGEN:
+1. [Frage]
+2. [Frage]
+3. [Frage]
+
+INTERNE LINK-KANDIDATEN:
+- [Thema] → [URL oder Seitenbereich]
+- [Thema] → [URL oder Seitenbereich]
+```
+
+---
+
+---
+
+# SCHRITT 2 — POST SCHREIBEN
 
 ---
 
@@ -50,8 +221,9 @@ TEIL 1 — META-ZEILE
 TEIL 2 — TITEL
 TEIL 3 — LEAD (Hook)
 TEIL 4 — BODY (Kern-Sektionen)
-TEIL 5 — ABSCHLUSS
-TEIL 6 — CTA
+TEIL 5 — FAQ-BLOCK
+TEIL 6 — ABSCHLUSS
+TEIL 7 — CTA
 ```
 
 ---
@@ -71,7 +243,8 @@ Farid El-Nomany
 
 ### TEIL 2 — TITEL
 
-Der einzige Job des Titels: Den Leser in den ersten Satz ziehen. Max. 12 Wörter.
+Der einzige Job des Titels: Den Leser in den ersten Satz ziehen.
+**Primär-Keyword muss im Titel vorkommen.** Max. 12 Wörter.
 
 **Formate:**
 ```
@@ -88,13 +261,13 @@ DIE FRAGE:
 "Was passiert mit dir, wenn keiner zuschaut?"
 ```
 
-**Regeln:** Max. 12 Wörter · kein Clickbait · der Leser muss sich gemeint fühlen
+**Regeln:** Max. 12 Wörter · kein Clickbait · der Leser muss sich gemeint fühlen · Primär-Keyword enthalten
 
 ---
 
 ### TEIL 3 — LEAD (Hook)
 
-**Länge:** 60–120 Wörter. Kein Wort mehr.
+**Länge:** 60–120 Wörter. **Primär-Keyword in den ersten 100 Wörtern.**
 
 Kein Anlauf. Kein „In diesem Artikel geht es um...". Direkt rein in die Situation.
 
@@ -102,18 +275,12 @@ Kein Anlauf. Kein „In diesem Artikel geht es um...". Direkt rein in die Situat
 ```
 TYP 1 — DIE SZENE
 Konkrete Situation. Der Leser soll sich drin sehen.
-"Es war ein Mittwochabend. Mein Sohn fragte mich, ob wir heute noch
-spielen. Ich sagte: 'Gleich.' Das war vor zwei Stunden."
 
 TYP 2 — DIE PROVOKATION
 Eine Aussage die nicht jeder sagen würde.
-"Die meisten Männer wissen nicht, dass sie gerade ihre Ehe
-auf Sparflamme stellen. Sie denken, sie investieren in die Familie."
 
 TYP 3 — DIE THESE
 Kernaussage direkt. Der Rest des Posts beweist sie.
-"Erschöpfung hat selten mit dem Job zu tun.
-Fast immer mit dem, was du nach dem Job noch alles trägst."
 ```
 
 ---
@@ -123,10 +290,10 @@ Fast immer mit dem, was du nach dem Job noch alles trägst."
 **3–6 Sektionen.** Jede Sektion:
 
 ```
-[H2 SUBHEADLINE – als Versprechen formuliert]
+[H2 SUBHEADLINE – als Versprechen formuliert, sekundäres Keyword einbauen]
 [EINSTIEG – 1–2 Sätze direkt in die Sektion]
 [KERN-ABSÄTZE – max. 3 Zeilen pro Absatz, dann Leerzeile]
-[PULL-QUOTE – optional: stärkster Satz, hervorgehoben]
+[PULL-QUOTE – optional: stärkster Satz, mit > markieren]
 [ÜBERLEITUNG – 1 Satz zur nächsten Sektion]
 ```
 
@@ -138,45 +305,63 @@ IMPERATIV:  "Hör auf, das zu rechtfertigen."
 KONTRAST:   "Nicht mehr leisten – klarer werden."
 ```
 
-**Pull-Quote:** Den stärksten Satz einer Sektion markieren.
-Im Output: mit `> ` als Blockquote kennzeichnen.
+**Pull-Quote:** Stärksten Satz mit `> ` als Blockquote markieren.
 ```
 > "Ein voller Kalender ist kein Beweis für ein volles Leben."
 ```
 
 **Absatz-Regeln:**
-- Max. 3 Zeilen pro Absatz
-- Nach jedem Absatz: Leerzeile
-- Jeder Absatz fügt etwas Neues hinzu – kein Wiederholen
+- Max. 3 Zeilen pro Absatz · Leerzeile danach
+- Jeder Absatz fügt etwas Neues hinzu — kein Wiederholen
+- Mindestens einmal eine klare **Definitionssatz** einbauen (für KI-Zitation)
 
 ---
 
-### TEIL 5 — ABSCHLUSS
+### TEIL 5 — FAQ-BLOCK
 
-**Länge:** 80–150 Wörter
+**Länge:** 2–4 Fragen mit je 2–4 Satz Antwort.
+**Position:** immer nach dem Body, vor dem Abschluss.
 
-Kein Zusammenfassen. Etwas Neues hinzufügen oder offen lassen.
+**Zweck:** Google Featured Snippets + KI-Antwort-Quellen.
+
+Format:
+```
+## Häufig gestellte Fragen
+
+**[Frage genau so wie jemand sie googeln würde?]**
+[Direkte Antwort. 2–4 Sätze. Primär-Keyword natürlich einbauen.]
+
+**[Zweite Frage?]**
+[Direkte Antwort. 2–4 Sätze.]
+```
+
+**Fragen ableiten aus:**
+- Long-Tail-Keywords aus dem SEO-Brief
+- Google „Menschen fragen auch"-Box
+- Was Farid in Gesprächen, DMs oder im Podcast immer wieder gefragt wird
+
+---
+
+### TEIL 6 — ABSCHLUSS
+
+**Länge:** 80–150 Wörter. Kein Zusammenfassen — etwas Neues hinzufügen.
 
 ```
 TYP 1 — DIE OFFENE FRAGE
-"Was würde sich ändern, wenn du diese Woche eine einzige Sache
-anders machst? Nicht mehr. Eine."
+"Was würde sich ändern, wenn du diese Woche eine einzige Sache anders machst?"
 
 TYP 2 — DIE PERSÖNLICHE EINORDNUNG
-"Ich kämpfe mit diesem Thema selbst. Jeden Tag neu.
-Aber der Unterschied zwischen früher und heute ist: Ich weiß jetzt,
-dass es einen Unterschied macht."
+"Ich kämpfe mit diesem Thema selbst. Jeden Tag neu."
 
 TYP 3 — DER HARTE SCHLUSSPUNKT
 Ein Satz. Stehen lassen.
-"Die Zeit, die du dir nimmst, ist keine Schwäche."
 ```
 
 **Signatur:** „Herzliche Grüße, dein Farid." oder „Alles Liebe – Farid."
 
 ---
 
-### TEIL 6 — CTA
+### TEIL 7 — CTA
 
 **Länge:** 2–4 Sätze + ein Link. Maximal ein CTA pro Post.
 
@@ -186,30 +371,18 @@ Ein Satz. Stehen lassen.
 | Basiert auf Podcast-Episode | Podcast-CTA |
 | Event-Bezug | Event-CTA (weich, ohne Druck) |
 
-```
-NEWSLETTER:
-"Wenn dich solche Themen bewegen, schreib dich in meinen Newsletter ein.
-Kein Spam. Nur Dinge, die ich selbst für wertvoll halte."
-→ [Link zur Newsletter-Seite]
-
-PODCAST:
-"Das Thema habe ich in Folge [X] des MANN! Farid Podcast auseinandergenommen.
-[Titel der Folge] – jetzt hören."
-→ [Podcast-Link]
-```
-
 **Verboten im CTA:** „Sichere dir jetzt..." · „Nur noch X Plätze..." · mehr als ein CTA
 
 ---
 
 ## Modi
 
-| Modus | Länge | Sektionen | CTA |
-|---|---|---|---|
-| **A — Standard** | 900–1.400 W | 3–4 | Newsletter |
-| **B — Podcast-Begleit** | 800–1.200 W | 3–4 | Podcast-Folge |
-| **C — Deep Dive** | 1.400–2.000 W | 5–6 | Newsletter/Event |
-| **D — Kurz & Scharf** | 500–700 W | 2–3 | Optional |
+| Modus | Länge | Sektionen | FAQ | CTA |
+|---|---|---|---|---|
+| **A — Standard** | 900–1.400 W | 3–4 | 3 Fragen | Newsletter |
+| **B — Podcast-Begleit** | 800–1.200 W | 3–4 | 2–3 Fragen | Podcast-Folge |
+| **C — Deep Dive** | 1.400–2.000 W | 5–6 | 4 Fragen | Newsletter/Event |
+| **D — Kurz & Scharf** | 500–700 W | 2–3 | 2 Fragen | Optional |
 
 **Modus B – Regel:** Post muss alleine stehen. Wer die Episode nie hört, soll trotzdem vollen Wert bekommen.
 
@@ -217,6 +390,7 @@ PODCAST:
 
 ## Qualitätskontrolle
 
+### Inhalt & Stil
 1. Zieht der erste Satz den Leser rein – ohne Anlauf?
 2. Ist kein Absatz länger als 3 Zeilen?
 3. Fügt jede Sektion etwas Neues hinzu – kein Wiederholen?
@@ -224,9 +398,17 @@ PODCAST:
 5. Fasst der Abschluss NICHT zusammen – fügt er etwas hinzu?
 6. Ist der CTA konkret aber ohne Druck?
 7. Liegt die Länge im Zielbereich des Modus?
-8. Ist jede H2-Subheadline ein Versprechen an den Leser?
-9. Gibt es mindestens eine unbequeme Wahrheit?
-10. **Brand Bible Check:** Klingt es wie Farid? Gibt es einen Satz, den nur er so schreiben würde?
+8. Gibt es mindestens eine unbequeme Wahrheit?
+9. **Brand Bible Check:** Klingt es wie Farid? Gibt es einen Satz, den nur er so schreiben würde?
+
+### SEO & KI
+10. Ist das Primär-Keyword im Titel enthalten?
+11. Ist das Primär-Keyword in den ersten 100 Wörtern?
+12. Enthalten die H2-Subheadlines sekundäre Keywords – natürlich, nicht erzwungen?
+13. Ist der SEO-Brief (Title Tag, Meta, URL) geliefert?
+14. Gibt es einen FAQ-Block mit 2–4 Fragen aus echten Suchanfragen?
+15. Gibt es mindestens einen klaren Definitionssatz im Text?
+16. Sind 2–3 interne Verlinkungen vorgeschlagen?
 
 ---
 
@@ -238,4 +420,117 @@ PODCAST:
 
 ---
 
-*Modul 03e — Version 2.0 | Zuständig für: Textinhalt & Struktur | HTML-Umsetzung: 04 — HTML Formatter*
+---
+
+# SCHRITT 3 — WORDPRESS-CHECKLISTE
+
+> Dieser Block wird **nach dem fertigen Post** automatisch ausgegeben.
+> Alle Felder sind auf den Post zugeschnitten – nichts ist generisch.
+> Einfach von oben nach unten abarbeiten.
+
+---
+
+## WordPress-Checkliste für „[TITEL DES POSTS]"
+
+---
+
+**1. AUTHOR SETZEN**
+```
+Author: Farid El-Nomany
+```
+→ Im WordPress-Editor rechts unter „Author" auswählen.
+
+---
+
+**2. BILD EINFÜGEN**
+```
+Featured Image: [Beschreibung des idealen Bildes für diesen Post]
+Alt-Text:       [Primär-Keyword + kurze Bildbeschreibung]
+```
+→ Rechts unter „Featured Image" → „Set featured image" → Bild hochladen.
+→ Alt-Text beim Upload im Medien-Dialog eintragen.
+
+---
+
+**3. SCHLÜSSELWORT (Yoast SEO / Rank Math)**
+
+Immer zwei Schlüsselwörter — das post-spezifische zuerst, dann der feste Marken-Begriff:
+
+```
+Schlüsselwort 1: [Primär-Keyword des Posts – aus SEO-Brief]
+Schlüsselwort 2: Männer-Podcast
+```
+→ Yoast SEO: „Focus Keyphrase" Feld → Schlüsselwort 1 eintragen.
+→ Zweites Schlüsselwort: Yoast Premium → „Additional keyphrases" oder als Tag setzen.
+
+---
+
+**4. DIE VIER WICHTIGSTEN SEO-SCHLAGWÖRTER (Tags)**
+
+```
+Tag 1: [Primär-Keyword]
+Tag 2: [Sekundäres Keyword 1]
+Tag 3: [Sekundäres Keyword 2]
+Tag 4: Männer-Podcast
+```
+→ Im Editor rechts unter „Tags" eintragen und mit Enter bestätigen.
+
+---
+
+**5. TITEL SETZEN**
+
+```
+WordPress-Titel (H1): [Titel des Posts]
+SEO-Titel (Title Tag): [Title Tag aus SEO-Brief – 50–60 Zeichen]
+```
+→ WordPress-Titel: ganz oben im Editor-Feld „Add title".
+→ SEO-Titel: Yoast SEO → „SEO Title" Feld (kann vom WordPress-Titel abweichen).
+
+---
+
+**6. TEXT & SNIPPET SETZEN**
+
+```
+Text:    → Fertigen Post-Text in den Editor einfügen (Block-Editor oder HTML-Block).
+Snippet: → Yoast SEO → „Meta Description" Feld:
+
+[Meta-Beschreibung aus SEO-Brief – 140–155 Zeichen]
+```
+→ Snippet-Vorschau in Yoast zeigt wie der Eintrag in Google aussieht.
+→ Primär-Keyword muss in der Meta-Beschreibung vorkommen.
+
+---
+
+**7. SNIPPET BEARBEITEN**
+
+Prüfen ob die Snippet-Vorschau in Yoast korrekt aussieht:
+
+```
+✓ SEO-Titel:          [Title Tag] — zwischen 50–60 Zeichen?
+✓ URL / Permalink:    /[URL-Vorschlag aus SEO-Brief]/ — kurz und mit Keyword?
+✓ Meta-Beschreibung:  [Meta-Text] — zwischen 140–155 Zeichen?
+✓ Primär-Keyword:     kommt in Titel UND Meta-Beschreibung vor?
+✓ Kein Wort abgeschnitten in der Vorschau?
+```
+→ Permalink ändern: oben im Editor neben dem Titel auf „Edit" klicken.
+→ Wenn Snippet zu lang: kürzen bis die Balken in Yoast grün werden.
+
+---
+
+**PERMALINK-VORGABE:**
+```
+/[URL-Vorschlag aus SEO-Brief]/
+```
+
+**KATEGORIE-VORGABE:**
+```
+[Kategorie 1 aus Meta-Zeile]
+[Kategorie 2 aus Meta-Zeile]
+```
+→ Rechts unter „Categories" anhaken.
+
+---
+
+*Modul 03e — Version 3.0*
+*Zuständig für: Textinhalt, Struktur, SEO-Brief & KI-Optimierung.*
+*HTML-Umsetzung: 04 — HTML Formatter.*
