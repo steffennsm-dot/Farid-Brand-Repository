@@ -8,6 +8,11 @@
 > Stilreferenz: Medium (Lesbarkeit, Tiefe) × Alex Hormozi (Direktheit, Hooks).
 > Immer zusammen mit der Brand Bible verwenden.
 
+**Conversion-Ziel:** Jeder Blog Post hat genau eines von drei Zielen —
+den Leser zum Podcast zu bringen, ihn zur Newsletter-Anmeldung zu führen,
+oder ihn dazu zu bringen, Farid auf Instagram oder LinkedIn zu folgen.
+Kein Post endet ohne einen dieser drei Calls-to-Action.
+
 ---
 
 ## Schritt 0 — Start-Check (immer zuerst)
@@ -370,6 +375,25 @@ Ein Satz. Stehen lassen.
 | Kein spezifisches Angebot | Newsletter-CTA |
 | Basiert auf Podcast-Episode | Podcast-CTA |
 | Event-Bezug | Event-CTA (weich, ohne Druck) |
+| Neuer Leser, kein klarer Bezug | Social-Follow-CTA |
+
+```
+NEWSLETTER:
+"Wenn dich solche Themen bewegen, schreib dich in meinen Newsletter ein.
+Kein Spam. Nur Dinge, die ich selbst für wertvoll halte."
+→ https://farid-el-nomany.com/newsletter/
+
+PODCAST:
+"Das Thema habe ich in Folge [X] des MANN! Farid Podcast auseinandergenommen.
+[Titel der Folge] – jetzt hören."
+→ https://podcasts.apple.com/podcast/id1582590279
+
+SOCIAL FOLLOW:
+"Wenn du solche Themen regelmäßig haben willst – ich schreibe davon
+täglich auf Instagram und LinkedIn. Einfach folgen."
+→ Instagram: https://www.instagram.com/farid_elnomany/
+→ LinkedIn: https://www.linkedin.com/in/farid-el-nomany-7922321b0/
+```
 
 **Verboten im CTA:** „Sichere dir jetzt..." · „Nur noch X Plätze..." · mehr als ein CTA
 
@@ -379,10 +403,10 @@ Ein Satz. Stehen lassen.
 
 | Modus | Länge | Sektionen | FAQ | CTA |
 |---|---|---|---|---|
-| **A — Standard** | 900–1.400 W | 3–4 | 3 Fragen | Newsletter |
+| **A — Standard** | 900–1.400 W | 3–4 | 3 Fragen | Newsletter oder Social Follow |
 | **B — Podcast-Begleit** | 800–1.200 W | 3–4 | 2–3 Fragen | Podcast-Folge |
-| **C — Deep Dive** | 1.400–2.000 W | 5–6 | 4 Fragen | Newsletter/Event |
-| **D — Kurz & Scharf** | 500–700 W | 2–3 | 2 Fragen | Optional |
+| **C — Deep Dive** | 1.400–2.000 W | 5–6 | 4 Fragen | Newsletter oder Event |
+| **D — Kurz & Scharf** | 500–700 W | 2–3 | 2 Fragen | Social Follow oder Optional |
 
 **Modus B – Regel:** Post muss alleine stehen. Wer die Episode nie hört, soll trotzdem vollen Wert bekommen.
 
